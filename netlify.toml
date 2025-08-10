@@ -9,4 +9,4 @@
   # The 'name' must EXACTLY match the name in your form tag.
   name = "rsvp-final"
   # This explicitly tells Netlify where to redirect after a successful submission.
-  action = "/thank-you"
+  action = "/thank-you.html"
