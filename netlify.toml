@@ -1,0 +1,12 @@
+# This file gives direct instructions to Netlify's servers.
+
+# This tells Netlify that our website's files are in the main folder.
+[build]
+  publish = "/"
+
+# This gives explicit instructions for our RSVP form.
+[[forms]]
+  # The 'name' must EXACTLY match the name in your form tag.
+  name = "rsvp-final"
+  # This explicitly tells Netlify where to redirect after a successful submission.
+  action = "/thank-you"
