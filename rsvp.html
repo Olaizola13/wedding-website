@@ -88,7 +88,49 @@
     <script src="/js/main.js"></script>
 
     <script>
-        // ... (The script at the bottom remains the same)
+        document.addEventListener('DOMContentLoaded', () => {
+            const attendingYes = document.getElementById('attending-yes');
+            const attendingNo = document.getElementById('attending-no');
+            const attendingDetails = document.getElementById('attending-details');
+            
+            const plusOneYes = document.getElementById('plus-one-yes');
+            const plusOneNo = document.getElementById('plus-one-no');
+            const plusOneNameGroup = document.getElementById('plus-one-name-group');
+
+            attendingYes.addEventListener('change', () => {
+                if (attendingYes.checked) attendingDetails.classList.add('show');
+            });
+            attendingNo.addEventListener('change', () => {
+                if (attendingNo.checked) attendingDetails.classList.remove('show');
+            });
+            
+            plusOneYes.addEventListener('change', () => {
+                if (plusOneYes.checked) plusOneNameGroup.classList.add('show');
+            });
+            plusOneNo.addEventListener('change', () => {
+                if (plusOneNo.checked) plusOneNameGroup.classList.remove('show');
+            });
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const guestId = urlParams.get('guest');
+            if (guestId && typeof guestList !== 'undefined') {
+                const guest = guestList.find(g => g.id === guestId);
+                if (guest) {
+                    document.getElementById('name').value = guest.name;
+                    if (guest.plusOneAllowed) {
+                        plusOneYes.checked = true;
+                        plusOneNameGroup.classList.add('show');
+                        if(guest.plusOneName) {
+                            document.getElementById('plus-one-name').value = guest.plusOneName;
+                        }
+                    }
+                    const welcomeDiv = document.getElementById('rsvp-welcome-message');
+                    const lang = localStorage.getItem('language') || 'en';
+                    const welcomeText = translations[lang]['rsvp_welcome_guest'] || "Welcome, ";
+                    welcomeDiv.innerText = welcomeText + guest.name.split(' ')[0] + '!';
+                }
+            }
+        });
     </script>
 </body>
 </html>
