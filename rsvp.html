@@ -23,8 +23,7 @@
     <main class="container">
         <div id="rsvp-welcome-message" class="rsvp-welcome"></div>
 
-        <form name="rsvp-final" method="POST" action="/thank-you.html" data-netlify="true">
-            <input type="hidden" name="form-name" value="rsvp-final" />
+        <form method="POST" action="https://formspree.io/f/xeozvrye">
 
             <div class="form-group">
                 <label for="name" data-key="rsvp_q_name"></label>
@@ -34,11 +33,11 @@
             <div class="form-group">
                 <label data-key="rsvp_q_attending"></label>
                 <div class="radio-group">
-                    <input type="radio" id="attending-yes" name="attending" value="Yes" required>
+                    <input type="radio" id="attending-yes" name="Attending Status" value="Yes" required>
                     <label for="attending-yes" data-key="rsvp_a_yes"></label>
                 </div>
                 <div class="radio-group">
-                    <input type="radio" id="attending-no" name="attending" value="No">
+                    <input type="radio" id="attending-no" name="Attending Status" value="No">
                     <label for="attending-no" data-key="rsvp_a_no"></label>
                 </div>
             </div>
@@ -47,33 +46,33 @@
                 <div class="form-group">
                     <label data-key="rsvp_q_plus_one"></label>
                     <div class="radio-group">
-                        <input type="radio" id="plus-one-yes" name="plus-one" value="Yes">
+                        <input type="radio" id="plus-one-yes" name="Plus One" value="Yes">
                         <label for="plus-one-yes" data-key="rsvp_a_yes"></label>
                     </div>
                     <div class="radio-group">
-                        <input type="radio" id="plus-one-no" name="plus-one" value="No" checked>
+                        <input type="radio" id="plus-one-no" name="Plus One" value="No" checked>
                         <label for="plus-one-no" data-key="rsvp_a_no"></label>
                     </div>
                 </div>
 
                 <div class="form-group form-section-hidden" id="plus-one-name-group">
                     <label for="plus-one-name" data-key="rsvp_q_plus_one_name"></label>
-                    <input type="text" id="plus-one-name" name="plus-one-name">
+                    <input type="text" id="plus-one-name" name="Plus One Name">
                 </div>
 
                 <div class="form-group">
                     <label for="allergies" data-key="rsvp_q_allergies"></label>
-                    <textarea id="allergies" name="allergies" rows="3"></textarea>
+                    <textarea id="allergies" name="Allergies or Dietary Restrictions" rows="3"></textarea>
                 </div>
 
                 <div class="form-group">
                     <label data-key="rsvp_q_prewedding"></label>
                      <div class="radio-group">
-                        <input type="radio" id="prewedding-yes" name="prewedding" value="Yes">
+                        <input type="radio" id="prewedding-yes" name="Attending Pre-Wedding" value="Yes">
                         <label for="prewedding-yes" data-key="rsvp_a_yes"></label>
                     </div>
                     <div class="radio-group">
-                        <input type="radio" id="prewedding-no" name="prewedding" value="No" checked>
+                        <input type="radio" id="prewedding-no" name="Attending Pre-Wedding" value="No" checked>
                         <label for="prewedding-no" data-key="rsvp_a_no"></label>
                     </div>
                 </div>
@@ -134,7 +133,3 @@
     </script>
 </body>
 </html>
-
-
-
-
