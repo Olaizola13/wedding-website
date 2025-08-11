@@ -2,6 +2,7 @@ const translations = {
     "en": {
         "page_title": "Jessica & Juanma's Wedding",
         "date": "17 . 10 . 2026",
+        "btn_lovestory": "Our Story",
         "btn_travel": "Arrival",
         "btn_accommodations": "Accommodation",
         "btn_locations": "Venues",
@@ -42,13 +43,14 @@ const translations = {
         "locations_page_title": "Venues",
         "kids_page_title": "Kids",
         "transport_page_title": "Transport",
-        "recommendations_page_title": "Recommendations"
+        "recommendations_page_title": "Recommendations",
         "thank_you_no_title": "We'll Miss You",
-        "thank_you_no_message": "Thank you for letting us know. We're so sorry you can't make it and will miss celebrating with you!",
+        "thank_you_no_message": "Thank you for letting us know. We're so sorry you can't make it and will miss celebrating with you!"
     },
     "es": {
         "page_title": "La Boda de Jessica & Juanma",
         "date": "17 . 10 . 2026",
+        "btn_lovestory": "Nuestra Historia",
         "btn_travel": "Cómo Llegar",
         "btn_accommodations": "Alojamiento",
         "btn_locations": "Lugares",
@@ -89,13 +91,14 @@ const translations = {
         "locations_page_title": "Lugares",
         "kids_page_title": "Niños",
         "transport_page_title": "Transporte",
-        "recommendations_page_title": "Recomendaciones"
+        "recommendations_page_title": "Recomendaciones",
         "thank_you_no_title": "Te Echaremos de Menos",
-        "thank_you_no_message": "Gracias por responder. Sentimos mucho que no puedas venir, ¡te echaremos de menos en la celebración!",
+        "thank_you_no_message": "Gracias por responder. Sentimos mucho que no puedas venir, ¡te echaremos de menos en la celebración!"
     },
     "de": {
         "page_title": "Die Hochzeit von Jessica & Juanma",
         "date": "17 . 10 . 2026",
+        "btn_lovestory": "Unsere Geschichte",
         "btn_travel": "Anreise",
         "btn_accommodations": "Unterkünfte",
         "btn_locations": "Locations",
@@ -136,9 +139,8 @@ const translations = {
         "locations_page_title": "Locations",
         "kids_page_title": "Kinder",
         "transport_page_title": "Transport",
-        "recommendations_page_title": "Sehenswertes"
+        "recommendations_page_title": "Sehenswertes",
         "thank_you_no_title": "Wir werden dich vermissen",
-        "thank_you_no_message": "Danke für deine Rückmeldung. Wir finden es sehr schade, dass du nicht dabei sein kannst und werden dich bei der Feier vermissen!",
+        "thank_you_no_message": "Danke für deine Rückmeldung. Wir finden es sehr schade, dass du nicht dabei sein kannst und werden dich bei der Feier vermissen!"
     }
-
 };
