@@ -43,6 +43,8 @@ const translations = {
         "kids_page_title": "Kids",
         "transport_page_title": "Transport",
         "recommendations_page_title": "Recommendations"
+        "thank_you_no_title": "We'll Miss You",
+        "thank_you_no_message": "Thank you for letting us know. We're so sorry you can't make it and will miss celebrating with you!",
     },
     "es": {
         "page_title": "La Boda de Jessica & Juanma",
@@ -88,6 +90,8 @@ const translations = {
         "kids_page_title": "Niños",
         "transport_page_title": "Transporte",
         "recommendations_page_title": "Recomendaciones"
+        "thank_you_no_title": "Te Echaremos de Menos",
+        "thank_you_no_message": "Gracias por responder. Sentimos mucho que no puedas venir, ¡te echaremos de menos en la celebración!",
     },
     "de": {
         "page_title": "Die Hochzeit von Jessica & Juanma",
@@ -133,5 +137,8 @@ const translations = {
         "kids_page_title": "Kinder",
         "transport_page_title": "Transport",
         "recommendations_page_title": "Sehenswertes"
+        "thank_you_no_title": "Wir werden dich vermissen",
+        "thank_you_no_message": "Danke für deine Rückmeldung. Wir finden es sehr schade, dass du nicht dabei sein kannst und werden dich bei der Feier vermissen!",
     }
+
 };
