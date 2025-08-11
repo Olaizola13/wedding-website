@@ -86,7 +86,7 @@ h1, h2, h3, h4 {
 /* Icon Button Grid */
 .icon-button-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 15px;
     margin-bottom: 25px;
 }
@@ -123,6 +123,20 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* 3-2-3 Layout Rules */
+.icon-button-grid a:nth-child(-n+3) {
+    grid-column: span 2;
+}
+.icon-button-grid a:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+.icon-button-grid a:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+.icon-button-grid a:nth-child(n+6) {
+    grid-column: span 2;
 }
 
 /* Event Details Card */
