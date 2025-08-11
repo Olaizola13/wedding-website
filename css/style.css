@@ -86,7 +86,7 @@ h1, h2, h3, h4 {
 /* Icon Button Grid */
 .icon-button-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6-column grid for flexibility */
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-bottom: 25px;
 }
@@ -124,25 +124,6 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: center;
 }
-
-/* NEW 3-2-3 Layout Rules */
-/* Row 1: The first 3 buttons each span 2 columns */
-.icon-button-grid a:nth-child(-n+3) {
-    grid-column: span 2;
-}
-/* Row 2: The 4th button starts at column 2, spanning 2 */
-.icon-button-grid a:nth-child(4) {
-    grid-column: 2 / span 2;
-}
-/* Row 2: The 5th button starts at column 4, spanning 2 */
-.icon-button-grid a:nth-child(5) {
-    grid-column: 4 / span 2;
-}
-/* Row 3: The final 3 buttons each span 2 columns */
-.icon-button-grid a:nth-child(n+6) {
-    grid-column: span 2;
-}
-
 
 /* Event Details Card */
 .event-details-card {
@@ -267,42 +248,68 @@ footer {
 }
 
 /* RSVP Form Styles */
+.rsvp-welcome {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+}
+.form-section-hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out, opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.form-section-hidden.show {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+}
+.form-group { margin-bottom: 25px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: var(--color-dark); }
 .form-group input[type="text"], .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
     font-family: 'Nunito', sans-serif;
 }
+.radio-group { display: flex; align-items: center; margin-bottom: 10px; }
+.radio-group input[type="radio"] { margin-right: 10px; }
+.form-submit-btn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.form-submit-btn:hover { background-color: #c58d8e; }
 
 /* Thank You Page Styles */
+.thank-you-text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
 .calendar-buttons h2 {
     font-family: 'Kalam', cursive;
 }
 .calendar-button {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Gifts Page Specific Styles */
-.gifts-page-thank-you {
-    font-family: 'Kalam', cursive;
-    font-size: 1.6rem;
-    margin-top: 40px;
-}
-
-.bank-details {
-    background-color: white;
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    margin-top: 30px;
-    text-align: left;
-    border-top: 4px solid var(--color-primary);
-}
-.bank-details h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--color-dark);
-    margin-top: 0;
-    font-size: 1.5rem;
-}
-.bank-details p {
-    margin: 5px 0;
-    line-height: 1.8;
-    word-wrap: break-word;
-}
+    display: block;
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 300px;
+    transition: background-color 0.
