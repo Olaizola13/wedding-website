@@ -33,8 +33,8 @@ const translations = {
         "rsvp_q_prewedding": "Will you also be joining the get-together on Friday?",
         "rsvp_submit_btn": "Submit Response",
         "thank_you_title": "Thank You!",
-        "thank_you_message": "Your response has been recorded. We are so excited to celebrate with you!",
-        "add_to_calendar_title": "Don't Forget!",
+        "thank_you_message": "Thank you so much for your response! We're so excited to celebrate our big day with our favorite people. For those who can make it, we are counting down the days! For those who can't, please know you'll be in our hearts and we'll miss you.",
+        "add_to_calendar_title": "Attending? Add the Dates!",
         "add_prewedding_btn": "Add Get-Together to Calendar",
         "add_wedding_btn": "Add Wedding to Calendar",
         "lovestory_page_title": "Our Story",
@@ -43,9 +43,7 @@ const translations = {
         "locations_page_title": "Venues",
         "kids_page_title": "Kids",
         "transport_page_title": "Transport",
-        "recommendations_page_title": "Recommendations",
-        "thank_you_no_title": "We'll Miss You",
-        "thank_you_no_message": "Thank you for letting us know. We're so sorry you can't make it and will miss celebrating with you!"
+        "recommendations_page_title": "Recommendations"
     },
     "es": {
         "page_title": "La Boda de Jessica & Juanma",
@@ -81,8 +79,8 @@ const translations = {
         "rsvp_q_prewedding": "¿Te unirás también a la preboda del viernes?",
         "rsvp_submit_btn": "Enviar Respuesta",
         "thank_you_title": "¡Gracias!",
-        "thank_you_message": "Hemos recibido tu respuesta. ¡Estamos muy emocionados de celebrar con vosotros!",
-        "add_to_calendar_title": "¡No te olvides!",
+        "thank_you_message": "¡Muchas gracias por tu respuesta! Estamos muy emocionados de celebrar nuestro gran día con nuestra gente querida. Para los que podáis venir, ¡ya estamos contando los días! Para los que no, que sepáis que estaréis en nuestros corazones y os echaremos de menos.",
+        "add_to_calendar_title": "¿Vienes? ¡Apunta las Fechas!",
         "add_prewedding_btn": "Añadir Preboda al Calendario",
         "add_wedding_btn": "Añadir Boda al Calendario",
         "lovestory_page_title": "Nuestra Historia",
@@ -91,9 +89,7 @@ const translations = {
         "locations_page_title": "Lugares",
         "kids_page_title": "Niños",
         "transport_page_title": "Transporte",
-        "recommendations_page_title": "Recomendaciones",
-        "thank_you_no_title": "Te Echaremos de Menos",
-        "thank_you_no_message": "Gracias por responder. Sentimos mucho que no puedas venir, ¡te echaremos de menos en la celebración!"
+        "recommendations_page_title": "Recomendaciones"
     },
     "de": {
         "page_title": "Die Hochzeit von Jessica & Juanma",
@@ -129,8 +125,8 @@ const translations = {
         "rsvp_q_prewedding": "Nimmst du auch am Get-Together am Freitag teil?",
         "rsvp_submit_btn": "Antwort Senden",
         "thank_you_title": "Danke!",
-        "thank_you_message": "Deine Antwort wurde registriert. Wir freuen uns riesig, mit dir zu feiern!",
-        "add_to_calendar_title": "Nicht vergessen!",
+        "thank_you_message": "Vielen Dank für deine Rückmeldung! Wir freuen uns riesig darauf, unseren großen Tag mit unseren Lieblingsmenschen zu feiern. Für diejenigen, die dabei sein können: Wir zählen schon die Tage! Für diejenigen, die nicht kommen können: Ihr werdet in unseren Herzen sein und wir werden euch sehr vermissen.",
+        "add_to_calendar_title": "Du kommst? Speicher die Termine!",
         "add_prewedding_btn": "Get-Together zum Kalender hinzufügen",
         "add_wedding_btn": "Hochzeit zum Kalender hinzufügen",
         "lovestory_page_title": "Unsere Geschichte",
@@ -139,8 +135,6 @@ const translations = {
         "locations_page_title": "Locations",
         "kids_page_title": "Kinder",
         "transport_page_title": "Transport",
-        "recommendations_page_title": "Sehenswertes",
-        "thank_you_no_title": "Wir werden dich vermissen",
-        "thank_you_no_message": "Danke für deine Rückmeldung. Wir finden es sehr schade, dass du nicht dabei sein kannst und werden dich bei der Feier vermissen!"
+        "recommendations_page_title": "Sehenswertes"
     }
 };
