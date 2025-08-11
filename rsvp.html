@@ -23,7 +23,7 @@
     </nav>
 
     <header class="subpage-header">
-        <img src="/images/icon_rsvp.png" alt="RSVP Icon">
+        <img src="/images/icon_rsvp.webp" alt="RSVP Icon">
         <h1 data-key="rsvp_page_title"></h1>
     </header>
     
@@ -57,15 +57,11 @@
                 iframe.textContent = "Loading…";
                 formContainer.appendChild(iframe);
 
-                // --- THIS IS THE AUTOMATIC REDIRECT SCRIPT ---
                 let formSubmitted = false;
                 iframe.addEventListener('load', function() {
                     if (formSubmitted) {
-                        // The form has been submitted, and the confirmation has loaded.
-                        // Now we redirect the main page to our single thank-you page.
                         window.top.location.href = '/thank-you.html';
                     } else {
-                        // This is the first load of the form, so we set our flag.
                         setTimeout(() => { formSubmitted = true; }, 1500);
                     }
                 });
