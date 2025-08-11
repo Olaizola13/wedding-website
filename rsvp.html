@@ -28,8 +28,7 @@
     </header>
     
     <main class="container">
-        <div id="form-container" class="google-form-container">
-            </div>
+        <div id="form-container" class="google-form-container"></div>
     </main>
 
     <script src="/js/translations.js"></script>
@@ -57,6 +56,19 @@
                 iframe.marginWidth = "0";
                 iframe.textContent = "Loading…";
                 formContainer.appendChild(iframe);
+
+                // --- THIS IS THE AUTOMATIC REDIRECT SCRIPT ---
+                let formSubmitted = false;
+                iframe.addEventListener('load', function() {
+                    if (formSubmitted) {
+                        // The form has been submitted, and the confirmation has loaded.
+                        // Now we redirect the main page to our single thank-you page.
+                        window.top.location.href = '/thank-you.html';
+                    } else {
+                        // This is the first load of the form, so we set our flag.
+                        setTimeout(() => { formSubmitted = true; }, 1500);
+                    }
+                });
             }
         });
     </script>
