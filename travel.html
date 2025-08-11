@@ -14,6 +14,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .map-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 20px auto 40px auto;
+            display: block;
+        }
+        .travel-option {
+            background-color: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-left: 4px solid var(--color-secondary);
+        }
+        .city-description {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .city-description li {
+            padding-left: 1.5em;
+            text-indent: -1.5em;
+            margin-bottom: 10px;
+        }
+        .city-description li::before {
+            content: '📍';
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <nav class="subpage-nav">
@@ -24,7 +56,29 @@
         <h1 data-key="travel_page_title"></h1>
     </header>
     <main class="container">
-        <p class="intro-text">This is where we'll put the detailed instructions for guests traveling from abroad, including information about airports, trains, and local transport options to get to Valladolid.</p>
+        
+        <p class="intro-text" data-key="travel_intro_1"></p>
+
+        <img src="/images/map_region.webp" alt="Map of the wedding region" class="map-image">
+
+        <p data-key="travel_intro_2"></p>
+        <ul class="city-description">
+            <li data-key="travel_city_valladolid"></li>
+            <li data-key="travel_city_medina"></li>
+        </ul>
+
+        <h2 data-key="travel_options_title" style="text-align: center; margin-top: 50px;"></h2>
+        
+        <div class="travel-option">
+            <h3 data-key="travel_option_1_title"></h3>
+            <p data-key="travel_option_1_text"></p>
+        </div>
+
+        <div class="travel-option">
+            <h3 data-key="travel_option_2_title"></h3>
+            <p data-key="travel_option_2_text"></p>
+        </div>
+        
     </main>
     <script src="/js/translations.js"></script>
     <script src="/js/main.js"></script>
