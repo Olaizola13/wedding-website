@@ -43,7 +43,7 @@ h1, h2, h3, h4 {
 /* Header Section */
 .dashboard-header {
     text-align: center;
-    margin-bottom: 15px; /* Reduced space */
+    margin-bottom: 15px;
 }
 
 .header-illustration-link {
@@ -53,7 +53,7 @@ h1, h2, h3, h4 {
 
 .header-image-container {
     position: relative;
-    margin-bottom: 10px; /* Reduced space */
+    margin-bottom: 10px;
 }
 
 .header-illustration {
@@ -79,16 +79,16 @@ h1, h2, h3, h4 {
     font-size: 2.2rem;
     font-weight: 700;
     color: var(--color-accent);
-    margin-top: 10px; /* Reduced space */
+    margin-top: 10px;
     letter-spacing: 2px;
 }
 
 /* Icon Button Grid */
 .icon-button-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px; /* Reduced space */
-    margin-bottom: 25px; /* Reduced space */
+    grid-template-columns: repeat(6, 1fr); /* 6-column grid for flexibility */
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
 .icon-button {
@@ -125,15 +125,22 @@ h1, h2, h3, h4 {
     justify-content: center;
 }
 
-/* 3-3-2 Layout Rules */
-.icon-button-grid a:nth-child(-n+6) {
+/* NEW 3-2-3 Layout Rules */
+/* Row 1: The first 3 buttons each span 2 columns */
+.icon-button-grid a:nth-child(-n+3) {
     grid-column: span 2;
 }
-.icon-button-grid a:nth-child(7) {
+/* Row 2: The 4th button starts at column 2, spanning 2 */
+.icon-button-grid a:nth-child(4) {
     grid-column: 2 / span 2;
 }
-.icon-button-grid a:nth-child(8) {
+/* Row 2: The 5th button starts at column 4, spanning 2 */
+.icon-button-grid a:nth-child(5) {
     grid-column: 4 / span 2;
+}
+/* Row 3: The final 3 buttons each span 2 columns */
+.icon-button-grid a:nth-child(n+6) {
+    grid-column: span 2;
 }
 
 
