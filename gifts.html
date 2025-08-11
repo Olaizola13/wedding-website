@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="page_title"></title>
+    <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="J&J" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,35 +33,29 @@
         .bank-details p {
             margin: 5px 0;
             line-height: 1.8;
-            word-wrap: break-word; /* Helps prevent long IBAN from overflowing */
+            word-wrap: break-word;
         }
     </style>
 </head>
 <body>
-
     <nav class="subpage-nav">
         <a href="/wedding.html" data-key="nav_back_to_main"></a>
     </nav>
-
     <header class="subpage-header">
         <img src="/images/icon_gifts.webp" alt="Gifts Icon">
         <h1 data-key="gifts_page_title"></h1>
     </header>
-    
     <main class="container" style="text-align: center; max-width: 650px;">
         <p data-key="gifts_message_intro"></p>
         <p data-key="gifts_message_main"></p>
-
         <div class="bank-details">
             <h3 data-key="gifts_bank_details_title"></h3>
             <p><strong data-key="gifts_bank_holder"></strong>: JUAN MARIA OLAIZOLA ARRANZ, JESSICA DILSCHMANN</p>
             <p><strong>IBAN</strong>: DE06100110012738587320</p>
             <p><strong>BIC</strong>: NTSBDEB1XXX</p>
         </div>
-
         <p class="gifts-page-thank-you" data-key="gifts_thank_you"></p>
     </main>
-    
     <script src="/js/translations.js"></script>
     <script src="/js/main.js"></script>
 </body>
