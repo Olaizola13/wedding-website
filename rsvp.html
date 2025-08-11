@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Kalam:wght@300;400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* This style helps the embedded form look good on the page */
+        .google-form-container iframe {
+            width: 100%;
+            height: 1200px; /* Adjust height as needed for your form */
+            border: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,120 +29,35 @@
     </header>
     
     <main class="container">
-        <div id="rsvp-welcome-message" class="rsvp-welcome"></div>
-
-        <form method="POST" action="https://formsubmit.co/e397a66712102b39c9cdadd6b04abdf5">
-    
-            <input type="hidden" name="_next" value="https://jessica-juanma.netlify.app/thank-you.html">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New Wedding RSVP from {{Name}}">
-
-            <div class="form-group">
-                <label for="name" data-key="rsvp_q_name"></label>
-                <input type="text" id="name" name="Name" required>
-            </div>
-
-            <div class="form-group">
-                <label data-key="rsvp_q_attending"></label>
-                <div class="radio-group">
-                    <input type="radio" id="attending-yes" name="Attending Status" value="Yes" required>
-                    <label for="attending-yes" data-key="rsvp_a_yes"></label>
-                </div>
-                <div class="radio-group">
-                    <input type="radio" id="attending-no" name="Attending Status" value="No">
-                    <label for="attending-no" data-key="rsvp_a_no"></label>
-                </div>
-            </div>
-
-            <div id="attending-details" class="form-section-hidden">
-                <div class="form-group">
-                    <label data-key="rsvp_q_plus_one"></label>
-                    <div class="radio-group">
-                        <input type="radio" id="plus-one-yes" name="Plus One" value="Yes">
-                        <label for="plus-one-yes" data-key="rsvp_a_yes"></label>
-                    </div>
-                    <div class="radio-group">
-                        <input type="radio" id="plus-one-no" name="Plus One" value="No" checked>
-                        <label for="plus-one-no" data-key="rsvp_a_no"></label>
-                    </div>
-                </div>
-
-                <div class="form-group form-section-hidden" id="plus-one-name-group">
-                    <label for="plus-one-name" data-key="rsvp_q_plus_one_name"></label>
-                    <input type="text" id="plus-one-name" name="Plus One Name">
-                </div>
-
-                <div class="form-group">
-                    <label for="allergies" data-key="rsvp_q_allergies"></label>
-                    <textarea id="allergies" name="Allergies or Dietary Restrictions" rows="3"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label data-key="rsvp_q_prewedding"></label>
-                     <div class="radio-group">
-                        <input type="radio" id="prewedding-yes" name="Attending Pre-Wedding" value="Yes">
-                        <label for="prewedding-yes" data-key="rsvp_a_yes"></label>
-                    </div>
-                    <div class="radio-group">
-                        <input type="radio" id="prewedding-no" name="Attending Pre-Wedding" value="No" checked>
-                        <label for="prewedding-no" data-key="rsvp_a_no"></label>
-                    </div>
-                </div>
-            </div>
-            
-            <button type="submit" class="form-submit-btn" data-key="rsvp_submit_btn"></button>
-        </form>
+        <div class="google-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScudltAZeBb5wJ85HJQVZNpk6DPkZdShJ7IuENEWPsG2UJgmw/viewform?embedded=true" width="640" height="1267" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
     </main>
 
-    <script src="/js/guestlist.js"></script>
     <script src="/js/translations.js"></script>
     <script src="/js/main.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const attendingYes = document.getElementById('attending-yes');
-            const attendingNo = document.getElementById('attending-no');
-            const attendingDetails = document.getElementById('attending-details');
-            
-            const plusOneYes = document.getElementById('plus-one-yes');
-            const plusOneNo = document.getElementById('plus-one-no');
-            const plusOneNameGroup = document.getElementById('plus-one-name-group');
+        let formSubmitted = false;
+        const googleForm = document.querySelector('iframe');
 
-            attendingYes.addEventListener('change', () => {
-                if (attendingYes.checked) attendingDetails.classList.add('show');
-            });
-            attendingNo.addEventListener('change', () => {
-                if (attendingNo.checked) attendingDetails.classList.remove('show');
-            });
-            
-            plusOneYes.addEventListener('change', () => {
-                if (plusOneYes.checked) plusOneNameGroup.classList.add('show');
-            });
-            plusOneNo.addEventListener('change', () => {
-                if (plusOneNo.checked) plusOneNameGroup.classList.remove('show');
-            });
-
-            // Magic Link Logic
-            const urlParams = new URLSearchParams(window.location.search);
-            const guestId = urlParams.get('guest');
-            if (guestId && typeof guestList !== 'undefined') {
-                const guest = guestList.find(g => g.id === guestId);
-                if (guest) {
-                    document.getElementById('name').value = guest.name;
-                    if (guest.plusOneAllowed) {
-                        plusOneYes.checked = true;
-                        plusOneNameGroup.classList.add('show');
-                        if(guest.plusOneName) {
-                            document.getElementById('plus-one-name').value = guest.plusOneName;
-                        }
-                    }
-                    const welcomeDiv = document.getElementById('rsvp-welcome-message');
-                    const lang = localStorage.getItem('language') || 'en';
-                    const welcomeText = translations[lang]['rsvp_welcome_guest'] || "Welcome, ";
-                    welcomeDiv.innerText = welcomeText + guest.name.split(' ')[0] + '!';
+        if (googleForm) {
+            googleForm.addEventListener('load', function() {
+                if (formSubmitted) {
+                    // If the form has been submitted once, the 'load' event
+                    // means the confirmation message has appeared.
+                    // We now redirect to our thank you page.
+                    window.location.href = '/thank-you.html';
+                } else {
+                    // This is the first load of the form, so we set our flag.
+                    // We use a timeout to make sure we only set it after the initial page load.
+                    setTimeout(() => {
+                        formSubmitted = true;
+                    }, 1500); // Increased timeout slightly for reliability
                 }
-            }
-        });
+            });
+        }
     </script>
+
 </body>
 </html>
