@@ -59,4 +59,5 @@ Object.assign(translations.de, {
     "travel_train_step2_detail2": "Bevor ihr den Gleisbereich betretet, müsst ihr euer Gepäck durch einen schnellen Sicherheitsscanner geben. Das Gleis ('Vía') für euren Zug wird etwa 20-30 Minuten vor Abfahrt auf den Bildschirmen angezeigt.",
     "travel_train_step2_detail3": "Wir empfehlen dringend, die Zugtickets <strong>Wochen im Voraus</strong> auf der <strong>Renfe-Website (www.renfe.com)</strong> zu buchen. Euer Ziel ist entweder <strong>'Valladolid - Campo Grande'</strong> oder <strong>'Medina del Campo AV'</strong>.",
     "travel_option_2_title": "Option 2: Mit dem Mietwagen",
-    "travel_option_2_text": "Ein Mietwagen bietet große Flexibilität. Alle großen Vermieter haben Schalter in den Ankunftshallen von T1 und T4 am Flughafen Madrid. Die Fahrt dauert ca. 2 Stunden, hauptsächlich auf
+    "travel_option_2_text": "Ein Mietwagen bietet große Flexibilität. Alle großen Vermieter haben Schalter in den Ankunftshallen von T1 und T4 am Flughafen Madrid. Die Fahrt dauert ca. 2 Stunden, hauptsächlich auf der Autobahn A-6. Beachtet eventuelle Mautgebühren ('peajes'). Wir empfehlen Google Maps oder Waze zur Navigation. Das Parken im Zentrum von Valladolid kann schwierig sein, prüft also, ob euer Hotel Parkplätze anbietet."
+});
