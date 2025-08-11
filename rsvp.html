@@ -28,7 +28,8 @@
     </header>
     
     <main class="container">
-        <div id="form-container" class="google-form-container"></div>
+        <div id="form-container" class="google-form-container">
+            </div>
     </main>
 
     <script src="/js/translations.js"></script>
@@ -36,14 +37,12 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Your 3 unique form URLs are now here
             const formUrls = {
                 en: "https://docs.google.com/forms/d/e/1FAIpQLScudltAZeBb5wJ85HJQVZNpk6DPkZdShJ7IuENEWPsG2UJgmw/viewform?embedded=true",
                 es: "https://docs.google.com/forms/d/e/1FAIpQLScR-4ba40Q9qRcqcw55fEBxIH73mOILeYVnBBIvIV4YxSsJNg/viewform?embedded=true",
                 de: "https://docs.google.com/forms/d/e/1FAIpQLSfeFc2zNIT-966ueI0GcXGvVIVudz1LuJG7JvmVxjYXpW1d9A/viewform?embedded=true"
             };
 
-            // This script does the rest
             const lang = localStorage.getItem('language') || 'en';
             const formUrl = formUrls[lang];
             const formContainer = document.getElementById('form-container');
@@ -58,16 +57,6 @@
                 iframe.marginWidth = "0";
                 iframe.textContent = "Loading…";
                 formContainer.appendChild(iframe);
-
-                // This is our clever redirect script
-                let formSubmitted = false;
-                iframe.addEventListener('load', function() {
-                    if (formSubmitted) {
-                        window.location.href = '/thank-you.html';
-                    } else {
-                        setTimeout(() => { formSubmitted = true; }, 1500);
-                    }
-                });
             }
         });
     </script>
