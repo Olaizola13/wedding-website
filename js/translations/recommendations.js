@@ -1,9 +1,63 @@
 Object.assign(translations.en, {
-    "recommendations_page_title": "Recommendations"
+    "recommendations_page_title": "Recommendations",
+    "recommendations_section1_title": "What Valladolid Has to Offer",
+    "recommendations_history_intro": "Valladolid is a city steeped in history. For a time, it was the capital of Spain, a center for art and literature, and has been the backdrop for pivotal moments, including the marriage of the Catholic Monarchs, Ferdinand and Isabella, and the death of Christopher Columbus. Its streets tell a thousand stories.",
+    "recommendations_region_intro": "The surrounding region of Castile and León is the heartland of Spain, known for its stunning castles, ancient universities, and, most importantly, its incredible food and wine.",
+    "recommendations_food_title": "Food & Drink",
+    "recommendations_food_text": "The region is famous for its hearty and delicious cuisine. Must-try products include 'Lechazo' (roast suckling lamb), 'Morcilla de Valladolid' (a local blood sausage), wonderful cheeses, and of course, a huge variety of 'tapas' or 'pinchos'.",
+    "recommendations_wine_title": "The Wineries (Bodegas)",
+    "recommendations_wine_text": "Castile and León is home to some of the world's most famous wine regions, especially Ribera del Duero. The tradition of winemaking here dates back to Roman times. Over the centuries, monastic orders perfected viticulture, and today, the family-run 'bodegas' are a testament to this rich history. Many offer fantastic guided tours and tastings, which are a wonderful way to spend an afternoon.",
+    "recommendations_section2_title": "What We Like to Do When We're Here",
+    "recommendations_cathedral_title": "The Unfinished Cathedral",
+    "recommendations_cathedral_text": "Valladolid is a city of some wonderful misconceptions. Our grand cathedral, designed by the same architect as El Escorial, would have been one of the largest in Christendom. But, due to endless funding issues, it was never finished. What you see today is less than half of the original plan, a beautiful monument to grand ambitions.",
+    "recommendations_beach_title": "The 'Caribbean' Beach of Pisuerga",
+    "recommendations_beach_text": "Yes, Valladolid has a beach! Our magnificent Pisuerga river gives us this wonderful sandy stretch. If you close your eyes on a sunny day, you can almost imagine you're in the Caribbean... until you open them and see the other side of the river!",
+    "recommendations_storks_title": "The Cigüeñas (Storks)",
+    "recommendations_storks_text": "Look up! The roofs of the old city's churches and historic buildings are home to magnificent white storks. These gigantic birds build enormous nests wherever a structure can hold the weight. They spend their days in the countryside and return at sunset. Watching their flight formations as they come home is an amazing sight.",
+    "recommendations_park_title": "Campo Grande, The 'Big Field'",
+    "recommendations_park_text": "Our central park is a true urban oasis. You can easily spot beautiful peacocks roaming freely, especially near the main entrance at Plaza Zorrilla. But don't be fooled by its entrance; you might be surprised by just how big the 'Big Field' really is.",
+    "recommendations_dayout_title": "Our Perfect Day Out",
+    "recommendations_dayout_text": "When we're in town, we love to hit the Mercado del Val, a beautiful iron market where you can grab a beer or a wine with a delicious tapa. Speaking of tapas, the best area is just behind the Plaza Mayor. We highly recommend ordering some 'pinchos' at Bar Zamora and trying the famous 'croqueta' at El Corcho. A perfect walk is to start at the entrance of Campo Grande, stroll down the main shopping street 'Calle de Santiago' to the Plaza Mayor. If it's hot, cool down with an incredible ice cream from Iborra. For those with more time, the area around the Cathedral and the old 'La Antigua' church is a beautiful place to explore and, of course, have another drink with a tapa."
 });
 Object.assign(translations.es, {
-    "recommendations_page_title": "Recomendaciones"
+    "recommendations_page_title": "Recomendaciones",
+    "recommendations_section1_title": "Qué Ofrece Valladolid",
+    "recommendations_history_intro": "Valladolid es una ciudad cargada de historia. Durante un tiempo, fue la capital de España, un centro de arte y literatura, y ha sido el escenario de momentos cruciales, como el matrimonio de los Reyes Católicos, Isabel y Fernando, y la muerte de Cristóbal Colón. Sus calles cuentan mil historias.",
+    "recommendations_region_intro": "La región circundante de Castilla y León es el corazón de España, conocida por sus impresionantes castillos, antiguas universidades y, lo más importante, su increíble gastronomía y vino.",
+    "recommendations_food_title": "Comida y Bebida",
+    "recommendations_food_text": "La región es famosa por su cocina contundente y deliciosa. Los productos que no te puedes perder incluyen el 'Lechazo' asado, la 'Morcilla de Valladolid', maravillosos quesos y, por supuesto, una enorme variedad de 'tapas' o 'pinchos'.",
+    "recommendations_wine_title": "Las Bodegas",
+    "recommendations_wine_text": "Castilla y León alberga algunas de las regiones vinícolas más famosas del mundo, especialmente la Ribera del Duero. La tradición vinícola aquí se remonta a la época romana. A lo largo de los siglos, las órdenes monásticas perfeccionaron la viticultura, y hoy en día, las 'bodegas' familiares son un testimonio de esta rica historia. Muchas ofrecen fantásticas visitas guiadas y catas, que son una forma maravillosa de pasar la tarde.",
+    "recommendations_section2_title": "Qué Nos Gusta Hacer Cuando Estamos Aquí",
+    "recommendations_cathedral_title": "La Catedral Inacabada",
+    "recommendations_cathedral_text": "Valladolid es una ciudad de algunas maravillosas ideas erróneas. Nuestra gran catedral, diseñada por el mismo arquitecto que El Escorial, habría sido una de las más grandes de la cristiandad. Pero, debido a interminables problemas de financiación, nunca se terminó. Lo que se ve hoy es menos de la mitad del plano original, un hermoso monumento a las grandes ambiciones.",
+    "recommendations_beach_title": "La Playa 'Caribeña' del Pisuerga",
+    "recommendations_beach_text": "¡Sí, Valladolid tiene playa! Nuestro magnífico río Pisuerga nos regala esta maravillosa extensión de arena. Si cierras los ojos en un día soleado, casi puedes imaginar que estás en el Caribe... ¡hasta que los abres y ves la otra orilla del río!",
+    "recommendations_storks_title": "Las Cigüeñas",
+    "recommendations_storks_text": "¡Mirad hacia arriba! Los tejados de las iglesias y edificios históricos del casco antiguo albergan magníficas cigüeñas blancas. Estas gigantescas aves construyen enormes nidos dondequiera que una estructura pueda soportar el peso. Pasan el día en el campo y regresan al atardecer. Observar sus formaciones de vuelo cuando vuelven a casa es un espectáculo asombroso.",
+    "recommendations_park_title": "Campo Grande",
+    "recommendations_park_text": "Nuestro parque central es un verdadero oasis urbano. Se pueden ver fácilmente hermosos pavos reales de deambulando libremente, especialmente cerca de la entrada principal en la Plaza Zorrilla. Pero no te dejes engañar por su entrada; te sorprenderá lo grande que es realmente el 'Campo Grande'.",
+    "recommendations_dayout_title": "Nuestro Día Perfecto",
+    "recommendations_dayout_text": "Cuando estamos en la ciudad, nos encanta ir al Mercado del Val, un precioso mercado de hierro donde puedes tomar una cerveza o un vino con una deliciosa tapa. Hablando de tapas, la mejor zona está justo detrás de la Plaza Mayor. Recomendamos encarecidamente pedir unos pinchos en el Bar Zamora y probar la famosa 'croqueta' de El Corcho. Un paseo perfecto es empezar en la entrada de Campo Grande, recorrer la principal calle comercial 'Calle de Santiago' hasta la Plaza Mayor. Si hace calor, refréscate con un increíble helado de Iborra. Para los que tengan más tiempo, la zona de la Catedral y la iglesia de 'La Antigua' es un lugar precioso para explorar y, por supuesto, tomar otra copa con una tapa."
 });
 Object.assign(translations.de, {
-    "recommendations_page_title": "Sehenswertes"
+    "recommendations_page_title": "Empfehlungen",
+    "recommendations_section1_title": "Was Valladolid zu bieten hat",
+    "recommendations_history_intro": "Valladolid ist eine geschichtsträchtige Stadt. Zeitweise war sie die Hauptstadt Spaniens, ein Zentrum für Kunst und Literatur und Schauplatz entscheidender Momente, darunter die Hochzeit der Katholischen Könige, Ferdinand und Isabella, und der Tod von Christoph Kolumbus. Ihre Straßen erzählen tausend Geschichten.",
+    "recommendations_region_intro": "Die umliegende Region Kastilien und León ist das Herz Spaniens und bekannt für ihre atemberaubenden Burgen, alten Universitäten und vor allem für ihr unglaubliches Essen und ihren Wein.",
+    "recommendations_food_title": "Essen & Trinken",
+    "recommendations_food_text": "Die Region ist berühmt für ihre herzhafte und köstliche Küche. Unbedingt probieren sollte man Produkte wie 'Lechazo' (gebratenes Spanferkel), 'Morcilla de Valladolid' (eine lokale Blutwurst), wunderbare Käsesorten und natürlich eine riesige Auswahl an 'Tapas' oder 'Pinchos'.",
+    "recommendations_wine_title": "Die Weinkellereien (Bodegas)",
+    "recommendations_wine_text": "Kastilien und León beheimatet einige der berühmtesten Weinregionen der Welt, insbesondere Ribera del Duero. Die Weinbautradition hier reicht bis in die Römerzeit zurück. Im Laufe der Jahrhunderte perfektionierten die Mönchsorden den Weinbau, und heute zeugen die familiengeführten 'Bodegas' von dieser reichen Geschichte. Viele bieten fantastische Führungen und Verkostungen an, die eine wunderbare Möglichkeit sind, einen Nachmittag zu verbringen.",
+    "recommendations_section2_title": "Was wir gerne tun, wenn wir hier sind",
+    "recommendations_cathedral_title": "Die unvollendete Kathedrale",
+    "recommendations_cathedral_text": "Valladolid ist eine Stadt einiger wunderbarer Missverständnisse. Unsere große Kathedrale, vom selben Architekten wie El Escorial entworfen, wäre eine der größten der Christenheit gewesen. Aber wegen endloser Finanzierungsprobleme wurde sie nie fertiggestellt. Was man heute sieht, ist weniger als die Hälfte des ursprünglichen Plans, ein schönes Denkmal für große Ambitionen.",
+    "recommendations_beach_title": "Der 'karibische' Strand von Pisuerga",
+    "recommendations_beach_text": "Ja, Valladolid hat einen Strand! Unser prächtiger Fluss Pisuerga beschert uns diesen wunderbaren Sandstrand. Wenn man an einem sonnigen Tag die Augen schließt, kann man sich fast vorstellen, in der Karibik zu sein... bis man sie wieder öffnet und die andere Seite des Flusses sieht!",
+    "recommendations_storks_title": "Die Cigüeñas (Störche)",
+    "recommendations_storks_text": "Schaut nach oben! Die Dächer der Kirchen und historischen Gebäude der Altstadt beherbergen prächtige Weißstörche. Diese riesigen Vögel bauen enorme Nester, wo immer eine Struktur das Gewicht tragen kann. Sie verbringen ihre Tage auf dem Land und kehren bei Sonnenuntergang zurück. Ihre Flugformationen bei der Heimkehr zu beobachten, ist ein erstaunlicher Anblick.",
+    "recommendations_park_title": "Campo Grande, das 'Große Feld'",
+    "recommendations_park_text": "Unser zentraler Park ist eine wahre städtische Oase. Man kann leicht wunderschöne Pfauen beobachten, die frei herumlaufen, besonders in der Nähe des Haupteingangs an der Plaza Zorrilla. Aber lasst euch nicht vom Eingang täuschen; ihr werdet überrascht sein, wie groß das 'Große Feld' wirklich ist.",
+    "recommendations_dayout_title": "Unser perfekter Tag",
+    "recommendations_dayout_text": "Wenn wir in der Stadt sind, lieben wir es, zum Mercado del Val zu gehen, einem wunderschönen Eisenmarkt, wo man ein Bier oder einen Wein mit einer köstlichen Tapa genießen kann. Apropos Tapas, die beste Gegend ist direkt hinter der Plaza Mayor. Wir empfehlen dringend, einige 'Pinchos' in der Bar Zamora zu bestellen und die berühmte 'Croqueta' im El Corcho zu probieren. Ein perfekter Spaziergang beginnt am Eingang des Campo Grande, führt die Haupteinkaufsstraße 'Calle de Santiago' hinunter zur Plaza Mayor. Wenn es heiß ist, kühlt euch mit einem unglaublichen Eis von Iborra ab. Für diejenigen mit mehr Zeit ist die Gegend um die Kathedrale und die alte Kirche 'La Antigua' ein wunderschöner Ort zum Erkunden und natürlich, um ein weiteres Getränk mit einer Tapa zu genießen."
 });
