@@ -368,3 +368,69 @@ footer {
     content: '🚌';
     margin-right: 10px;
 }
+
+/* Accordion Styles for Recommendations Page */
+.accordion {
+    background-color: white;
+    color: var(--color-dark);
+    cursor: pointer;
+    padding: 18px 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5rem;
+    transition: background-color 0.4s ease;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    border-radius: 16px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.accordion:after {
+    content: '\\002B'; /* Plus sign */
+    color: var(--color-primary);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\\2212"; /* Minus sign */
+}
+
+.accordion:hover, .accordion.active {
+    background-color: #f7f7f7;
+}
+
+.panel {
+    padding: 0 25px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-top: -5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.panel p, .panel h3 {
+    margin-top: 20px;
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin: 10px 0 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+}
