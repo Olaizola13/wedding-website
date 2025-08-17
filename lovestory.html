@@ -11,6 +11,9 @@
     <meta name="apple-mobile-web-app-title" content="J&J" />
     <link rel="manifest" href="/icons/site.webmanifest" />
     <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
@@ -24,32 +27,22 @@
         <h1 data-key="lovestory_page_title"></h1>
     </header>
     <main class="container">
-        
-        <p class="intro-text" data-key="lovestory_intro"></p>
-
         <div class="content-card">
-            <h3 data-key="lovestory_howwemet_title"></h3>
-            <p data-key="lovestory_howwemet_text"></p>
-        </div>
-        
-        <div class="content-card">
-            <h3 data-key="lovestory_first_dates_title"></h3>
-            <p data-key="lovestory_first_dates_text"></p>
-            <ul class="heart-list">
-                <li data-key="lovestory_highlight_1"></li>
-                <li data-key="lovestory_highlight_2"></li>
-                <li data-key="lovestory_highlight_3"></li>
-            </ul>
-        </div>
-
-        <div class="content-card">
-            <h3 data-key="lovestory_building_life_title"></h3>
-            <p data-key="lovestory_building_life_text"></p>
-        </div>
-
-        <div class="content-card">
-            <h3 data-key="lovestory_why_wedding_title"></h3>
-            <p data-key="lovestory_why_wedding_text"></p>
+            <h3 data-key="lovestory_gallery_title"></h3>
+            <div id="lightgallery" class="image-grid">
+                <a href="/images/gallery_1.webp" class="gallery-item">
+                    <img src="/images/gallery_1.webp" class="content-image" alt="Gallery photo 1">
+                </a>
+                <a href="/images/gallery_2.webp" class="gallery-item">
+                    <img src="/images/gallery_2.webp" class="content-image" alt="Gallery photo 2">
+                </a>
+                <a href="/images/gallery_3.webp" class="gallery-item">
+                    <img src="/images/gallery_3.webp" class="content-image" alt="Gallery photo 3">
+                </a>
+                <a href="/images/gallery_4.webp" class="gallery-item">
+                    <img src="/images/gallery_4.webp" class="content-image" alt="Gallery photo 4">
+                </a>
+                </div>
         </div>
         
     </main>
@@ -57,5 +50,15 @@
     <script src="/js/translations/common.js"></script>
     <script src="/js/translations/lovestory.js"></script>
     <script src="/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            lightGallery(document.getElementById('lightgallery'), {
+                speed: 500,
+                download: false
+            });
+        });
+    </script>
 </body>
 </html>
