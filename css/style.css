@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5 {
 /* Header Section */
 .dashboard-header {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .header-illustration-link {
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .icon-button {
