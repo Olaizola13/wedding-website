@@ -14,6 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .story-image {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     <nav class="subpage-nav">
@@ -24,13 +33,28 @@
         <h1 data-key="lovestory_page_title"></h1>
     </header>
     <main class="container">
+        
         <p class="intro-text" data-key="lovestory_intro"></p>
-        <h2 data-key="lovestory_howwemet_title"></h2>
-        <p data-key="lovestory_howwemet_text"></p>
-        <h2 data-key="lovestory_proposal_title" style="margin-top: 40px;"></h2>
-        <p data-key="lovestory_proposal_text"></p>
-        <p data-key="lovestory_future_text" style="margin-top: 40px;"></p>
+
+        <div class="content-card">
+            <h3 data-key="lovestory_howwemet_title"></h3>
+            <p data-key="lovestory_howwemet_text"></p>
+        </div>
+        
+        <div class="content-card">
+            <h3 data-key="lovestory_first_dates_title"></h3>
+            <p data-key="lovestory_first_dates_text"></p>
+            <ul>
+                <li data-key="lovestory_highlight_1"></li>
+                <li data-key="lovestory_highlight_2"></li>
+                <li data-key="lovestory_highlight_3"></li>
+            </ul>
+        </div>
+
+        <p data-key="lovestory_conclusion" style="margin-top: 30px;"></p>
+        
     </main>
+    
     <script src="/js/translations/common.js"></script>
     <script src="/js/translations/lovestory.js"></script>
     <script src="/js/main.js"></script>
