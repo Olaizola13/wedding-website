@@ -14,21 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        .content-image {
-            width: 100%;
-            height: auto;
-            border-radius: 16px;
-            margin: 10px 0 20px 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        .image-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            align-items: center;
-        }
-    </style>
 </head>
 <body>
     <nav class="subpage-nav">
@@ -40,8 +25,8 @@
     </header>
     <main class="container">
 
-        <div class="content-card">
-            <h2 data-key="recommendations_section1_title"></h2>
+        <button class="accordion" data-key="recommendations_section1_title"></button>
+        <div class="panel">
             <p data-key="recommendations_history_intro"></p>
             <p data-key="recommendations_region_intro"></p>
             <h3 data-key="recommendations_food_title"></h3>
@@ -50,38 +35,29 @@
             <p data-key="recommendations_wine_text"></p>
         </div>
 
-        <h2 data-key="recommendations_section2_title" style="text-align:center; margin-top:50px;"></h2>
-
-        <div class="content-card">
+        <button class="accordion" data-key="recommendations_section2_title"></button>
+        <div class="panel">
             <h3 data-key="recommendations_cathedral_title"></h3>
             <img src="/images/recommended_catedral.webp" alt="Facade of Valladolid Cathedral" class="content-image">
             <p data-key="recommendations_cathedral_text"></p>
             <img src="/images/recommended_catedral_detras.webp" alt="Ruins behind the unfinished cathedral" class="content-image">
-        </div>
-
-        <div class="content-card">
-            <h3 data-key="recommendations_beach_title"></h3>
+            
+            <h3 data-key="recommendations_beach_title" style="margin-top: 40px;"></h3>
             <img src="/images/recommended_playa.webp" alt="The river beach in Valladolid" class="content-image">
             <p data-key="recommendations_beach_text"></p>
             <img src="/images/recommended_playa_view.webp" alt="View showing the beach is on a river" class="content-image">
-        </div>
 
-        <div class="content-card">
-            <h3 data-key="recommendations_storks_title"></h3>
+            <h3 data-key="recommendations_storks_title" style="margin-top: 40px;"></h3>
             <img src="/images/recommended_cigu.webp" alt="A white stork in flight" class="content-image">
             <p data-key="recommendations_storks_text"></p>
             <img src="/images/recommended_formation.webp" alt="A flight formation of storks at sunset" class="content-image">
-        </div>
 
-        <div class="content-card">
-            <h3 data-key="recommendations_park_title"></h3>
+            <h3 data-key="recommendations_park_title" style="margin-top: 40px;"></h3>
             <img src="/images/recommended_peacock.webp" alt="A peacock in Campo Grande park" class="content-image">
             <p data-key="recommendations_park_text"></p>
             <img src="/images/recommended_campo_grande.webp" alt="Aerial view of Campo Grande park" class="content-image">
-        </div>
-        
-        <div class="content-card">
-            <h3 data-key="recommendations_dayout_title"></h3>
+
+            <h3 data-key="recommendations_dayout_title" style="margin-top: 40px;"></h3>
             <img src="/images/recommended_mercado.webp" alt="Mercado del Val" class="content-image">
             <p data-key="recommendations_dayout_text"></p>
             <img src="/images/recommended_croquetas.webp" alt="Croquetas from El Corcho" class="content-image">
@@ -91,5 +67,20 @@
     <script src="/js/translations/common.js"></script>
     <script src="/js/translations/recommendations.js"></script>
     <script src="/js/main.js"></script>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+        accordions.forEach(accordion => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
