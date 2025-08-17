@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .icon-button {
