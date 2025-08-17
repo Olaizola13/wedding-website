@@ -1,5 +1,7 @@
 Object.assign(translations.en, {
     "recommendations_page_title": "Recommendations",
+    "rec_index_history": "History & Culture",
+    "rec_index_our_faves": "Our Favourites",
     "recommendations_section1_title": "What Valladolid Has to Offer",
     "recommendations_history_intro": "Valladolid is a city steeped in history. For a time, it was the capital of Spain, a center for art and literature, and has been the backdrop for pivotal moments, including the marriage of the Catholic Monarchs, Ferdinand and Isabella, and the death of Christopher Columbus. Its streets tell a thousand stories.",
     "recommendations_region_intro": "The surrounding region of Castile and León is the heartland of Spain, known for its stunning castles, ancient universities, and, most importantly, its incredible food and wine.",
@@ -21,6 +23,8 @@ Object.assign(translations.en, {
 });
 Object.assign(translations.es, {
     "recommendations_page_title": "Recomendaciones",
+    "rec_index_history": "Historia y Cultura",
+    "rec_index_our_faves": "Nuestros Favoritos",
     "recommendations_section1_title": "Qué Ofrece Valladolid",
     "recommendations_history_intro": "Valladolid es una ciudad cargada de historia. Durante un tiempo, fue la capital de España, un centro de arte y literatura, y ha sido el escenario de momentos cruciales, como el matrimonio de los Reyes Católicos, Isabel y Fernando, y la muerte de Cristóbal Colón. Sus calles cuentan mil historias.",
     "recommendations_region_intro": "La región circundante de Castilla y León es el corazón de España, conocida por sus impresionantes castillos, antiguas universidades y, lo más importante, su increíble gastronomía y vino.",
@@ -42,6 +46,8 @@ Object.assign(translations.es, {
 });
 Object.assign(translations.de, {
     "recommendations_page_title": "Empfehlungen",
+    "rec_index_history": "Geschichte & Kultur",
+    "rec_index_our_faves": "Unsere Favoriten",
     "recommendations_section1_title": "Was Valladolid zu bieten hat",
     "recommendations_history_intro": "Valladolid ist eine geschichtsträchtige Stadt. Zeitweise war sie die Hauptstadt Spaniens, ein Zentrum für Kunst und Literatur und Schauplatz entscheidender Momente, darunter die Hochzeit der Katholischen Könige, Ferdinand und Isabella, und der Tod von Christoph Kolumbus. Ihre Straßen erzählen tausend Geschichten.",
     "recommendations_region_intro": "Die umliegende Region Kastilien und León ist das Herz Spaniens und bekannt für ihre atemberaubenden Burgen, alten Universitäten und vor allem für ihr unglaubliches Essen und ihren Wein.",
