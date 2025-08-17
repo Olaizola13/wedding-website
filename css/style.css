@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 
 .header-logo-overlay {
     position: absolute;
-    bottom: 5x;
+    bottom: 5px;
     left: 84%;
     transform: translateX(-50%);
     height: 92px;
@@ -435,5 +435,6 @@ footer {
     gap: 15px;
     align-items: center;
 }
+
 
 
