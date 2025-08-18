@@ -378,6 +378,7 @@ footer {
 .content-card ul.heart-list li::before {
     content: '❤️';
     margin-right: 15px;
+    color: var(--color-primary);
 }
 
 .content-card li::before {
@@ -385,7 +386,7 @@ footer {
     margin-right: 10px;
 }
 
-/* Recommendations Index/Accordion Page Styles */
+/* Recommendations Index Page Styles */
 .recommendations-index-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -435,4 +436,55 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     align-items: center;
+}
+
+/* Memories Page Button Styles */
+.memories-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.upload-button:hover {
+    background-color: var(--color-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.upload-button img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+@media (min-width: 600px) {
+    .memories-button-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .upload-button {
+        width: auto;
+    }
 }
