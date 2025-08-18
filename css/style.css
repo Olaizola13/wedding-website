@@ -22,8 +22,7 @@ h1, h2, h3, h4, h5 {
 
 /* Apply Nunito font ONLY to the main content area of sub-pages */
 .container p,
-.container li,
-.form-group label {
+.container li {
     font-family: 'Nunito', sans-serif;
 }
 
@@ -44,7 +43,7 @@ h1, h2, h3, h4, h5 {
 /* Header Section */
 .dashboard-header {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .header-illustration-link {
@@ -75,21 +74,12 @@ h1, h2, h3, h4, h5 {
     filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
 }
 
-.dashboard-date {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--color-accent);
-    margin-top: 10px;
-    letter-spacing: 2px;
-}
-
 /* Icon Button Grid */
 .icon-button-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .icon-button {
@@ -374,6 +364,17 @@ footer {
     margin-right: 10px;
 }
 
+.content-card ul.heart-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content-card ul.heart-list li {
+    padding-left: 2em;
+    text-indent: -2em;
+    margin-bottom: 15px;
+}
+
 .content-card ul.heart-list li::before {
     content: '❤️';
     margin-right: 15px;
@@ -384,7 +385,7 @@ footer {
     margin-right: 10px;
 }
 
-/* Recommendations Index Page Styles */
+/* Recommendations Index/Accordion Page Styles */
 .recommendations-index-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -435,10 +436,3 @@ footer {
     gap: 15px;
     align-items: center;
 }
-
-
-
-
-
-
-
