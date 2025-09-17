@@ -119,12 +119,18 @@ h1, h2, h3, h4, h5 {
 /* Event Details Card */
 .event-details-card {
     background-color: #ffffff;
-    padding: 20px 30px 30px 30px;
+    padding: 20px 30px 10px 30px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     margin-bottom: 40px;
     border-top: 5px solid var(--color-primary);
     text-align: center;
+    cursor: pointer;
+    transition: padding-bottom 0.4s ease;
+}
+
+.event-details-card.expanded {
+    padding-bottom: 30px;
 }
 
 .event-details-card h2 {
@@ -134,6 +140,17 @@ h1, h2, h3, h4, h5 {
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--color-primary);
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.event-details-card.expanded .collapsible-content {
+    max-height: 600px;
+    transition: max-height 0.5s ease-in;
 }
 
 .event-card-text {
@@ -171,6 +188,22 @@ h1, h2, h3, h4, h5 {
 
 .event-item p strong {
     font-weight: 700;
+}
+
+.toggle-arrow-container {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.toggle-arrow {
+    width: 36px;
+    height: 36px;
+    color: var(--color-secondary);
+    transition: transform 0.4s ease;
+}
+
+.event-details-card.expanded .toggle-arrow {
+    transform: rotate(180deg);
 }
 
 
