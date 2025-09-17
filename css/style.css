@@ -730,6 +730,7 @@ footer {
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+    /* --- Mobile Timeline --- */
     .timeline::after {
         left: 31px;
     }
@@ -738,15 +739,17 @@ footer {
         padding-left: 70px;
         padding-right: 25px;
     }
-    .timeline-item:nth-child(odd) {
-        left: 0;
-        padding-right: 25px;
-    }
+    .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         left: 0;
+        padding-left: 70px;
+        padding-right: 25px;
     }
     .timeline-icon {
         left: 6px;
+    }
+    .timeline-item:nth-child(even) .timeline-icon {
+        left: 6px; /* Ensure icon stays on the left for all items */
     }
 }
 
