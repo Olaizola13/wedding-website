@@ -36,20 +36,25 @@
 
         <section class="event-details-card">
             <h2 data-key="dear_guests"></h2>
-            <p class="event-card-text" data-key="event_intro"></p>
-            <div class="event-item">
-                <h3 data-key="pre_wedding_title"></h3>
-                <p data-key="pre_wedding_date"></p>
-                <p data-key="pre_wedding_location"></p>
-                <p data-key="pre_wedding_dresscode"></p>
+            <div id="collapsible-content" class="collapsible-content">
+                <p class="event-card-text" data-key="event_intro"></p>
+                <div class="event-item">
+                    <h3 data-key="pre_wedding_title"></h3>
+                    <p data-key="pre_wedding_date"></p>
+                    <p data-key="pre_wedding_location"></p>
+                    <p data-key="pre_wedding_dresscode"></p>
+                </div>
+                <div class="event-item">
+                    <h3 data-key="wedding_title"></h3>
+                    <p data-key="wedding_date_long"></p>
+                    <p data-key="wedding_location"></p>
+                    <p data-key="wedding_dresscode"></p>
+                </div>
+                <p class="event-card-text" data-key="event_outro"></p>
             </div>
-            <div class="event-item">
-                <h3 data-key="wedding_title"></h3>
-                <p data-key="wedding_date_long"></p>
-                <p data-key="wedding_location"></p>
-                <p data-key="wedding_dresscode"></p>
+            <div class="toggle-arrow-container">
+                <svg class="toggle-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
             </div>
-            <p class="event-card-text" data-key="event_outro"></p>
         </section>
 
         <section class="icon-button-grid">
@@ -108,3 +113,4 @@
     <script src="/js/main.js"></script>
 </body>
 </html>
+
