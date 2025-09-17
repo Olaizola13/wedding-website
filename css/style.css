@@ -158,7 +158,11 @@ h1, h2, h3, h4, h5 {
 .collapsible-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 0.7s ease-in-out;
+}
+
+.event-details-card.expanded .collapsible-content {
+    max-height: 1000px; /* Large value to ensure it fits all content */
 }
 
 .event-card-text {
@@ -173,10 +177,6 @@ h1, h2, h3, h4, h5 {
 .visual-separator {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     margin: 25px 0;
-}
-
-.event-item {
-    padding: 0;
 }
 
 .event-item h3 {
