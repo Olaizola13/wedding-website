@@ -47,27 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     setLanguage(language);
 
-    // --- NEW ROBUST Collapsible section logic ---
+    // --- Clean & Simple Collapsible section logic ---
     const eventCard = document.querySelector('.event-details-card');
 
     if (eventCard) {
         const clickableHeader = eventCard.querySelector('.event-card-header');
         const clickableArrow = eventCard.querySelector('.toggle-arrow-container');
-        const collapsibleContent = eventCard.querySelector('.collapsible-content');
 
         const toggleExpansion = (e) => {
             e.stopPropagation(); 
-            
-            const isExpanded = eventCard.classList.contains('expanded');
-
-            if (isExpanded) {
-                // Collapse the section by removing the inline style
-                collapsibleContent.style.maxHeight = null;
-            } else {
-                // Expand the section by setting max-height to its scrollHeight
-                collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + "px";
-            }
-            
             eventCard.classList.toggle('expanded');
         };
 
