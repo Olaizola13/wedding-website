@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
 }
 
-/* Event Details Card */
+/* --- NEW Event Details Card --- */
 .event-details-card {
     background-color: var(--color-accent);
     padding: 20px 30px;
@@ -155,14 +155,19 @@ h1, h2, h3, h4, h5 {
     display: none;
 }
 
-.collapsible-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.7s ease-in-out;
+/* New CSS Grid Animation */
+.collapsible-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-in-out;
 }
 
-.event-details-card.expanded .collapsible-content {
-    max-height: 1000px; /* Large value to ensure it fits all content */
+.event-details-card.expanded .collapsible-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.collapsible-content {
+    overflow: hidden;
 }
 
 .event-card-text {
