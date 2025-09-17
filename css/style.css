@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5 {
 .container p.intro-text {
     font-size: 1.2rem;
     color: #555;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -77,9 +81,10 @@ h1, h2, h3, h4, h5 {
 /* Icon Button Grid */
 .icon-button-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: 15px;
     margin-bottom: 30px;
+    align-items: start;
 }
 
 .icon-button {
@@ -116,7 +121,40 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
 }
 
-/* --- NEW Event Details Card --- */
+/* --- Countdown Timer --- */
+.countdown-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.countdown-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.1;
+}
+
+.countdown-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+}
+
+
+/* --- Event Details Card --- */
 .event-details-card {
     background-color: var(--color-accent);
     padding: 20px 30px;
@@ -155,7 +193,6 @@ h1, h2, h3, h4, h5 {
     display: none;
 }
 
-/* New CSS Grid Animation */
 .collapsible-wrapper {
     display: grid;
     grid-template-rows: 0fr;
@@ -217,6 +254,139 @@ h1, h2, h3, h4, h5 {
 
 .event-details-card.expanded .toggle-arrow {
     transform: rotate(180deg);
+}
+
+
+/* --- Love Story Timeline --- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--color-primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 70px;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 70px;
+}
+
+.timeline-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: -25px;
+    background-color: white;
+    border: 4px solid var(--color-primary);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 42px;
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+    left: -25px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+}
+
+.gallery-card {
+    margin-top: 50px;
+}
+
+
+/* --- Song Request Form --- */
+.song-request-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: var(--color-secondary);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--color-dark);
+}
+
+.form-success-message {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 8px;
 }
 
 
@@ -559,6 +729,28 @@ footer {
 }
 
 /* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .timeline-item:nth-child(odd) {
+        left: 0;
+        padding-right: 25px;
+    }
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    .timeline-icon {
+        left: 6px;
+    }
+}
+
+
 @media (max-width: 600px) {
     .subpage-header h1 {
         font-size: 2.8rem; /* Reduced font size for mobile */
@@ -579,6 +771,13 @@ footer {
 
     .icon-button span {
         font-size: 1rem;
+    }
+
+    .countdown-number {
+        font-size: 2rem;
+    }
+    .countdown-label {
+        font-size: 0.8rem;
     }
 }
 
