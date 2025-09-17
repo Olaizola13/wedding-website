@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="page_title"></title>
+    <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="J&J" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="subpage-nav">
+        <a href="/wedding.html" data-key="nav_back_to_main"></a>
+    </nav>
+    <header class="subpage-header">
+        <img src="/images/icon_song_request.webp" alt="Song Requests Icon">
+        <h1 data-key="song_requests_page_title"></h1>
+    </header>
+    <main class="container">
+        <p class="intro-text" data-key="song_requests_intro"></p>
+
+        <form id="song-request-form" class="song-request-form">
+            <div class="form-group">
+                <label for="name" data-key="form_label_name"></label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="artist" data-key="form_label_artist"></label>
+                <input type="text" id="artist" required>
+            </div>
+            <div class="form-group">
+                <label for="song" data-key="form_label_song"></label>
+                <input type="text" id="song" required>
+            </div>
+            <button type="submit" class="submit-button" data-key="form_submit_button"></button>
+        </form>
+        <div id="form-success-message" class="form-success-message" style="display: none;">
+             <p data-key="form_success_message"></p>
+        </div>
+
+    </main>
+    
+    <script src="/js/translations/common.js"></script>
+    <script src="/js/translations/song-requests.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>
