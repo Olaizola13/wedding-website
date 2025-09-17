@@ -81,10 +81,9 @@ h1, h2, h3, h4, h5 {
 /* Icon Button Grid */
 .icon-button-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-bottom: 30px;
-    align-items: start;
 }
 
 .icon-button {
@@ -126,7 +125,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-around;
     background-color: white;
-    padding: 20px 15px;
+    padding: 15px 10px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     margin-bottom: 25px;
@@ -140,7 +139,7 @@ h1, h2, h3, h4, h5 {
 
 .countdown-number {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--color-primary);
     line-height: 1.1;
@@ -148,7 +147,7 @@ h1, h2, h3, h4, h5 {
 
 .countdown-label {
     font-family: 'Nunito', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--color-secondary);
     text-transform: uppercase;
 }
@@ -327,66 +326,6 @@ h1, h2, h3, h4, h5 {
 
 .gallery-card {
     margin-top: 50px;
-}
-
-
-/* --- Song Request Form --- */
-.song-request-form {
-    max-width: 600px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    color: var(--color-dark);
-}
-
-.form-group input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-}
-
-.submit-button {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    background-color: var(--color-secondary);
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: var(--color-dark);
-}
-
-.form-success-message {
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #e8f5e9;
-    color: #2e7d32;
-    border-radius: 8px;
 }
 
 
@@ -777,6 +716,7 @@ footer {
     }
 
     .icon-button-grid {
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 
@@ -790,10 +730,10 @@ footer {
     }
 
     .countdown-number {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .countdown-label {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
