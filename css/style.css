@@ -118,36 +118,57 @@ h1, h2, h3, h4, h5 {
 
 /* Event Details Card */
 .event-details-card {
-    background-color: white;
-    padding: 25px;
+    background-color: #ffffff;
+    padding: 20px 30px 30px 30px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    border-top: 5px solid var(--color-primary);
+    text-align: center;
 }
 
 .event-details-card h2 {
     font-family: 'Kalam', cursive;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: var(--color-primary);
 }
 
+.event-card-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    margin: 15px 0;
+    line-height: 1.7;
+}
+
+.event-item {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+
+.event-item:first-of-type {
+    margin-top: 15px;
+    padding-top: 0;
+    border-top: none;
+}
+
+
 .event-item h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 0 0 15px 0;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--color-primary);
     color: var(--color-dark);
 }
 
 .event-item p {
-    margin: 4px 0;
+    margin: 5px 0;
     font-size: 1rem;
     font-family: 'Nunito', sans-serif;
 }
+
 .event-item p strong {
     font-weight: 700;
 }
