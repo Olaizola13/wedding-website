@@ -50,8 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Collapsible section logic
     const eventCard = document.querySelector('.event-details-card');
     if (eventCard) {
-        eventCard.addEventListener('click', () => {
+        const cardHeader = eventCard.querySelector('.event-card-header');
+        const arrowContainer = eventCard.querySelector('.toggle-arrow-container');
+
+        const toggleCard = () => {
             eventCard.classList.toggle('expanded');
-        });
+        };
+
+        if (cardHeader) {
+            cardHeader.addEventListener('click', toggleCard);
+        }
+        if (arrowContainer) {
+            arrowContainer.addEventListener('click', toggleCard);
+        }
     }
 });
+
