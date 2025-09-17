@@ -47,24 +47,59 @@ document.addEventListener('DOMContentLoaded', () => {
     
     setLanguage(language);
 
-    // --- Clean & Simple Collapsible section logic ---
+    // --- Collapsible section logic ---
     const eventCard = document.querySelector('.event-details-card');
-
     if (eventCard) {
         const clickableHeader = eventCard.querySelector('.event-card-header');
         const clickableArrow = eventCard.querySelector('.toggle-arrow-container');
-
         const toggleExpansion = (e) => {
             e.stopPropagation(); 
             eventCard.classList.toggle('expanded');
         };
+        if (clickableHeader) clickableHeader.addEventListener('click', toggleExpansion);
+        if (clickableArrow) clickableArrow.addEventListener('click', toggleExpansion);
+    }
 
-        if (clickableHeader) {
-            clickableHeader.addEventListener('click', toggleExpansion);
-        }
-        if (clickableArrow) {
-            clickableArrow.addEventListener('click', toggleExpansion);
-        }
+    // --- Countdown timer logic ---
+    const countdownElement = document.getElementById('countdown-timer');
+    if (countdownElement) {
+        const weddingDate = new Date('2026-10-17T13:00:00').getTime();
+
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            if (distance < 0) {
+                countdownElement.innerHTML = `<div class="countdown-label" data-key="countdown_married"></div>`;
+                setLanguage(localStorage.getItem('language') || 'en');
+                clearInterval(countdownInterval);
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        };
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+    }
+
+    // --- Song Request Form Logic ---
+    const songRequestForm = document.getElementById('song-request-form');
+    if (songRequestForm) {
+        songRequestForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const successMessage = document.getElementById('form-success-message');
+            this.style.display = 'none';
+            successMessage.style.display = 'block';
+        });
     }
 });
 
