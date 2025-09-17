@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5 {
 
 /* Event Details Card */
 .event-details-card {
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
     padding: 20px 30px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
