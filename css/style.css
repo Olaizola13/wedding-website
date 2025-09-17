@@ -156,14 +156,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .collapsible-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-in-out;
 }
 
 .event-details-card.expanded .collapsible-content {
-    max-height: 1000px; /* Increased value to ensure all content is visible */
-    transition: max-height 0.5s ease-in;
+    grid-template-rows: 1fr;
+}
+
+.collapsible-inner {
+    overflow: hidden;
 }
 
 .event-card-text {
