@@ -51,10 +51,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const eventCard = document.querySelector('.event-details-card');
 
     if (eventCard) {
-        // We want the entire card to be clickable to toggle the section
-        eventCard.addEventListener('click', () => {
+        const clickableHeader = eventCard.querySelector('.event-card-header');
+        const clickableArrow = eventCard.querySelector('.toggle-arrow-container');
+
+        const toggleExpansion = (e) => {
+            // Stop the event from firing twice if one clickable area is inside another
+            e.stopPropagation(); 
             eventCard.classList.toggle('expanded');
-        });
+        };
+
+        if (clickableHeader) {
+            clickableHeader.addEventListener('click', toggleExpansion);
+        }
+        if (clickableArrow) {
+            clickableArrow.addEventListener('click', toggleExpansion);
+        }
     }
 });
 
