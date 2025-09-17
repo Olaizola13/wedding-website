@@ -1,9 +1,8 @@
 Object.assign(translations.en, {
     "date": "17 . 10 . 2026",
     "dear_guests": "Dear Guests,",
-    "wedding_intro_truncated": "Welcome to our wedding page. Good that you are here! In this site you can find . . .",
     "wedding_intro": "Welcome to our wedding page. Good that you are here! In this site you can find all the information about our wedding event.",
-    "wedding_outro": "Please find all the relevant information on the sections below. We are very much looking forward to celebrating this special day with all of you!",
+    "wedding_intro_truncated": "Welcome to our wedding page. Good that you are here! In this site you can find . . .",
     "pre_wedding_title": "Get-Together",
     "pre_wedding_date": "<strong>When:</strong> Friday, 16.10.2026, from 7:00 PM",
     "pre_wedding_location": "<strong>Where:</strong> Location in Valladolid (TBD)",
@@ -11,14 +10,19 @@ Object.assign(translations.en, {
     "wedding_title": "The Wedding",
     "wedding_date_long": "<strong>When:</strong> Saturday, 17.10.2026, from 1:00 PM",
     "wedding_location": "<strong>Where:</strong> Posada Real del Pinar",
-    "wedding_dresscode": "<strong>Dresscode:</strong> Formal Attire"
+    "wedding_dresscode": "<strong>Dresscode:</strong> Formal Attire",
+    "wedding_outro": "Please find all the relevant information on the sections below. We are very much looking forward to celebrating this special day with all of you!",
+    "countdown_days": "Days",
+    "countdown_hours": "Hours",
+    "countdown_minutes": "Minutes",
+    "countdown_seconds": "Seconds",
+    "countdown_married": "We are married!"
 });
 Object.assign(translations.es, {
     "date": "17 . 10 . 2026",
     "dear_guests": "Queridos Invitados,",
-    "wedding_intro_truncated": "Bienvenidos a nuestra página de bodas. ¡Qué bien que estéis aquí! En esta web podéis encontrar . . .",
     "wedding_intro": "Bienvenidos a nuestra página de bodas. ¡Qué bien que estéis aquí! En esta web podéis encontrar toda la información sobre nuestro evento.",
-    "wedding_outro": "Por favor, encontrad toda la información relevante en las secciones de abajo. ¡Estamos deseando celebrar este día tan especial con todos vosotros!",
+    "wedding_intro_truncated": "Bienvenidos a nuestra página de bodas. ¡Qué bien que estéis aquí! En esta web podéis encontrar . . .",
     "pre_wedding_title": "Preboda",
     "pre_wedding_date": "<strong>Cuándo:</strong> Viernes, 16.10.2026, desde las 19:00h",
     "pre_wedding_location": "<strong>Dónde:</strong> Lugar en Valladolid (pendiente)",
@@ -26,14 +30,19 @@ Object.assign(translations.es, {
     "wedding_title": "La Boda",
     "wedding_date_long": "<strong>Cuándo:</strong> Sábado, 17.10.2026, desde las 13:00h",
     "wedding_location": "<strong>Dónde:</strong> Posada Real del Pinar",
-    "wedding_dresscode": "<strong>Etiqueta:</strong> Formal"
+    "wedding_dresscode": "<strong>Etiqueta:</strong> Formal",
+    "wedding_outro": "Por favor, encontrad toda la información relevante en las secciones de abajo. ¡Estamos deseando celebrar este día tan especial con todos vosotros!",
+    "countdown_days": "Días",
+    "countdown_hours": "Horas",
+    "countdown_minutes": "Minutos",
+    "countdown_seconds": "Segundos",
+    "countdown_married": "¡Nos hemos casado!"
 });
 Object.assign(translations.de, {
     "date": "17 . 10 . 2026",
     "dear_guests": "Liebe Gäste,",
-    "wedding_intro_truncated": "Willkommen auf unserer Hochzeitsseite. Schön, dass ihr hier seid! Auf dieser Seite findet ihr . . .",
     "wedding_intro": "Willkommen auf unserer Hochzeitsseite. Schön, dass ihr hier seid! Auf dieser Seite findet ihr alle Informationen zu unserer Hochzeitsfeier.",
-    "wedding_outro": "Bitte findet alle relevanten Informationen in den Abschnitten unten. Wir freuen uns sehr darauf, diesen besonderen Tag mit euch allen zu feiern!",
+    "wedding_intro_truncated": "Willkommen auf unserer Hochzeitsseite. Schön, dass ihr hier seid! Auf dieser Seite findet ihr . . .",
     "pre_wedding_title": "Get-Together",
     "pre_wedding_date": "<strong>Wann:</strong> Freitag, 16.10.2026, ab 19:00 Uhr",
     "pre_wedding_location": "<strong>Wo:</strong> Ort in Valladolid (wird noch bekannt gegeben)",
@@ -41,6 +50,12 @@ Object.assign(translations.de, {
     "wedding_title": "Die Hochzeit",
     "wedding_date_long": "<strong>Wann:</strong> Samstag, 17.10.2026, ab 13:00 Uhr",
     "wedding_location": "<strong>Wo:</strong> Posada Real del Pinar",
-    "wedding_dresscode": "<strong>Dresscode:</strong> Festliche Kleidung"
+    "wedding_dresscode": "<strong>Dresscode:</strong> Festliche Kleidung",
+    "wedding_outro": "Bitte findet alle relevanten Informationen in den folgenden Abschnitten. Wir freuen uns sehr darauf, diesen besonderen Tag mit euch allen zu feiern!",
+    "countdown_days": "Tage",
+    "countdown_hours": "Stunden",
+    "countdown_minutes": "Minuten",
+    "countdown_seconds": "Sekunden",
+    "countdown_married": "Wir haben geheiratet!"
 });
 
