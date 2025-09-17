@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .event-details-card.expanded .collapsible-content {
-    max-height: 500px;
+    max-height: 1000px; /* Increased value to ensure all content is visible */
     transition: max-height 0.5s ease-in;
 }
 
