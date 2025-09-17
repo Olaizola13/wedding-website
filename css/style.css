@@ -730,26 +730,39 @@ footer {
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-    /* --- Mobile Timeline --- */
+    /* --- NEW Mobile Timeline --- */
+    /* Hide the central timeline bar on mobile */
     .timeline::after {
-        left: 31px;
+        display: none;
     }
-    .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
+
+    /* Make each item a full-width block and remove side padding */
+    .timeline-item,
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
+        width: 100%;
         left: 0;
-        padding-left: 70px;
-        padding-right: 25px;
+        padding: 0;
+        margin-bottom: 30px; /* Add space between story points */
     }
+
+    /* Reposition the icon to be static and centered above the content */
     .timeline-icon {
-        left: 6px;
+        position: static; /* Remove absolute positioning */
+        display: block;
+        margin: 0 auto 15px auto; /* Center the icon */
+        right: auto;
+        left: auto;
     }
-    .timeline-item:nth-child(even) .timeline-icon {
-        left: 6px; /* Ensure icon stays on the left for all items */
+
+    /* Add padding to the content card itself */
+    .timeline-content {
+        padding: 20px;
+        text-align: center; /* Center the title */
+    }
+
+     .timeline-content p {
+        text-align: left; /* Keep paragraph text left-aligned for readability */
     }
 }
 
