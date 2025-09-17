@@ -118,12 +118,11 @@ h1, h2, h3, h4, h5 {
 
 /* Event Details Card */
 .event-details-card {
-    background-color: #ffffff;
+    background-color: var(--color-primary);
     padding: 20px 30px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     margin-bottom: 40px;
-    border-top: 5px solid var(--color-primary);
     text-align: center;
 }
 
@@ -137,16 +136,23 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: var(--color-primary);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
-.event-card-intro {
+.event-card-intro-truncated {
     font-family: 'Nunito', sans-serif;
     font-style: italic;
-    font-size: 1.05rem;
-    color: #555;
+    font-size: 1rem;
+    color: white;
     margin: 5px 0 20px 0;
     line-height: 1.6;
+    opacity: 0.9;
+    display: block;
+}
+
+.event-details-card.expanded .event-card-intro-truncated {
+    display: none;
 }
 
 .collapsible-content {
@@ -165,16 +171,18 @@ h1, h2, h3, h4, h5 {
     font-size: 1rem;
     margin: 15px 0;
     line-height: 1.7;
+    color: var(--color-dark);
+    font-style: normal;
 }
 
 .event-item {
     margin-top: 25px;
     padding-top: 25px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .event-item:first-of-type {
-    margin-top: 15px;
+    margin-top: 0;
     padding-top: 0;
     border-top: none;
 }
@@ -191,6 +199,7 @@ h1, h2, h3, h4, h5 {
     margin: 5px 0;
     font-size: 1rem;
     font-family: 'Nunito', sans-serif;
+    color: var(--color-dark);
 }
 
 .event-item p strong {
@@ -206,7 +215,7 @@ h1, h2, h3, h4, h5 {
 .toggle-arrow {
     width: 36px;
     height: 36px;
-    color: var(--color-secondary);
+    color: white;
     transition: transform 0.4s ease;
 }
 
