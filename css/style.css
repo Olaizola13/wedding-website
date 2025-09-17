@@ -119,18 +119,16 @@ h1, h2, h3, h4, h5 {
 /* Event Details Card */
 .event-details-card {
     background-color: #ffffff;
-    padding: 20px 30px 10px 30px;
+    padding: 20px 30px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     margin-bottom: 40px;
     border-top: 5px solid var(--color-primary);
     text-align: center;
-    cursor: pointer;
-    transition: padding-bottom 0.4s ease;
 }
 
-.event-details-card.expanded {
-    padding-bottom: 30px;
+.event-card-header {
+    cursor: pointer;
 }
 
 .event-details-card h2 {
@@ -142,6 +140,15 @@ h1, h2, h3, h4, h5 {
     color: var(--color-primary);
 }
 
+.event-card-intro {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #555;
+    margin: 5px 0 20px 0;
+    line-height: 1.6;
+}
+
 .collapsible-content {
     max-height: 0;
     overflow: hidden;
@@ -149,7 +156,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .event-details-card.expanded .collapsible-content {
-    max-height: 600px;
+    max-height: 500px;
     transition: max-height 0.5s ease-in;
 }
 
@@ -192,7 +199,8 @@ h1, h2, h3, h4, h5 {
 
 .toggle-arrow-container {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
+    cursor: pointer;
 }
 
 .toggle-arrow {
