@@ -46,4 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('language', language);
     
     setLanguage(language);
+
+    // Collapsible section logic
+    const eventCard = document.querySelector('.event-details-card');
+    if (eventCard) {
+        eventCard.addEventListener('click', () => {
+            eventCard.classList.toggle('expanded');
+        });
+    }
 });
