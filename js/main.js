@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     url.search = urlParams.toString();
                     link.href = url.href;
                 }
-            } catch (e) => {
+            } catch (e) {
                 // Ignore invalid URLs
             }
         });
@@ -67,6 +67,5 @@ document.addEventListener('DOMContentLoaded', () => {
             clickableArrow.addEventListener('click', toggleExpansion);
         }
     }
-})
-
+});
 
