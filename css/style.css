@@ -225,6 +225,7 @@ footer {
     padding: 40px 20px;
     border-bottom: 1px solid #eee;
     margin-bottom: 40px;
+    overflow-x: hidden; /* Add failsafe to prevent horizontal scroll */
 }
 .subpage-header img {
     width: 200px;
@@ -238,6 +239,7 @@ footer {
 .subpage-header h1 {
     font-size: 3.5rem;
     color: var(--color-dark);
+    overflow-wrap: break-word; /* Ensure long words break to prevent overflow */
 }
 
 /* RSVP Page Styles */
