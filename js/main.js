@@ -67,5 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
             clickableArrow.addEventListener('click', toggleExpansion);
         }
     }
-});
+})
+
 
