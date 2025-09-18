@@ -1,4 +1,4 @@
-document.addEventListener('load', () => {
+window.addEventListener('load', () => {
 
     const setLanguage = (language) => {
         const elements = document.querySelectorAll('[data-key]');
