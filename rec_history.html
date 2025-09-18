@@ -24,64 +24,78 @@
         <h1 data-key="rec_history_page_title"></h1>
     </header>
     <main class="container">
-        
         <div class="content-card">
-            <h2 data-key="section_title_region"></h2>
+            <h2 class="section-title" data-key="section_title_region"></h2>
             <p data-key="recommendations_region_intro"></p>
         </div>
 
-        <div class="tab-container">
-            <div class="tab-nav">
-                <button class="tab-link active" data-tab="tab-city" data-key="tab_city"></button>
-                <button class="tab-link" data-tab="tab-culture" data-key="tab_culture"></button>
-                <button class="tab-link" data-tab="tab-region" data-key="tab_region"></button>
-            </div>
+        <div class="icon-tabs">
+            <button class="icon-tab-button active" data-tab="city">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.49a1 1 0 0 1 .386-.79l8-6.222a1 1 0 0 1 1.228 0l8 6.222a1 1 0 0 1 .386.79V20zM7 11v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zm0 4v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zm4-4v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zm0 4v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zm4-4v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zm0 4v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0z"></path></svg>
+                <span data-key="tab_city"></span>
+            </button>
+            <button class="icon-tab-button" data-tab="culture">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zM5 4v16h14V4H5zm5.5 13a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v-9a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v9zm4 0a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v-5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v5z"></path></svg>
+                <span data-key="tab_culture"></span>
+            </button>
+            <button class="icon-tab-button" data-tab="region">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 11.143l-3.234 1.699a.5.5 0 0 1-.741-.531L9.12 8.32l-3.007-2.09a.5.5 0 0 1 .28-.885l3.812.019 1.12-3.644a.5.5 0 0 1 .95 0l1.12 3.644 3.812-.019a.5.5 0 0 1 .28.885l-3.007 2.09 1.095 3.992a.5.5 0 0 1-.74.53L12 11.144zM4.331 21.22l5.774-2.232 2.895 1.522-2.895 1.522a1 1 0 0 1-1.076-.11L4.33 21.22zM19.669 21.22l-4.697-.978a1 1 0 0 1-1.076.11l-2.895-1.522 2.895-1.522 5.774 2.232z"></path></svg>
+                <span data-key="tab_region"></span>
+            </button>
+        </div>
 
-            <div class="tab-content">
-                <!-- Tab 1: The City -->
-                <div id="tab-city" class="tab-pane active">
-                    <h3 data-key="section_title_city"></h3>
+        <!-- Tab Content -->
+        <div id="city" class="tab-content active">
+             <details class="accordion-item" open>
+                <summary class="accordion-header" data-key="section_title_city"></summary>
+                <div class="accordion-content">
                     <p data-key="city_intro_1"></p>
                     <p data-key="city_intro_2"></p>
                 </div>
+            </details>
+        </div>
 
-                <!-- Tab 2: Arts & Letters -->
-                <div id="tab-culture" class="tab-pane">
-                    <h3 data-key="section_title_writers"></h3>
-                    <ul class="icon-list">
-                        <li data-key="writer_cervantes"></li>
-                        <li data-key="writer_zorrilla"></li>
-                        <li data-key="writer_delibes"></li>
-                    </ul>
-                    <div class="visual-separator-light"></div>
-                    <h3 data-key="section_title_museums"></h3>
-                    <ul class="icon-list">
-                        <li data-key="museum_sculpture"></li>
-                        <li data-key="museum_cervantes"></li>
-                        <li data-key="museum_oriental"></li>
-                    </ul>
+        <div id="culture" class="tab-content">
+            <details class="accordion-item">
+                <summary class="accordion-header" data-key="section_title_writers"></summary>
+                <div class="accordion-content">
+                    <p data-key="writer_cervantes"></p>
+                    <p data-key="writer_zorrilla"></p>
+                    <p data-key="writer_delibes"></p>
                 </div>
+            </details>
+            <details class="accordion-item">
+                <summary class="accordion-header" data-key="section_title_museums"></summary>
+                <div class="accordion-content">
+                     <p data-key="museum_sculpture"></p>
+                     <p data-key="museum_cervantes"></p>
+                     <p data-key="museum_oriental"></p>
+                </div>
+            </details>
+        </div>
 
-                <!-- Tab 3: Castles & Wine -->
-                <div id="tab-region" class="tab-pane">
-                    <h3 data-key="section_title_castles"></h3>
+        <div id="region" class="tab-content">
+            <details class="accordion-item">
+                <summary class="accordion-header" data-key="section_title_castles"></summary>
+                <div class="accordion-content">
                     <p data-key="castles_intro"></p>
-                    <ul class="icon-list">
-                        <li data-key="castle_penafiel"></li>
-                        <li data-key="castle_mota"></li>
-                        <li data-key="castle_iscar"></li>
-                    </ul>
-                    <div class="visual-separator-light"></div>
-                    <h3 data-key="section_title_gastronomy"></h3>
+                    <p data-key="castle_penafiel"></p>
+                    <p data-key="castle_mota"></p>
+                    <p data-key="castle_simancas"></p>
+                    <p data-key="castle_portillo"></p>
+                </div>
+            </details>
+            <details class="accordion-item">
+                <summary class="accordion-header" data-key="section_title_gastronomy"></summary>
+                <div class="accordion-content">
                     <p data-key="food_intro"></p>
                     <h4 data-key="food_dishes_title"></h4>
                     <p data-key="food_dishes_text"></p>
-                    <h4 data-key="wine_title"></h4>
+                    <h4 data-key="wine_title" style="margin-top: 20px;"></h4>
                     <p data-key="wine_text"></p>
                 </div>
-            </div>
+            </details>
         </div>
-
     </main>
     <script src="/js/translations/common.js"></script>
     <script src="/js/translations/rec_history.js"></script>
