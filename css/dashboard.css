@@ -1,0 +1,251 @@
+/* Styles specific to the main wedding.html dashboard page */
+
+.dashboard-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Header Section */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header-illustration-link {
+    display: block;
+    text-decoration: none;
+}
+
+.header-image-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.header-illustration {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.header-logo-overlay {
+    position: absolute;
+    bottom: -25px;
+    left: 75%;
+    transform: translateX(-50%);
+    height: 92px;
+    width: auto;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
+}
+
+/* Icon Button Grid */
+.icon-button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.icon-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.icon-button:hover {
+    transform: translateY(-5px);
+}
+
+.icon-button img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.icon-button span {
+    font-family: 'Kalam', cursive;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    text-align: center;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Countdown Timer --- */
+.countdown-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.countdown-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.1;
+}
+
+.countdown-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+}
+
+
+/* --- Event Details Card --- */
+.event-details-card {
+    background-color: var(--color-accent);
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.event-card-header {
+    cursor: pointer;
+}
+
+.event-details-card h2 {
+    font-family: 'Kalam', cursive;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.event-card-intro-truncated {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0 20px 0;
+    line-height: 1.6;
+    opacity: 0.9;
+    display: block;
+}
+
+.event-details-card.expanded .event-card-intro-truncated {
+    display: none;
+}
+
+.collapsible-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-in-out;
+}
+
+.event-details-card.expanded .collapsible-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.collapsible-content {
+    overflow: hidden;
+}
+
+.event-card-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.7;
+    color: var(--color-dark);
+    font-style: normal;
+}
+
+.visual-separator {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 25px 0;
+}
+
+.event-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin: 0 0 15px 0;
+    color: var(--color-dark);
+}
+
+.event-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-dark);
+}
+
+.event-item p strong {
+    font-weight: 700;
+}
+
+.toggle-arrow-container {
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.toggle-arrow {
+    width: 36px;
+    height: 36px;
+    color: white;
+    transition: transform 0.4s ease;
+}
+
+.event-details-card.expanded .toggle-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* --- Responsive styles for Dashboard --- */
+@media (min-width: 769px) {
+    .dashboard-container {
+        max-width: 550px; /* Slightly wider for better spacing */
+    }
+}
+
+@media (max-width: 600px) {
+    .icon-button-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .icon-button img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon-button span {
+        font-size: 1rem;
+    }
+
+    .countdown-number {
+        font-size: 1.8rem;
+    }
+    .countdown-label {
+        font-size: 0.7rem;
+    }
+}
