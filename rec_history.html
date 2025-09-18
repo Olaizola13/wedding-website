@@ -30,49 +30,56 @@
             <p data-key="recommendations_region_intro"></p>
         </div>
 
-        <div class="subsection-card">
-            <h3 data-key="section_title_city"></h3>
-            <p data-key="city_intro_1"></p>
-            <p data-key="city_intro_2"></p>
-        </div>
+        <div class="tab-container">
+            <div class="tab-nav">
+                <button class="tab-link active" data-tab="tab-city" data-key="tab_city"></button>
+                <button class="tab-link" data-tab="tab-culture" data-key="tab_culture"></button>
+                <button class="tab-link" data-tab="tab-region" data-key="tab_region"></button>
+            </div>
 
-        <div class="subsection-card">
-            <h3 data-key="section_title_writers"></h3>
-            <ul class="icon-list">
-                <li data-key="writer_cervantes"></li>
-                <li data-key="writer_zorrilla"></li>
-                <li data-key="writer_delibes"></li>
-            </ul>
-        </div>
-        
-        <div class="subsection-card">
-            <h3 data-key="section_title_museums"></h3>
-             <img src="https://www.info.valladolid.es/documents/10180/63909/MuseoNacionaldeEscultura-Fachada-01/811867c4-54c3-424a-9528-66174b1e3687?t=1522756333000" alt="National Sculpture Museum" class="content-image">
-            <ul class="icon-list">
-                <li data-key="museum_sculpture"></li>
-                <li data-key="museum_cervantes"></li>
-                <li data-key="museum_oriental"></li>
-            </ul>
-        </div>
+            <div class="tab-content">
+                <!-- Tab 1: The City -->
+                <div id="tab-city" class="tab-pane active">
+                    <h3 data-key="section_title_city"></h3>
+                    <p data-key="city_intro_1"></p>
+                    <p data-key="city_intro_2"></p>
+                </div>
 
-        <div class="subsection-card">
-            <h3 data-key="section_title_castles"></h3>
-            <p data-key="castles_intro"></p>
-             <img src="https://www. rutasconhistoria.es/wp-content/uploads/2015/02/castillo-de-penafiel-valladolid.jpg" alt="Castle of Peñafiel" class="content-image">
-            <ul class="icon-list">
-                <li data-key="castle_penafiel"></li>
-                <li data-key="castle_mota"></li>
-                <li data-key="castle_iscar"></li>
-            </ul>
-        </div>
+                <!-- Tab 2: Arts & Letters -->
+                <div id="tab-culture" class="tab-pane">
+                    <h3 data-key="section_title_writers"></h3>
+                    <ul class="icon-list">
+                        <li data-key="writer_cervantes"></li>
+                        <li data-key="writer_zorrilla"></li>
+                        <li data-key="writer_delibes"></li>
+                    </ul>
+                    <div class="visual-separator-light"></div>
+                    <h3 data-key="section_title_museums"></h3>
+                    <ul class="icon-list">
+                        <li data-key="museum_sculpture"></li>
+                        <li data-key="museum_cervantes"></li>
+                        <li data-key="museum_oriental"></li>
+                    </ul>
+                </div>
 
-        <div class="subsection-card">
-            <h3 data-key="section_title_gastronomy"></h3>
-            <p data-key="food_intro"></p>
-            <h4 data-key="food_dishes_title"></h4>
-            <p data-key="food_dishes_text"></p>
-            <h4 data-key="wine_title"></h4>
-            <p data-key="wine_text"></p>
+                <!-- Tab 3: Castles & Wine -->
+                <div id="tab-region" class="tab-pane">
+                    <h3 data-key="section_title_castles"></h3>
+                    <p data-key="castles_intro"></p>
+                    <ul class="icon-list">
+                        <li data-key="castle_penafiel"></li>
+                        <li data-key="castle_mota"></li>
+                        <li data-key="castle_iscar"></li>
+                    </ul>
+                    <div class="visual-separator-light"></div>
+                    <h3 data-key="section_title_gastronomy"></h3>
+                    <p data-key="food_intro"></p>
+                    <h4 data-key="food_dishes_title"></h4>
+                    <p data-key="food_dishes_text"></p>
+                    <h4 data-key="wine_title"></h4>
+                    <p data-key="wine_text"></p>
+                </div>
+            </div>
         </div>
 
     </main>
@@ -81,3 +88,4 @@
     <script src="/js/main.js"></script>
 </body>
 </html>
+
