@@ -881,39 +881,6 @@ footer {
     .dashboard-container {
         max-width: 550px; /* Slightly wider for better spacing */
     }
-
-    /* History & Culture Page Desktop Layout */
-    .history-desktop-layout {
-        display: flex;
-        gap: 30px;
-        align-items: flex-start;
-    }
-
-    .icon-tabs {
-        flex-direction: column; /* Stack tabs vertically */
-        justify-content: flex-start;
-        border-bottom: none;
-        border-right: 1px solid #ddd;
-        padding: 0;
-        margin: 0;
-        width: 200px; /* Fixed width for the tab navigation */
-        flex-shrink: 0;
-    }
-
-    .icon-tab-button {
-        flex-direction: row; /* Icon and text side-by-side */
-        width: 100%;
-        padding: 15px;
-        border-bottom: none;
-        border-right: 4px solid transparent;
-        justify-content: flex-start;
-        font-size: 1.1rem;
-    }
-    .icon-tab-button.active {
-        border-bottom-color: transparent;
-        border-right-color: var(--color-primary);
-        background-color: #fff;
-    }
     
     .tab-content-wrapper {
         flex-grow: 1; /* Allow content to fill remaining space */
