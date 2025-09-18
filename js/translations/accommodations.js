@@ -1,91 +1,76 @@
 Object.assign(translations.en, {
     "accommodations_page_title": "Accommodation",
     "accommodations_intro": "We highly recommend our guests stay in Valladolid. It's Juanma's beautiful hometown and the city that has the most to offer in terms of culture, food, and atmosphere. The Get-Together on Friday will also be held here.",
-    
+    "accommodations_warning_title": "Important: Book in Advance!",
+    "accommodations_warning_text": "Please keep in mind that our wedding is around the time of 'Seminci', the Valladolid International Film Festival. The city is very popular in October and attracts a lot of tourism, so we strongly advise you to book your accommodation well in advance to ensure availability and better prices.",
     "hotels_in_valladolid": "Hotels in Valladolid",
     "hotels_in_medina": "Hotels in Medina del Campo",
-    "medina_placeholder_text": "We are currently finalizing details for recommended hotels in Medina del Campo. Information will be available here soon!",
-
     "location_recoletos": "Recoletos Area",
     "location_center": "City Center",
-    "booking_info_title": "How to Book",
+    "booking_info_title": "Booking Information",
     "book_now_btn": "Book Now",
     "visit_website_btn": "Visit Website",
     "contact_hotel_btn": "Contact Hotel",
-
-    "hotel_colon_desc": "A 4-star hotel located right on the Acera de Recoletos, a beautiful boulevard next to the Campo Grande park. The hotel offers our guests a special discount.",
-    "hotel_colon_booking": "To receive a <strong>10% discount</strong> on the official online rate, book through their website, select the 'Hotel Colón-Plaza', and enter the promotional code <strong>BODAS2026</strong> in the 'Promotional Code?' field.",
-    
-    "hotel_mozart_desc": "A cozy 3-star hotel located very centrally, close to the Plaza Mayor. They have blocked rooms for our guests at a fixed rate until September 16, 2026.",
-    "hotel_mozart_booking": "Book directly with the hotel by phone (+34 983 297 777) or email (hotelmozart@hotelmozart.net) and mention the reference <strong>'Boda Juanma y Jessica'</strong> to get the special rates: Double Room for €110/night or Single Room for €77/night.",
-
-    "hotel_recoletos_desc": "This 4-star hotel is also on the Acera de Recoletos and offers our guests special rates including breakfast.",
-    "hotel_recoletos_booking": "To get the special rates (Double Room: €107+VAT, Single Room: €95+VAT), you need to email the hotel at <strong>comercial@valladolidrecoletos.com</strong>, mentioning our wedding and the discount code <strong>JessicaJuanma2026</strong>.",
-
-    "hotel_enara_desc": "A stylish 4-star boutique hotel located in a historic building in the heart of the city, right on the Plaza Mayor.",
-    "hotel_enara_booking": "The hotel has offered to create a promotional code for a <strong>10% discount</strong> for our guests. Please contact them directly at <strong>rec.enara@elehoteles.es</strong> mentioning our wedding to inquire about the code and availability.",
-
-    "accommodations_warning_title": "Important: Book in Advance!",
-    "accommodations_warning_text": "Please keep in mind that our wedding weekend is around the time of 'Seminci', the Valladolid International Film Festival. The city is very popular in October and attracts a lot of tourism, so we strongly advise you to book your accommodation well in advance to ensure availability and better prices."
+    "hotel_colon_desc": "A modern hotel located on the main avenue, right next to Campo Grande park.",
+    "hotel_colon_booking": "To get a <strong>10% discount</strong> on the standard online rate, go to their website, select the 'Colón-Plaza' hotel, choose your dates, and enter the promotional code <strong>BODAS2026</strong>.",
+    "hotel_mozart_desc": "A charming and very centrally located hotel, perfect for exploring the city on foot.",
+    "hotel_mozart_booking": "We have blocked 15 double rooms at a fixed rate (110€/night). To book, you must call the hotel at (+34 983 297 777) or email (hotelmozart@hotelmozart.net) and mention the reference '<strong>Boda Juanma y Jessica</strong>'. This block is valid until September 16, 2026.",
+    "hotel_recoletos_desc": "A classic hotel also located near Campo Grande park, known for its comfortable rooms.",
+    "hotel_recoletos_booking": "To get a special rate (Single: 95€, Double: 107€, both +10% VAT, breakfast included), please email the hotel at comercial@valladolidrecoletos.com and mention the code '<strong>JessicaJuanma2026</strong>'.",
+    "hotel_enara_desc": "A stylish boutique hotel right on the main square, Plaza Mayor.",
+    "hotel_enara_booking": "The hotel offers a <strong>10% discount</strong> on their web rates for our guests. Please contact us directly if you are interested, and we will request a personalized promotional code for you from the hotel.",
+    "medina_placeholder_text": "More recommendations for hotels in Medina del Campo will be added soon.",
+    "hotel_villa_desc": "A comfortable and convenient hotel located in Medina del Campo, making it a great option for those who wish to stay closer to the wedding venue.",
+    "hotel_villa_booking": "We don't have a special discount code for this hotel, but you can book directly through their website for the best available rates."
 });
 Object.assign(translations.es, {
     "accommodations_page_title": "Alojamiento",
     "accommodations_intro": "Recomendamos encarecidamente a nuestros invitados que se alojen en Valladolid. Es la preciosa ciudad natal de Juanma y la que más tiene que ofrecer en cuanto a cultura, gastronomía y ambiente. La preboda del viernes también se celebrará aquí.",
-
+    "accommodations_warning_title": "Importante: ¡Reservad con Antelación!",
+    "accommodations_warning_text": "Por favor, tened en cuenta que nuestra boda es en fechas cercanas a la 'Seminci', el Festival Internacional de Cine de Valladolid. La ciudad es muy popular en octubre y atrae mucho turismo, por lo que os aconsejamos encarecidamente que reservéis vuestro alojamiento con bastante antelación para asegurar disponibilidad y mejores precios.",
     "hotels_in_valladolid": "Hoteles en Valladolid",
     "hotels_in_medina": "Hoteles en Medina del Campo",
-    "medina_placeholder_text": "Estamos finalizando los detalles de los hoteles recomendados en Medina del Campo. ¡La información estará disponible aquí pronto!",
-
     "location_recoletos": "Zona Recoletos",
     "location_center": "Centro Ciudad",
-    "booking_info_title": "Cómo Reservar",
+    "booking_info_title": "Información de Reserva",
     "book_now_btn": "Reservar Ahora",
     "visit_website_btn": "Visitar Web",
     "contact_hotel_btn": "Contactar Hotel",
-
-    "hotel_colon_desc": "Un hotel de 4 estrellas situado en la misma Acera de Recoletos, un precioso bulevar junto al parque Campo Grande. El hotel ofrece a nuestros invitados un descuento especial.",
-    "hotel_colon_booking": "Para recibir un <strong>10% de descuento</strong> sobre la tarifa oficial online, reservad a través de su web, seleccionad el 'Hotel Colón-Plaza', e introducid el código promocional <strong>BODAS2026</strong> en el campo '¿Tienes un Código Promocional?'.",
-
-    "hotel_mozart_desc": "Un acogedor hotel de 3 estrellas muy céntrico, cerca de la Plaza Mayor. Han bloqueado habitaciones para nuestros invitados a un precio fijo hasta el 16 de septiembre de 2026.",
-    "hotel_mozart_booking": "Reservad directamente con el hotel por teléfono (+34 983 297 777) o email (hotelmozart@hotelmozart.net) y mencionad la referencia <strong>'Boda Juanma y Jessica'</strong> para obtener las tarifas especiales: Habitación Doble por 110€/noche o Individual por 77€/noche.",
-
-    "hotel_recoletos_desc": "Este hotel de 4 estrellas también se encuentra en la Acera de Recoletos y ofrece a nuestros invitados tarifas especiales con desayuno incluido.",
-    "hotel_recoletos_booking": "Para obtener las tarifas especiales (Doble: 107€+IVA, Individual: 95€+IVA), debéis enviar un email al hotel a <strong>comercial@valladolidrecoletos.com</strong>, mencionando nuestra boda y el código de descuento <strong>JessicaJuanma2026</strong>.",
-
-    "hotel_enara_desc": "Un elegante hotel boutique de 4 estrellas situado en un edificio histórico en el corazón de la ciudad, en la misma Plaza Mayor.",
-    "hotel_enara_booking": "El hotel se ha ofrecido a crear un código promocional con un <strong>10% de descuento</strong> para nuestros invitados. Por favor, contactadles directamente en <strong>rec.enara@elehoteles.es</strong> mencionando nuestra boda para solicitar el código y consultar disponibilidad.",
-
-    "accommodations_warning_title": "Importante: ¡Reservad con Antelación!",
-    "accommodations_warning_text": "Por favor, tened en cuenta que el fin de semana de nuestra boda es en fechas cercanas a la 'Seminci', el Festival Internacional de Cine de Valladolid. La ciudad es muy popular en octubre y atrae mucho turismo, por lo que os aconsejamos encarecidamente que reservéis vuestro alojamiento con bastante antelación para asegurar disponibilidad y mejores precios."
+    "hotel_colon_desc": "Un hotel moderno situado en la avenida principal, justo al lado del parque Campo Grande.",
+    "hotel_colon_booking": "Para obtener un <strong>10% de descuento</strong> sobre la tarifa online, id a su web, seleccionad el hotel 'Colón-Plaza', elegid las fechas e introducid el código promocional <strong>BODAS2026</strong>.",
+    "hotel_mozart_desc": "Un hotel con encanto y muy céntrico, perfecto para explorar la ciudad a pie.",
+    "hotel_mozart_booking": "Hemos bloqueado 15 habitaciones dobles a un precio fijo (110€/noche). Para reservar, debéis llamar al hotel (+34 983 297 777) o enviar un email (hotelmozart@hotelmozart.net) y mencionar la referencia '<strong>Boda Juanma y Jessica</strong>'. Este bloqueo es válido hasta el 16 de septiembre de 2026.",
+    "hotel_recoletos_desc": "Un hotel clásico también situado cerca del parque Campo Grande, conocido por sus cómodas habitaciones.",
+    "hotel_recoletos_booking": "Para obtener una tarifa especial (Individual: 95€, Doble: 107€, ambos +10% IVA, desayuno incluido), por favor enviad un email al hotel a comercial@valladolidrecoletos.com y mencionad el código '<strong>JessicaJuanma2026</strong>'.",
+    "hotel_enara_desc": "Un elegante hotel boutique en plena Plaza Mayor.",
+    "hotel_enara_booking": "El hotel ofrece un <strong>10% de descuento</strong> sobre sus tarifas web para nuestros invitados. Por favor, contactadnos directamente si estáis interesados y solicitaremos un código promocional personalizado para vosotros.",
+    "medina_placeholder_text": "Próximamente se añadirán más recomendaciones de hoteles en Medina del Campo.",
+    "hotel_villa_desc": "Un hotel cómodo y práctico situado en Medina del Campo, lo que lo convierte en una opción fantástica para aquellos que deseen alojarse más cerca del lugar de la boda.",
+    "hotel_villa_booking": "No tenemos un código de descuento especial para este hotel, pero podéis reservar directamente a través de su página web para obtener las mejores tarifas disponibles."
 });
 Object.assign(translations.de, {
     "accommodations_page_title": "Unterkünfte",
     "accommodations_intro": "Wir empfehlen unseren Gästen dringend, in Valladolid zu übernachten. Es ist Juanmas wunderschöne Heimatstadt und die Stadt, die in Bezug auf Kultur, Essen und Atmosphäre am meisten zu bieten hat. Das Get-Together am Freitag wird ebenfalls hier stattfinden.",
-
+    "accommodations_warning_title": "Wichtig: Frühzeitig buchen!",
+    "accommodations_warning_text": "Bitte beachtet, dass unsere Hochzeit um die Zeit der 'Seminci', dem Internationalen Filmfestival von Valladolid, stattfindet. Die Stadt ist im Oktober sehr beliebt und zieht viele Touristen an, daher raten wir euch dringend, eure Unterkunft weit im Voraus zu buchen, um Verfügbarkeit und bessere Preise zu gewährleisten.",
     "hotels_in_valladolid": "Hotels in Valladolid",
     "hotels_in_medina": "Hotels in Medina del Campo",
-    "medina_placeholder_text": "Wir klären gerade die letzten Details für empfohlene Hotels in Medina del Campo. Die Informationen werden hier in Kürze verfügbar sein!",
-
-    "location_recoletos": "Recoletos-Viertel",
+    "location_recoletos": "Nähe Recoletos",
     "location_center": "Stadtzentrum",
     "booking_info_title": "Buchungsinformationen",
     "book_now_btn": "Jetzt Buchen",
     "visit_website_btn": "Webseite Besuchen",
     "contact_hotel_btn": "Hotel Kontaktieren",
-
-    "hotel_colon_desc": "Ein 4-Sterne-Hotel direkt an der Acera de Recoletos, einem schönen Boulevard neben dem Campo Grande Park. Das Hotel bietet unseren Gästen einen besonderen Rabatt.",
-    "hotel_colon_booking": "Um einen <strong>10% Rabatt</strong> auf den offiziellen Online-Preis zu erhalten, buchen Sie über deren Webseite, wählen Sie das 'Hotel Colón-Plaza' und geben Sie den Aktionscode <strong>BODAS2026</strong> im Feld 'Haben Sie einen Aktionscode?' ein.",
-
-    "hotel_mozart_desc": "Ein gemütliches 3-Sterne-Hotel in sehr zentraler Lage nahe der Plaza Mayor. Sie haben für unsere Gäste Zimmer zu einem festen Preis bis zum 16. September 2026 geblockt.",
-    "hotel_mozart_booking": "Buchen Sie direkt beim Hotel per Telefon (+34 983 297 777) oder E-Mail (hotelmozart@hotelmozart.net) und geben Sie den Hinweis <strong>'Boda Juanma y Jessica'</strong> an, um die Sonderpreise zu erhalten: Doppelzimmer für 110€/Nacht oder Einzelzimmer für 77€/Nacht.",
-
-    "hotel_recoletos_desc": "Dieses 4-Sterne-Hotel befindet sich ebenfalls an der Acera de Recoletos und bietet unseren Gästen Sonderpreise inklusive Frühstück.",
-    "hotel_recoletos_booking": "Um die Sonderpreise zu erhalten (Doppelzimmer: 107€+MwSt., Einzelzimmer: 95€+MwSt.), müssen Sie eine E-Mail an das Hotel unter <strong>comercial@valladolidrecoletos.com</strong> senden und dabei unsere Hochzeit sowie den Rabattcode <strong>JessicaJuanma2026</strong> erwähnen.",
-
-    "hotel_enara_desc": "Ein stilvolles 4-Sterne-Boutique-Hotel in einem historischen Gebäude im Herzen der Stadt, direkt an der Plaza Mayor.",
-    "hotel_enara_booking": "Das Hotel hat angeboten, einen Aktionscode für einen <strong>10% Rabatt</strong> für unsere Gäste zu erstellen. Bitte kontaktieren Sie sie direkt unter <strong>rec.enara@elehoteles.es</strong> unter Erwähnung unserer Hochzeit, um den Code und die Verfügbarkeit zu erfragen.",
-
-    "accommodations_warning_title": "Wichtig: Frühzeitig buchen!",
-    "accommodations_warning_text": "Bitte beachtet, dass unser Hochzeitswochenende in die Zeit des 'Seminci', des Internationalen Filmfestivals von Valladolid, fällt. Die Stadt ist im Oktober sehr beliebt und zieht viele Touristen an, daher raten wir euch dringend, eure Unterkunft weit im Voraus zu buchen, um Verfügbarkeit und bessere Preise zu gewährleisten."
+    "hotel_colon_desc": "Ein modernes Hotel an der Hauptallee, direkt neben dem Campo Grande Park.",
+    "hotel_colon_booking": "Um einen Rabatt von <strong>10%</strong> auf den Standard-Online-Preis zu erhalten, gehen Sie auf deren Webseite, wählen Sie das Hotel 'Colón-Plaza', Ihre Daten und geben Sie den Promo-Code <strong>BODAS2026</strong> ein.",
+    "hotel_mozart_desc": "Ein charmantes und sehr zentral gelegenes Hotel, perfekt um die Stadt zu Fuß zu erkunden.",
+    "hotel_mozart_booking": "Wir haben 15 Doppelzimmer zu einem festen Preis (110€/Nacht) blockiert. Um zu buchen, müssen Sie das Hotel anrufen (+34 983 297 777) oder eine E-Mail (hotelmozart@hotelmozart.net) senden und die Referenz '<strong>Boda Juanma y Jessica</strong>' angeben. Diese Blockierung ist bis zum 16. September 2026 gültig.",
+    "hotel_recoletos_desc": "Ein klassisches Hotel, ebenfalls in der Nähe des Campo Grande Parks, bekannt für seine komfortablen Zimmer.",
+    "hotel_recoletos_booking": "Um einen Sondertarif zu erhalten (Einzel: 95€, Doppel: 107€, beides +10% MwSt., Frühstück inklusive), senden Sie bitte eine E-Mail an das Hotel unter comercial@valladolidrecoletos.com und geben Sie den Code '<strong>JessicaJuanma2026</strong>' an.",
+    "hotel_enara_desc": "Ein stilvolles Boutique-Hotel direkt am Hauptplatz, der Plaza Mayor.",
+    "hotel_enara_booking": "Das Hotel bietet unseren Gästen einen Rabatt von <strong>10%</strong> auf die Web-Preise. Bitte kontaktieren Sie uns direkt, wenn Sie interessiert sind, und wir werden einen personalisierten Promo-Code für Sie vom Hotel anfordern.",
+    "medina_placeholder_text": "Weitere Empfehlungen für Hotels in Medina del Campo werden in Kürze hinzugefügt.",
+    "hotel_villa_desc": "Ein komfortables und günstiges Hotel in Medina del Campo, was es zu einer großartigen Option für diejenigen macht, die näher am Hochzeitsort übernachten möchten.",
+    "hotel_villa_booking": "Wir haben keinen speziellen Rabattcode für dieses Hotel, aber Sie können direkt über deren Website buchen, um die besten verfügbaren Preise zu erhalten."
 });
 
