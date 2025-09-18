@@ -1,6 +1,6 @@
 Object.assign(translations.en, {
     "travel_page_title": "Travel & Arrival",
-    "travel_intro_1": "For our guests traveling by air, the most convenient airport to fly into is Adolfo Suárez Madrid–Barajas Airport (MAD). From there, you can reach the heart of our celebrations in Castile and León.",
+    "travel_intro_1": "For our guests traveling by air, the most convenient airport to fly into is Adolfo Suárez Madrid–Barajas Airport (MAD). From there, you can travel to the locations of our celebrations in Castile and León.",
     "travel_intro_2": "Our wedding events will be centered around two main locations: Valladolid and Medina del Campo. Please plan your accommodation in one of these two places:",
     "travel_city_valladolid": "<strong>Valladolid:</strong> Juanma's hometown and where we will host the get-together on Friday, October 16th.",
     "travel_city_medina": "<strong>Medina del Campo:</strong> A historic town just 10km away from the wedding venue, where the main event will take place on Saturday, October 17th.",
@@ -21,7 +21,7 @@ Object.assign(translations.en, {
 });
 Object.assign(translations.es, {
     "travel_page_title": "Viaje y Llegada",
-    "travel_intro_1": "Para nuestros invitados que viajan en avión, el aeropuerto más conveniente es el Aeropuerto Adolfo Suárez Madrid–Barajas (MAD). Desde allí, podéis llegar al corazón de nuestras celebraciones en Castilla y León.",
+    "travel_intro_1": "Para nuestros invitados que viajan en avión, el aeropuerto más conveniente es el Aeropuerto Adolfo Suárez Madrid–Barajas (MAD). Desde allí, podéis llegar a los lugares de nuestras celebraciones en Castilla y León.",
     "travel_intro_2": "Los eventos de nuestra boda se centrarán en dos lugares principales: Valladolid y Medina del Campo. Por favor, planificad vuestro alojamiento en uno de estos dos sitios:",
     "travel_city_valladolid": "<strong>Valladolid:</strong> La ciudad natal de Juanma y donde celebraremos la preboda el viernes 16 de octubre.",
     "travel_city_medina": "<strong>Medina del Campo:</strong> Una villa histórica a solo 10 km del lugar de la boda, donde tendrá lugar el evento principal el sábado 17 de octubre.",
@@ -42,7 +42,7 @@ Object.assign(translations.es, {
 });
 Object.assign(translations.de, {
     "travel_page_title": "Anreise",
-    "travel_intro_1": "Für unsere Gäste, die mit dem Flugzeug anreisen, ist der Flughafen Adolfo Suárez Madrid–Barajas (MAD) am besten geeignet. Von dort aus könnt ihr das Herz unserer Feierlichkeiten in Kastilien und León erreichen.",
+    "travel_intro_1": "Für unsere Gäste, die mit dem Flugzeug anreisen, ist der Flughafen Adolfo Suárez Madrid–Barajas (MAD) am besten geeignet. Von dort aus erreicht ihr die Orte unserer Feierlichkeiten in Kastilien und León.",
     "travel_intro_2": "Unsere Hochzeitsfeierlichkeiten konzentrieren sich auf zwei Hauptschauplätze: Valladolid und Medina del Campo. Bitte plant eure Unterkunft in einem dieser beiden Orte:",
     "travel_city_valladolid": "<strong>Valladolid:</strong> Juanmas Heimatstadt und der Ort, an dem wir am Freitag, den 16. Oktober, unser Get-Together veranstalten.",
     "travel_city_medina": "<strong>Medina del Campo:</strong> Eine historische Stadt, nur 10 km vom Hochzeitsort entfernt, wo am Samstag, den 17. Oktober, die Hauptveranstaltung stattfindet.",
