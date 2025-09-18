@@ -11,7 +11,7 @@ Object.assign(translations.en, {
     "book_now_btn": "Book Now",
     "visit_website_btn": "Visit Website",
     "contact_hotel_btn": "Contact Hotel",
-    "hotel_colon_desc": "A modern hotel located on the main avenue (Acera de Recoletos), right next to Campo Grande park.",
+    "hotel_colon_desc": "A modern hotel on the main avenue (Acera de Recoletos), right next to Campo Grande park.",
     "hotel_colon_booking": "To get a <strong>10% discount</strong> on the standard online rate, go to their website, select the 'Colón-Plaza' hotel, choose your dates, and enter the promotional code <strong>BODAS2026</strong>.",
     "hotel_mozart_desc": "A charming and very centrally located hotel, perfect for exploring the city on foot.",
     "hotel_mozart_booking": "We have blocked 15 double rooms at a fixed rate (110€/night). To book, you must call the hotel at (+34 983 297 777) or email (hotelmozart@hotelmozart.net) and mention the reference '<strong>Boda Juanma y Jessica</strong>'. This block is valid until September 16, 2026.",
@@ -21,7 +21,7 @@ Object.assign(translations.en, {
     "hotel_enara_booking": "The hotel offers a <strong>10% discount</strong> on their web rates for our guests. Please contact us directly if you are interested, and we will request a personalized promotional code for you from the hotel.",
     "medina_placeholder_text": "More recommendations for hotels in Medina del Campo will be added soon.",
     "hotel_villa_desc": "A comfortable and convenient hotel located in Medina del Campo, making it a great option for those who wish to stay closer to the wedding venue.",
-    "hotel_villa_booking": "We have blocked rooms at a special rate (Single: 57€/night, Double: 86€/night, Triple: 99€/night). To book, please call the hotel at (+34 983 80 02 54) or email (info@villadeferias.com) and mention the reference '<strong>Boda Juanma y Jessica</strong>'."
+    "hotel_villa_booking": "We have blocked rooms at a special rate (Single room: 57€/night, Double room: 86€/night, Triple room: 99€/night). To book, please call the hotel at (+34 983 80 02 54) or send an email (info@villadeferias.com) and mention the reference '<strong>Boda Juanma y Jessica</strong>'."
 });
 Object.assign(translations.es, {
     "accommodations_page_title": "Alojamiento",
@@ -46,7 +46,7 @@ Object.assign(translations.es, {
     "hotel_enara_booking": "El hotel ofrece un <strong>10% de descuento</strong> sobre sus tarifas web para nuestros invitados. Por favor, contactadnos directamente si estáis interesados y solicitaremos un código promocional personalizado para vosotros.",
     "medina_placeholder_text": "Próximamente se añadirán más recomendaciones de hoteles en Medina del Campo.",
     "hotel_villa_desc": "Un hotel cómodo y práctico situado en Medina del Campo, lo que lo convierte en una opción fantástica para aquellos que deseen alojarse más cerca del lugar de la boda.",
-    "hotel_villa_booking": "Hemos bloqueado habitaciones con una tarifa especial (Individual: 57€/noche, Doble: 86€/noche, Triple: 99€/noche). Para reservar, debéis llamar al hotel (+34 983 80 02 54) o enviar un email (info@villadeferias.com) mencionando la referencia '<strong>Boda Juanma y Jessica</strong>'."
+    "hotel_villa_booking": "Hemos bloqueado habitaciones con una tarifa especial (Habitación individual: 57€/noche, Habitación doble: 86€/noche, Habitación triple: 99€/noche). Para reservar, por favor, llamad al hotel (+34 983 80 02 54) o enviad un email (info@villadeferias.com) mencionando la referencia '<strong>Boda Juanma y Jessica</strong>'."
 });
 Object.assign(translations.de, {
     "accommodations_page_title": "Unterkünfte",
