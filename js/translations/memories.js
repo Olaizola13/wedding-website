@@ -9,7 +9,7 @@ Object.assign(translations.en, {
 Object.assign(translations.es, {
     "memories_page_title": "Comparte Tus Recuerdos",
     "memories_intro": "¡Uno de los mejores regalos que podéis darnos es compartir los maravillosos momentos que capturéis! Hemos creado álbumes compartidos donde podéis subir fácilmente vuestras fotos y vídeos tanto de la preboda como del día de la boda.",
-    "memories_note": "Por favor, elige el álbum que mejor se adapte a tu dispositivo. Se requiere una cuenta de Google para el álbum de Google Fotos.",
+    "memories_note": "Por favor, elegid el álbum que mejor se adapte a vuestro dispositivo. Se requiere una cuenta de Google para el álbum de Google Fotos.",
     "memories_google_button": "Álbum de Google Fotos",
     "memories_icloud_button": "Álbum Compartido de iCloud",
     "memories_thanks": "¡Estamos deseando ver el día a través de vuestros ojos!"
@@ -17,8 +17,9 @@ Object.assign(translations.es, {
 Object.assign(translations.de, {
     "memories_page_title": "Teile deine Erinnerungen",
     "memories_intro": "Eines der größten Geschenke, die ihr uns machen könnt, ist, die wundervollen Momente zu teilen, die ihr festhaltet! Wir haben gemeinsame Alben erstellt, in die ihr ganz einfach eure Fotos und Videos vom Get-Together und vom Hochzeitstag hochladen könnt.",
-    "memories_note": "Bitte wähle das Album, das am besten zu deinem Gerät passt. Für das Google Fotos-Album ist ein Google-Konto erforderlich.",
+    "memories_note": "Bitte wählt das Album, das am besten zu eurem Gerät passt. Für das Google Fotos-Album ist ein Google-Konto erforderlich.",
     "memories_google_button": "Google Fotos Album",
     "memories_icloud_button": "Geteiltes iCloud Album",
     "memories_thanks": "Wir können es kaum erwarten, den Tag durch eure Augen zu sehen!"
 });
+
