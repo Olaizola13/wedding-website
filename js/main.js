@@ -1,124 +1,117 @@
-<!DOCTYPE html>
-<html lang="">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-key="page_title"></title>
-    <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
-    <link rel="shortcut icon" href="/icons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="J&J" />
-    <link rel="manifest" href="/icons/site.webmanifest" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="subpage-nav">
-        <a href="/wedding.html" data-key="nav_back_to_main"></a>
-    </nav>
-    <header class="subpage-header">
-        <img src="/images/icon_accommodations.webp" alt="Accommodation Icon">
-        <h1 data-key="accommodations_page_title"></h1>
-    </header>
-    <main class="container">
-        <p class="intro-text" data-key="accommodations_intro"></p>
-        <img src="/images/map_accomodations.webp" alt="Map of hotel areas" class="map-image">
+document.addEventListener('DOMContentLoaded', () => {
+
+    const setLanguage = (language) => {
+        const elements = document.querySelectorAll('[data-key]');
         
-        <div class="hotel-recommendations">
-            
-            <div class="city-hotel-group">
-                <div class="collapsible-header">
-                    <h2 data-key="hotels_in_valladolid"></h2>
-                    <svg class="toggle-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
-                </div>
-                <div class="collapsible-wrapper">
-                    <div class="collapsible-content">
-                        <!-- Hotel 1: Colón Plaza -->
-                        <div class="hotel-card">
-                            <div class="hotel-header">
-                                <h3>Hotel Colón Plaza ****</h3>
-                                <span class="hotel-location" data-key="location_recoletos"></span>
-                            </div>
-                            <p data-key="hotel_colon_desc"></p>
-                            <div class="booking-info">
-                                <h4 data-key="booking_info_title"></h4>
-                                <p data-key="hotel_colon_booking"></p>
-                                <a href="http://www.hotelesvalladolid.es" target="_blank" class="hotel-link" data-key="book_now_btn"></a>
-                            </div>
-                        </div>
+        elements.forEach(element => {
+            const key = element.getAttribute('data-key');
+            if (translations[language] && translations[language][key]) {
+                element.innerHTML = translations[language][key];
+            }
+        });
 
-                        <!-- Hotel 2: Mozart -->
-                        <div class="hotel-card">
-                            <div class="hotel-header">
-                                <h3>Hotel Mozart ***</h3>
-                                <span class="hotel-location" data-key="location_center"></span>
-                            </div>
-                            <p data-key="hotel_mozart_desc"></p>
-                            <div class="booking-info">
-                                <h4 data-key="booking_info_title"></h4>
-                                <p data-key="hotel_mozart_booking"></p>
-                                <a href="http://www.hotelmozart.net" target="_blank" class="hotel-link" data-key="visit_website_btn"></a>
-                            </div>
-                        </div>
+        document.documentElement.lang = language;
+        
+        const links = document.querySelectorAll('a[href]');
+        links.forEach(link => {
+            if (link.closest('.language-switcher')) {
+                return;
+            }
 
-                        <!-- Hotel 3: Recoletos -->
-                        <div class="hotel-card">
-                            <div class="hotel-header">
-                                <h3>Hotel Valladolid Recoletos ****</h3>
-                                <span class="hotel-location" data-key="location_recoletos"></span>
-                            </div>
-                            <p data-key="hotel_recoletos_desc"></p>
-                            <div class="booking-info">
-                                <h4 data-key="booking_info_title"></h4>
-                                <p data-key="hotel_recoletos_booking"></p>
-                                <a href="mailto:comercial@valladolidrecoletos.com" class="hotel-link" data-key="contact_hotel_btn"></a>
-                            </div>
-                        </div>
-                        
-                        <!-- Hotel 4: Enara -->
-                        <div class="hotel-card">
-                            <div class="hotel-header">
-                                <h3>ELE Enara Boutique Hotel ****</h3>
-                                <span class="hotel-location" data-key="location_center"></span>
-                            </div>
-                            <p data-key="hotel_enara_desc"></p>
-                            <div class="booking-info">
-                                <h4 data-key="booking_info_title"></h4>
-                                <p data-key="hotel_enara_booking"></p>
-                                <a href="http://www.eleenaraaboutiquehotel.com" target="_blank" class="hotel-link" data-key="visit_website_btn"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            try {
+                const url = new URL(link.href, window.location.origin);
+                if (url.pathname.endsWith('.html')) {
+                    const urlParams = new URLSearchParams(url.search);
+                    urlParams.set('lang', language);
+                    url.search = urlParams.toString();
+                    link.href = url.href;
+                }
+            } catch (e) {
+                // Ignore invalid URLs
+            }
+        });
+    };
 
-            <div class="city-hotel-group">
-                 <div class="collapsible-header">
-                    <h2 data-key="hotels_in_medina"></h2>
-                    <svg class="toggle-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
-                </div>
-                <div class="collapsible-wrapper">
-                    <div class="collapsible-content">
-                        <div class="hotel-card placeholder-card">
-                            <p data-key="medina_placeholder_text"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    const urlParams = new URLSearchParams(window.location.search);
+    let language = urlParams.get('lang');
 
-        </div>
+    if (!language) {
+        language = localStorage.getItem('language');
+    }
+    
+    if (!['en', 'es', 'de'].includes(language)) {
+        language = 'en'; 
+    }
 
-        <div class="warning-card">
-            <h3 data-key="accommodations_warning_title"></h3>
-            <p data-key="accommodations_warning_text"></p>
-        </div>
-    </main>
-    <script src="/js/translations/common.js"></script>
-    <script src="/js/translations/accommodations.js"></script>
-    <script src="/js/main.js"></script>
-</body>
-</html>
+    localStorage.setItem('language', language);
+    
+    setLanguage(language);
 
+    // --- Collapsible section logic ---
+    const eventCard = document.querySelector('.event-details-card');
+    if (eventCard) {
+        const clickableHeader = eventCard.querySelector('.event-card-header');
+        const clickableArrow = eventCard.querySelector('.toggle-arrow-container');
+        const toggleExpansion = (e) => {
+            e.stopPropagation(); 
+            eventCard.classList.toggle('expanded');
+        };
+        if (clickableHeader) clickableHeader.addEventListener('click', toggleExpansion);
+        if (clickableArrow) clickableArrow.addEventListener('click', toggleExpansion);
+    }
+
+    // --- Countdown timer logic ---
+    const countdownElement = document.getElementById('countdown-timer');
+    if (countdownElement) {
+        const weddingDate = new Date('2026-10-17T13:00:00').getTime();
+
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            if (distance < 0) {
+                countdownElement.innerHTML = `<div class="countdown-label" data-key="countdown_married"></div>`;
+                setLanguage(localStorage.getItem('language') || 'en');
+                clearInterval(countdownInterval);
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        };
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+    }
+
+    // --- Song Request Form Logic ---
+    const songRequestForm = document.getElementById('song-request-form');
+    if (songRequestForm) {
+        songRequestForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const successMessage = document.getElementById('form-success-message');
+            this.style.display = 'none';
+            successMessage.style.display = 'block';
+        });
+    }
+
+    // --- Collapsible hotel sections logic ---
+    const hotelGroups = document.querySelectorAll('.city-hotel-group');
+    if (hotelGroups.length > 0) {
+        hotelGroups.forEach(group => {
+            const header = group.querySelector('.collapsible-header');
+            if (header) {
+                header.addEventListener('click', () => {
+                    group.classList.toggle('expanded');
+                });
+            }
+        });
+    }
+});
