@@ -22,3 +22,4 @@ Object.assign(translations.de, {
     "gifts_bank_holder": "Kontoinhaber",
     "gifts_thank_you": "Vielen herzlichen Dank für eure Liebe und Großzügigkeit!"
 });
+
