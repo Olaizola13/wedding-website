@@ -1,6 +1,6 @@
 Object.assign(translations.en, {
     "accommodations_page_title": "Accommodation",
-    "accommodations_intro": "We highly recommend our guests stay in Valladolid. It's Juanma's beautiful hometown and the city that has the most to offer in terms of culture, food, and atmosphere. The Get-Together on Friday will also be held here.",
+    "accommodations_intro": "We highly recommend our guests stay in Valladolid. It's Juanma's hometown and the city that has the most to offer in terms of culture, food, and atmosphere. The Get-Together on Friday will also be held here.",
     "accommodations_warning_title": "Important: Book in Advance!",
     "accommodations_warning_text": "Please keep in mind that our wedding is around the time of 'Seminci', the Valladolid International Film Festival. The city is very popular in October and attracts a lot of tourism, so we strongly advise you to book your accommodation well in advance to ensure availability and better prices.",
     "hotels_in_valladolid": "Hotels in Valladolid",
@@ -11,7 +11,7 @@ Object.assign(translations.en, {
     "book_now_btn": "Book Now",
     "visit_website_btn": "Visit Website",
     "contact_hotel_btn": "Contact Hotel",
-    "hotel_colon_desc": "A modern hotel located on the main avenue, right next to Campo Grande park.",
+    "hotel_colon_desc": "A modern hotel located on the main avenue (Acera de Recoletos), right next to Campo Grande park.",
     "hotel_colon_booking": "To get a <strong>10% discount</strong> on the standard online rate, go to their website, select the 'Colón-Plaza' hotel, choose your dates, and enter the promotional code <strong>BODAS2026</strong>.",
     "hotel_mozart_desc": "A charming and very centrally located hotel, perfect for exploring the city on foot.",
     "hotel_mozart_booking": "We have blocked 15 double rooms at a fixed rate (110€/night). To book, you must call the hotel at (+34 983 297 777) or email (hotelmozart@hotelmozart.net) and mention the reference '<strong>Boda Juanma y Jessica</strong>'. This block is valid until September 16, 2026.",
@@ -25,7 +25,7 @@ Object.assign(translations.en, {
 });
 Object.assign(translations.es, {
     "accommodations_page_title": "Alojamiento",
-    "accommodations_intro": "Recomendamos encarecidamente a nuestros invitados que se alojen en Valladolid. Es la preciosa ciudad natal de Juanma y la que más tiene que ofrecer en cuanto a cultura, gastronomía y ambiente. La preboda del viernes también se celebrará aquí.",
+    "accommodations_intro": "Recomendamos encarecidamente a nuestros invitados que se alojen en Valladolid. Es la ciudad natal de Juanma y la que más tiene que ofrecer en cuanto a cultura, gastronomía y ambiente. La preboda del viernes también se celebrará aquí.",
     "accommodations_warning_title": "Importante: ¡Reservad con Antelación!",
     "accommodations_warning_text": "Por favor, tened en cuenta que nuestra boda es en fechas cercanas a la 'Seminci', el Festival Internacional de Cine de Valladolid. La ciudad es muy popular en octubre y atrae mucho turismo, por lo que os aconsejamos encarecidamente que reservéis vuestro alojamiento con bastante antelación para asegurar disponibilidad y mejores precios.",
     "hotels_in_valladolid": "Hoteles en Valladolid",
@@ -36,7 +36,7 @@ Object.assign(translations.es, {
     "book_now_btn": "Reservar Ahora",
     "visit_website_btn": "Visitar Web",
     "contact_hotel_btn": "Contactar Hotel",
-    "hotel_colon_desc": "Un hotel moderno situado en la avenida principal, justo al lado del parque Campo Grande.",
+    "hotel_colon_desc": "Un hotel moderno situado en la avenida principal (Acera de Recoletos), justo al lado del parque Campo Grande.",
     "hotel_colon_booking": "Para obtener un <strong>10% de descuento</strong> sobre la tarifa online, id a su web, seleccionad el hotel 'Colón-Plaza', elegid las fechas e introducid el código promocional <strong>BODAS2026</strong>.",
     "hotel_mozart_desc": "Un hotel con encanto y muy céntrico, perfecto para explorar la ciudad a pie.",
     "hotel_mozart_booking": "Hemos bloqueado 15 habitaciones dobles a un precio fijo (110€/noche). Para reservar, debéis llamar al hotel (+34 983 297 777) o enviar un email (hotelmozart@hotelmozart.net) y mencionar la referencia '<strong>Boda Juanma y Jessica</strong>'. Este bloqueo es válido hasta el 16 de septiembre de 2026.",
@@ -73,3 +73,4 @@ Object.assign(translations.de, {
     "hotel_villa_desc": "Ein komfortables und günstiges Hotel in Medina del Campo, was es zu einer großartigen Option für diejenigen macht, die näher am Hochzeitsort übernachten möchten.",
     "hotel_villa_booking": "Wir haben Zimmer zu einem Sonderpreis blockiert (Einzelzimmer: 57€/Nacht, Doppelzimmer: 86€/Nacht, Dreibettzimmer: 99€/Nacht). Um zu buchen, ruft bitte das Hotel unter (+34 983 80 02 54) an oder sendet eine E-Mail (info@villadeferias.com) mit dem Hinweis '<strong>Boda Juanma y Jessica</strong>'."
 });
+
