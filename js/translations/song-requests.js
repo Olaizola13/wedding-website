@@ -9,19 +9,20 @@ Object.assign(translations.en, {
 });
 Object.assign(translations.es, {
     "song_requests_page_title": "Peticiones Musicales",
-    "song_requests_intro": "¿Tienes una canción que te haga salir a la pista de baile? ¡Dínoslo! Nos encantaría incluir vuestras canciones favoritas en nuestra lista de reproducción.",
-    "form_label_name": "Tu Nombre",
+    "song_requests_intro": "¿Tenéis una canción que os haga salir a la pista de baile? ¡Decídnoslo! Nos encantaría incluir vuestras canciones favoritas en nuestra lista de reproducción.",
+    "form_label_name": "Vuestro Nombre",
     "form_label_artist": "Artista",
     "form_label_song": "Título de la Canción",
     "form_submit_button": "Enviar Petición",
-    "form_success_message": "¡Gracias! Tu canción ha sido añadida a nuestra lista."
+    "form_success_message": "¡Gracias! Vuestra canción ha sido añadida a nuestra lista."
 });
 Object.assign(translations.de, {
     "song_requests_page_title": "Musikwünsche",
-    "song_requests_intro": "Hast du einen Song, der dich auf die Tanzfläche lockt? Lass es uns wissen! Wir würden uns freuen, eure Lieblingslieder in unsere Party-Playlist aufzunehmen.",
-    "form_label_name": "Dein Name",
+    "song_requests_intro": "Habt ihr einen Song, der euch auf die Tanzfläche lockt? Lasst es uns wissen! Wir würden uns freuen, eure Lieblingslieder in unsere Party-Playlist aufzunehmen.",
+    "form_label_name": "Euer Name",
     "form_label_artist": "Künstler",
     "form_label_song": "Songtitel",
     "form_submit_button": "Wunsch abschicken",
-    "form_success_message": "Vielen Dank! Dein Song wurde unserer Liste hinzugefügt."
+    "form_success_message": "Vielen Dank! Euer Song wurde unserer Liste hinzugefügt."
 });
+
