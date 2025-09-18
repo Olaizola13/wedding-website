@@ -657,6 +657,81 @@ footer {
     object-fit: contain;
 }
 
+/* --- Hotel Recommendations --- */
+.hotel-recommendations h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--color-dark);
+}
+
+.hotel-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border-left: 4px solid var(--color-primary);
+}
+
+.hotel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.hotel-header h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--color-dark);
+}
+
+.hotel-location {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: var(--color-secondary);
+    background-color: #f0f4f6;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.booking-info {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.booking-info h4 {
+    margin: 0 0 10px 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.booking-info p {
+    margin-bottom: 20px;
+}
+
+.hotel-link {
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.hotel-link:hover {
+    background-color: var(--color-dark);
+}
+
+
 @media (min-width: 600px) {
     .memories-button-container {
         flex-direction: row;
