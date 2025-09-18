@@ -5,8 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
         
         elements.forEach(element => {
             const key = element.getAttribute('data-key');
+            // Check if the key exists in the current language, or fallback to English
+            let translationText = '';
             if (translations[language] && translations[language][key]) {
-                element.innerHTML = translations[language][key];
+                translationText = translations[language][key];
+            } else if (translations['en'] && translations['en'][key]) {
+                // Fallback to English if the key is not found in the selected language
+                translationText = translations['en'][key];
+            }
+            
+            if (translationText) {
+                element.innerHTML = translationText;
             }
         });
 
@@ -14,12 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const links = document.querySelectorAll('a[href]');
         links.forEach(link => {
+            // Do not append lang to the language switcher links
             if (link.closest('.language-switcher')) {
                 return;
             }
 
             try {
                 const url = new URL(link.href, window.location.origin);
+                // only modify local html links
                 if (url.pathname.endsWith('.html')) {
                     const urlParams = new URLSearchParams(url.search);
                     urlParams.set('lang', language);
@@ -27,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     link.href = url.href;
                 }
             } catch (e) {
-                // Ignore invalid URLs
+                // Catches invalid URLs (like mailto:) and ignores them
             }
         });
     };
@@ -39,15 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
         language = localStorage.getItem('language');
     }
     
+    // Default to English if no valid language is set
     if (!['en', 'es', 'de'].includes(language)) {
         language = 'en'; 
     }
 
     localStorage.setItem('language', language);
     
+    // Ensure all translation files are loaded before setting the language
+    // This is a simple approach; more complex sites might need promises or callbacks
+    // For this project, assuming scripts are loaded sequentially is okay.
     setLanguage(language);
 
-    // --- Collapsible section logic ---
+    // --- Collapsible section logic for main page ---
     const eventCard = document.querySelector('.event-details-card');
     if (eventCard) {
         const clickableHeader = eventCard.querySelector('.event-card-header');
@@ -60,6 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (clickableArrow) clickableArrow.addEventListener('click', toggleExpansion);
     }
 
+    // --- Collapsible section logic for accommodation page hotels ---
+    const hotelSections = document.querySelectorAll('.collapsible-hotel-section');
+    hotelSections.forEach(section => {
+        const header = section.querySelector('.collapsible-hotel-header');
+        header.addEventListener('click', () => {
+            section.classList.toggle('expanded');
+        });
+    });
+
     // --- Countdown timer logic ---
     const countdownElement = document.getElementById('countdown-timer');
     if (countdownElement) {
@@ -70,8 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const distance = weddingDate - now;
 
             if (distance < 0) {
+                // Ensure the "We are married!" text is translatable
                 countdownElement.innerHTML = `<div class="countdown-label" data-key="countdown_married"></div>`;
-                setLanguage(localStorage.getItem('language') || 'en');
+                setLanguage(localStorage.getItem('language') || 'en'); // Re-apply translations
                 clearInterval(countdownInterval);
                 return;
             }
@@ -90,29 +115,32 @@ document.addEventListener('DOMContentLoaded', () => {
         const countdownInterval = setInterval(updateCountdown, 1000);
         updateCountdown();
     }
+    
+    // --- History Page Tab Logic ---
+    const historyTabsContainer = document.querySelector('.icon-tabs');
+    if (historyTabsContainer) {
+        const tabButtons = document.querySelectorAll('.icon-tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
 
-    // --- Song Request Form Logic ---
-    const songRequestForm = document.getElementById('song-request-form');
-    if (songRequestForm) {
-        songRequestForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const successMessage = document.getElementById('form-success-message');
-            this.style.display = 'none';
-            successMessage.style.display = 'block';
-        });
-    }
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.dataset.tab;
 
-    // --- Collapsible hotel sections logic ---
-    const hotelGroups = document.querySelectorAll('.city-hotel-group');
-    if (hotelGroups.length > 0) {
-        hotelGroups.forEach(group => {
-            const header = group.querySelector('.collapsible-header');
-            if (header) {
-                header.addEventListener('click', () => {
-                    group.classList.toggle('expanded');
+                // Update button states
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Update content visibility
+                tabContents.forEach(content => {
+                    if (content.id === targetTab) {
+                        content.classList.add('active');
+                    } else {
+                        content.classList.remove('active');
+                    }
                 });
-            }
+            });
         });
     }
+
 });
 
