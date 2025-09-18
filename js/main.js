@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('load', () => {
 
     const setLanguage = (language) => {
         const elements = document.querySelectorAll('[data-key]');
@@ -115,3 +115,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
