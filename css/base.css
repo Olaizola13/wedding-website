@@ -1,0 +1,129 @@
+:root {
+    --color-background: #f8f5f2;
+    --color-text: #363c48;
+    --color-primary: #d1a3a4;
+    --color-secondary: #88a0a8;
+    --color-accent: #E0B4A2;
+    --color-dark: #363c48;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Apply Nunito font ONLY to the main content area of sub-pages */
+.container p,
+.container li {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+
+/* Language Switcher */
+.language-switcher {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.language-switcher a {
+    display: block;
+    line-height: 0;
+    transition: transform 0.2s ease;
+}
+
+.language-switcher a:hover {
+    transform: scale(1.15);
+}
+
+.language-switcher img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sub-page & Footer */
+.subpage-nav {
+    background-color: var(--color-dark);
+    padding: 15px;
+    text-align: center;
+}
+
+.subpage-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.attribution a {
+    color: var(--color-accent);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+/* Sub-page Header */
+.subpage-header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+    overflow-x: hidden; /* Add failsafe to prevent horizontal scroll */
+}
+.subpage-header img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+.subpage-header h1 {
+    font-size: clamp(1.8rem, 10vw, 3.5rem);
+    color: var(--color-dark);
+    overflow-wrap: break-word; /* Ensure long words break to prevent overflow */
+    word-break: break-word; /* Better compatibility for word breaking */
+}
+
+/* =================================== */
+/* --- GLOBAL MEDIA QUERIES --- */
+/* =================================== */
+
+@media (min-width: 769px) {
+    /* Potential desktop-specific global styles could go here if needed */
+}
+
+@media (max-width: 600px) {
+    /* Potential mobile-specific global styles could go here if needed */
+}
