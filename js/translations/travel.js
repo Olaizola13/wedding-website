@@ -43,21 +43,21 @@ Object.assign(translations.es, {
 Object.assign(translations.de, {
     "travel_page_title": "Anreise",
     "travel_intro_1": "Für unsere Gäste, die mit dem Flugzeug anreisen, ist der Flughafen Adolfo Suárez Madrid–Barajas (MAD) am besten geeignet. Von dort aus könnt ihr das Herz unserer Feierlichkeiten in Kastilien und León erreichen.",
-    "travel_intro_2": "Unsere Hochzeitsfeierlichkeiten konzentrieren sich auf zwei Hauptstädte. Bitte plant eure Unterkunft in einer dieser beiden Städte:",
-    "travel_city_valladolid": "<strong>Valladolid:</strong> Juanmas wunderschöne Heimatstadt und der Ort, an dem wir am Freitag, den 16. Oktober, unser Get-Together veranstalten.",
+    "travel_intro_2": "Unsere Hochzeitsfeierlichkeiten konzentrieren sich auf zwei Hauptschauplätze: Valladolid und Medina del Campo. Bitte plant eure Unterkunft in einem dieser beiden Orte:",
+    "travel_city_valladolid": "<strong>Valladolid:</strong> Juanmas Heimatstadt und der Ort, an dem wir am Freitag, den 16. Oktober, unser Get-Together veranstalten.",
     "travel_city_medina": "<strong>Medina del Campo:</strong> Eine historische Stadt, nur 10 km vom Hochzeitsort entfernt, wo am Samstag, den 17. Oktober, die Hauptveranstaltung stattfindet.",
     "travel_options_title": "Anreise vom Flughafen Madrid",
-    "travel_option_1_title": "Option 1: Mit dem Hochgeschwindigkeitszug (Empfohlen)",
-    "travel_train_intro": "Spaniens Hochgeschwindigkeitszug ist schnell und bequem. Die Reise besteht aus zwei Teilen: vom Flughafen zum Bahnhof Madrid-Chamartín zu gelangen und dann den Hochgeschwindigkeitszug zu eurem Ziel zu nehmen.",
+    "travel_option_1_title": "Option 1: Mit dem AVE (empfohlen)",
+    "travel_train_intro": "Spaniens AVE ist schnell und bequem. Die Reise besteht aus zwei Teilen: vom Flughafen zum Bahnhof Madrid-Chamartín zu gelangen und dann den AVE zu eurem Ziel zu nehmen.",
     "travel_train_step1_title": "Teil 1: Flughafen (MAD) zum Bahnhof Chamartín",
     "travel_train_from_t4_title": "Wenn ihr am Terminal 4 (T4/T4S) ankommt:",
     "travel_train_from_t4_detail": "Eure beste Option ist der <strong>'Cercanías'-Nahverkehrszug</strong>. Folgt den rot-weißen Schildern zum Bahnhof auf Ebene -1. Am Fahrkartenautomaten wählt ihr Englisch und kauft ein Ticket nach <strong>'Madrid - Chamartín - Clara Campoamor'</strong>. Nehmt die Linie C-1 oder C-10; die Fahrt dauert etwa 20 Minuten.",
     "travel_train_from_t123_title": "Wenn ihr am Terminal 1, 2 oder 3 ankommt:",
     "travel_train_from_t123_detail": "Eure direkteste Option ist die <strong>Metro</strong>. Folgt den Metro-Schildern von der Ankunftshalle. Kauft ein Ticket nach Chamartín (dies beinhaltet einen Flughafenzuschlag). Nehmt die pinke <strong>Linie 8</strong> zur Station 'Nuevos Ministerios'. Dort steigt ihr in die dunkelblaue <strong>Linie 10</strong> um für ein paar Stationen nach Norden bis <strong>'Chamartín'</strong>. Die gesamte Fahrt dauert etwa 30-40 Minuten.",
     "travel_train_step2_title": "Teil 2: Im Bahnhof Chamartín zurechtfinden",
-    "travel_train_step2_detail1": "Im Hauptbahnhof von Chamartín müsst ihr die Gleise für die Hochgeschwindigkeitszüge finden. Achtet auf die großen Abfahrtstafeln und folgt den <strong>großen blauen Pfeilen auf dem Boden und den Schildern 'Alta Velocidad'</strong>.",
-    "travel_train_step2_detail2": "Bevor ihr den Gleisbereich betretet, müsst ihr euer Gepäck durch einen schnellen Sicherheitsscanner geben. Das Gleis ('Vía') für euren Zug wird etwa 20-30 Minuten vor Abfahrt auf den Bildschirmen angezeigt.",
+    "travel_train_step2_detail1": "Im Hauptbahnhof von Chamartín müsst ihr die Gleise für die AVE Züge finden. Achtet auf die großen Abfahrtstafeln und folgt den <strong>großen blauen Pfeilen auf dem Boden und den Schildern 'Alta Velocidad'</strong>.",
+    "travel_train_step2_detail2": "Um in den Wartebereich für die Züge nach Valladolid oder Medina del Campo zu gelangen, müsst ihr durch eine kurze Security Kontrolle (ihr benötigt keine Ausweisdokumente, eure Tickets werden direkt am Gleis von Mitarbeitenden kontrolliert). Das Gleis ('Vía') für euren Zug wird etwa 20-30 Minuten vor Abfahrt auf den Bildschirmen angezeigt.",
     "travel_train_step2_detail3": "Wir empfehlen dringend, die Zugtickets <strong>Wochen im Voraus</strong> auf der <strong>Renfe-Website (www.renfe.com)</strong> zu buchen. Euer Ziel ist entweder <strong>'Valladolid - Campo Grande'</strong> oder <strong>'Medina del Campo AV'</strong>.",
     "travel_option_2_title": "Option 2: Mit dem Mietwagen",
-    "travel_option_2_text": "Ein Mietwagen bietet große Flexibilität. Alle großen Vermieter haben Schalter in den Ankunftshallen von T1 und T4 am Flughafen Madrid. Die Fahrt dauert ca. 2 Stunden, hauptsächlich auf der Autobahn A-6. Beachtet eventuelle Mautgebühren ('peajes'). Wir empfehlen Google Maps oder Waze zur Navigation. Das Parken im Zentrum von Valladolid kann schwierig sein, prüft also, ob euer Hotel Parkplätze anbietet."
+    "travel_option_2_text": "Ein Mietwagen bietet große Flexibilität. Alle großen Vermieter haben Schalter in den Ankunftshallen von T1 und T4 am Flughafen Madrid. Die Fahrt dauert ca. 2 Stunden, hauptsächlich auf der Autobahn A-6. Beachtet eventuelle Mautgebühren ('peajes'). Wir empfehlen euch Google Maps oder Waze zur Navigation. Das Parken im Zentrum von Valladolid kann schwierig sein, prüft also, ob euer Hotel Parkplätze anbietet."
 });
