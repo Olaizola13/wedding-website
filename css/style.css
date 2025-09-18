@@ -666,14 +666,52 @@ footer {
     margin-bottom: 40px;
 }
 
-.city-hotel-group h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: var(--color-dark);
+.city-hotel-group .collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--color-secondary);
+    margin-bottom: 0px;
 }
+
+.city-hotel-group .collapsible-header h2 {
+    margin-bottom: 0;
+    border-bottom: none;
+    text-align: left;
+}
+
+.city-hotel-group .toggle-arrow {
+    width: 36px;
+    height: 36px;
+    color: var(--color-dark);
+    transition: transform 0.4s ease;
+    flex-shrink: 0;
+}
+
+.city-hotel-group.expanded .toggle-arrow {
+    transform: rotate(180deg);
+}
+
+.city-hotel-group .collapsible-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-in-out;
+}
+
+.city-hotel-group.expanded .collapsible-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.city-hotel-group.expanded .collapsible-header {
+    margin-bottom: 30px;
+}
+
+.city-hotel-group .collapsible-content {
+    overflow: hidden;
+}
+
 
 .hotel-card {
     background-color: white;
