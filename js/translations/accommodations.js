@@ -1,7 +1,11 @@
 Object.assign(translations.en, {
     "accommodations_page_title": "Accommodation",
     "accommodations_intro": "We highly recommend our guests stay in Valladolid. It's Juanma's beautiful hometown and the city that has the most to offer in terms of culture, food, and atmosphere. The Get-Together on Friday will also be held here.",
-    "hotel_recs_title": "Our Hotel Recommendations",
+    
+    "hotels_in_valladolid": "Hotels in Valladolid",
+    "hotels_in_medina": "Hotels in Medina del Campo",
+    "medina_placeholder_text": "We are currently finalizing details for recommended hotels in Medina del Campo. Information will be available here soon!",
+
     "location_recoletos": "Recoletos Area",
     "location_center": "City Center",
     "booking_info_title": "How to Book",
@@ -16,7 +20,7 @@ Object.assign(translations.en, {
     "hotel_mozart_booking": "Book directly with the hotel by phone (+34 983 297 777) or email (hotelmozart@hotelmozart.net) and mention the reference <strong>'Boda Juanma y Jessica'</strong> to get the special rates: Double Room for €110/night or Single Room for €77/night.",
 
     "hotel_recoletos_desc": "This 4-star hotel is also on the Acera de Recoletos and offers our guests special rates including breakfast.",
-    "hotel_recoletos_booking": "To get the special rates (Double Room: €107+VAT, Single Room: €95+VAT), you need to email the hotel at <strong>comercial@valladolidrecoletos.com</strong>, mentioning our wedding and accepting their offer. They will then guide you through the booking process.",
+    "hotel_recoletos_booking": "To get the special rates (Double Room: €107+VAT, Single Room: €95+VAT), you need to email the hotel at <strong>comercial@valladolidrecoletos.com</strong>, mentioning our wedding and the discount code <strong>JessicaJuanma2026</strong>.",
 
     "hotel_enara_desc": "A stylish 4-star boutique hotel located in a historic building in the heart of the city, right on the Plaza Mayor.",
     "hotel_enara_booking": "The hotel has offered to create a promotional code for a <strong>10% discount</strong> for our guests. Please contact them directly at <strong>rec.enara@elehoteles.es</strong> mentioning our wedding to inquire about the code and availability.",
@@ -27,7 +31,11 @@ Object.assign(translations.en, {
 Object.assign(translations.es, {
     "accommodations_page_title": "Alojamiento",
     "accommodations_intro": "Recomendamos encarecidamente a nuestros invitados que se alojen en Valladolid. Es la preciosa ciudad natal de Juanma y la que más tiene que ofrecer en cuanto a cultura, gastronomía y ambiente. La preboda del viernes también se celebrará aquí.",
-    "hotel_recs_title": "Nuestros Hoteles Recomendados",
+
+    "hotels_in_valladolid": "Hoteles en Valladolid",
+    "hotels_in_medina": "Hoteles en Medina del Campo",
+    "medina_placeholder_text": "Estamos finalizando los detalles de los hoteles recomendados en Medina del Campo. ¡La información estará disponible aquí pronto!",
+
     "location_recoletos": "Zona Recoletos",
     "location_center": "Centro Ciudad",
     "booking_info_title": "Cómo Reservar",
@@ -42,7 +50,7 @@ Object.assign(translations.es, {
     "hotel_mozart_booking": "Reservad directamente con el hotel por teléfono (+34 983 297 777) o email (hotelmozart@hotelmozart.net) y mencionad la referencia <strong>'Boda Juanma y Jessica'</strong> para obtener las tarifas especiales: Habitación Doble por 110€/noche o Individual por 77€/noche.",
 
     "hotel_recoletos_desc": "Este hotel de 4 estrellas también se encuentra en la Acera de Recoletos y ofrece a nuestros invitados tarifas especiales con desayuno incluido.",
-    "hotel_recoletos_booking": "Para obtener las tarifas especiales (Doble: 107€+IVA, Individual: 95€+IVA), debéis enviar un email al hotel a <strong>comercial@valladolidrecoletos.com</strong>, mencionando nuestra boda y aceptando su propuesta. Ellos os guiarán en el proceso de reserva.",
+    "hotel_recoletos_booking": "Para obtener las tarifas especiales (Doble: 107€+IVA, Individual: 95€+IVA), debéis enviar un email al hotel a <strong>comercial@valladolidrecoletos.com</strong>, mencionando nuestra boda y el código de descuento <strong>JessicaJuanma2026</strong>.",
 
     "hotel_enara_desc": "Un elegante hotel boutique de 4 estrellas situado en un edificio histórico en el corazón de la ciudad, en la misma Plaza Mayor.",
     "hotel_enara_booking": "El hotel se ha ofrecido a crear un código promocional con un <strong>10% de descuento</strong> para nuestros invitados. Por favor, contactadles directamente en <strong>rec.enara@elehoteles.es</strong> mencionando nuestra boda para solicitar el código y consultar disponibilidad.",
@@ -53,7 +61,11 @@ Object.assign(translations.es, {
 Object.assign(translations.de, {
     "accommodations_page_title": "Unterkünfte",
     "accommodations_intro": "Wir empfehlen unseren Gästen dringend, in Valladolid zu übernachten. Es ist Juanmas wunderschöne Heimatstadt und die Stadt, die in Bezug auf Kultur, Essen und Atmosphäre am meisten zu bieten hat. Das Get-Together am Freitag wird ebenfalls hier stattfinden.",
-    "hotel_recs_title": "Unsere Hotel-Empfehlungen",
+
+    "hotels_in_valladolid": "Hotels in Valladolid",
+    "hotels_in_medina": "Hotels in Medina del Campo",
+    "medina_placeholder_text": "Wir klären gerade die letzten Details für empfohlene Hotels in Medina del Campo. Die Informationen werden hier in Kürze verfügbar sein!",
+
     "location_recoletos": "Recoletos-Viertel",
     "location_center": "Stadtzentrum",
     "booking_info_title": "Buchungsinformationen",
@@ -68,7 +80,7 @@ Object.assign(translations.de, {
     "hotel_mozart_booking": "Buchen Sie direkt beim Hotel per Telefon (+34 983 297 777) oder E-Mail (hotelmozart@hotelmozart.net) und geben Sie den Hinweis <strong>'Boda Juanma y Jessica'</strong> an, um die Sonderpreise zu erhalten: Doppelzimmer für 110€/Nacht oder Einzelzimmer für 77€/Nacht.",
 
     "hotel_recoletos_desc": "Dieses 4-Sterne-Hotel befindet sich ebenfalls an der Acera de Recoletos und bietet unseren Gästen Sonderpreise inklusive Frühstück.",
-    "hotel_recoletos_booking": "Um die Sonderpreise zu erhalten (Doppelzimmer: 107€+MwSt., Einzelzimmer: 95€+MwSt.), müssen Sie eine E-Mail an das Hotel unter <strong>comercial@valladolidrecoletos.com</strong> senden, unsere Hochzeit erwähnen und ihr Angebot annehmen. Sie werden Sie dann durch den Buchungsprozess führen.",
+    "hotel_recoletos_booking": "Um die Sonderpreise zu erhalten (Doppelzimmer: 107€+MwSt., Einzelzimmer: 95€+MwSt.), müssen Sie eine E-Mail an das Hotel unter <strong>comercial@valladolidrecoletos.com</strong> senden und dabei unsere Hochzeit sowie den Rabattcode <strong>JessicaJuanma2026</strong> erwähnen.",
 
     "hotel_enara_desc": "Ein stilvolles 4-Sterne-Boutique-Hotel in einem historischen Gebäude im Herzen der Stadt, direkt an der Plaza Mayor.",
     "hotel_enara_booking": "Das Hotel hat angeboten, einen Aktionscode für einen <strong>10% Rabatt</strong> für unsere Gäste zu erstellen. Bitte kontaktieren Sie sie direkt unter <strong>rec.enara@elehoteles.es</strong> unter Erwähnung unserer Hochzeit, um den Code und die Verfügbarkeit zu erfragen.",
@@ -76,3 +88,4 @@ Object.assign(translations.de, {
     "accommodations_warning_title": "Wichtig: Frühzeitig buchen!",
     "accommodations_warning_text": "Bitte beachtet, dass unser Hochzeitswochenende in die Zeit des 'Seminci', des Internationalen Filmfestivals von Valladolid, fällt. Die Stadt ist im Oktober sehr beliebt und zieht viele Touristen an, daher raten wir euch dringend, eure Unterkunft weit im Voraus zu buchen, um Verfügbarkeit und bessere Preise zu gewährleisten."
 });
+
