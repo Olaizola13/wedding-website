@@ -413,9 +413,10 @@ footer {
     margin-bottom: 20px;
 }
 .subpage-header h1 {
-    font-size: 3.5rem;
+    font-size: clamp(1.8rem, 10vw, 3.5rem);
     color: var(--color-dark);
     overflow-wrap: break-word; /* Ensure long words break to prevent overflow */
+    word-break: break-word; /* Better compatibility for word breaking */
 }
 
 /* RSVP Page Styles */
@@ -929,10 +930,6 @@ footer {
 
 
 @media (max-width: 600px) {
-    .subpage-header h1 {
-        font-size: clamp(2.2rem, 8.5vw, 2.8rem);
-    }
-
     .recommendations-index-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
     }
