@@ -9,7 +9,7 @@ Object.assign(translations.en, {
     "pre_wedding_dresscode": "<strong>Dresscode:</strong> Casual Chic",
     "wedding_title": "The Wedding",
     "wedding_date_long": "<strong>When:</strong> Saturday, 17.10.2026, from 1:00 PM",
-    "wedding_location": "<strong>Where:</strong> Posada Real del Pinar",
+    "wedding_location": "<strong>Where:</strong> <em>Posada Real del Pinar</em>",
     "wedding_dresscode": "<strong>Dresscode:</strong> Formal Attire",
     "wedding_outro": "Please find all the relevant information on the sections below. We are very much looking forward to celebrating this special day with all of you!",
     "countdown_days": "Days",
@@ -49,7 +49,7 @@ Object.assign(translations.de, {
     "pre_wedding_dresscode": "<strong>Dresscode:</strong> Casual Chic",
     "wedding_title": "Die Hochzeit",
     "wedding_date_long": "<strong>Wann:</strong> Samstag, 17.10.2026, ab 13:00 Uhr",
-    "wedding_location": "<strong>Wo:</strong> Posada Real del Pinar",
+    "wedding_location": "<strong>Wo:</strong> <em>Posada Real del Pinar</em>",
     "wedding_dresscode": "<strong>Dresscode:</strong> Festliche Kleidung",
     "wedding_outro": "Bitte findet alle relevanten Informationen in den folgenden Abschnitten. Wir freuen uns sehr darauf, diesen besonderen Tag mit euch allen zu feiern!",
     "countdown_days": "Tage",
@@ -58,4 +58,3 @@ Object.assign(translations.de, {
     "countdown_seconds": "Sekunden",
     "countdown_married": "Wir haben geheiratet!"
 });
-
