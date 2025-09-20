@@ -42,20 +42,37 @@
             <h3 data-key="travel_option_1_title"></h3>
             <p data-key="travel_train_intro"></p>
             
-            <h4 data-key="travel_train_step1_title" style="margin-top: 25px;"></h4>
-            <h5 data-key="travel_train_from_t4_title"></h5>
-            <p data-key="travel_train_from_t4_detail"></p>
-            <h5 data-key="travel_train_from_t123_title" style="margin-top: 20px;"></h5>
-            <p data-key="travel_train_from_t123_detail"></p>
+            <div class="travel-steps-container">
+                <div class="travel-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4 data-key="travel_train_step1_title"></h4>
+                        <div class="terminal-options">
+                            <div class="terminal-card">
+                                <h5 data-key="travel_train_from_t4_title"></h5>
+                                <p data-key="travel_train_from_t4_detail"></p>
+                            </div>
+                            <div class="terminal-card">
+                                <h5 data-key="travel_train_from_t123_title"></h5>
+                                <p data-key="travel_train_from_t123_detail"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
-            <h4 data-key="travel_train_step2_title" style="margin-top: 25px;"></h4>
-            <ol>
-                <li data-key="travel_train_step2_detail1"></li>
-                <img src="/images/alta_velocidad.webp" alt="Alta Velocidad sign showing a blue arrow" class="content-image" style="margin-top: 15px; margin-bottom: 15px;">
-                <li data-key="travel_train_step2_detail2"></li>
-                <li data-key="travel_train_step2_detail3"></li>
-            </ol>
+                <div class="travel-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4 data-key="travel_train_step2_title"></h4>
+                        <ol>
+                            <li data-key="travel_train_step2_detail1"></li>
+                            <img src="/images/alta_velocidad.webp" alt="Alta Velocidad sign" class="content-image" style="margin-top: 15px; margin-bottom: 15px;">
+                            <li data-key="travel_train_step2_detail2"></li>
+                            <li data-key="travel_train_step2_detail3"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="travel-option">
@@ -70,3 +87,4 @@
     <script src="/js/main.js"></script>
 </body>
 </html>
+
