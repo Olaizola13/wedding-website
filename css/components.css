@@ -237,6 +237,10 @@
     font-weight: 700;
 }
 
+.step-content {
+    flex-grow: 1;
+}
+
 .step-content h4 {
     margin-top: 5px;
     margin-bottom: 15px;
@@ -273,3 +277,19 @@
         flex: 1;
     }
 }
+
+/* --- Travel Page Mobile Layout --- */
+@media (max-width: 600px) {
+    .travel-step {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .travel-option {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .step-content h4 {
+        margin-top: 0;
+    }
+}
+
