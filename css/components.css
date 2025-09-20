@@ -201,14 +201,75 @@
     word-wrap: break-word;
 }
 
-.travel-option h4, .travel-option h5 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    color: var(--color-dark);
-}
 .travel-option ol {
     padding-left: 20px;
 }
 .travel-option li {
     margin-bottom: 15px;
+}
+
+/* --- Travel Page Refactor --- */
+.travel-steps-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.travel-step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.step-content h4 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.step-content h5 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--color-dark);
+}
+
+.terminal-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.terminal-card {
+    background-color: #f8f5f2; /* A slightly different background */
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+.terminal-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+    .terminal-options {
+        flex-direction: row;
+    }
+    .terminal-card {
+        flex: 1;
+    }
 }
