@@ -16,11 +16,11 @@ Object.assign(translations.en, {
     "hotel_mozart_desc": "A charming and very centrally located hotel, perfect for exploring the city on foot.",
     "hotel_mozart_booking": "We have blocked 15 double rooms at a fixed rate (110€/night). To book, you must call the hotel at (+34 983 297 777) or email (hotelmozart@hotelmozart.net) and mention the reference '<strong>Boda Juanma y Jessica</strong>'. This block is valid until September 16, 2026.",
     "hotel_recoletos_desc": "A classic hotel also located near Campo Grande park, known for its comfortable rooms.",
-    "hotel_recoletos_booking": "To get a special rate (Single: 95€, Double: 107€, both +10% VAT, breakfast included), please email the hotel at comercial@valladolidrecoletos.com and mention the code '<strong>JessicaJuanma2026</strong>'.",
+    "hotel_recoletos_booking": "To get a special rate (Single: 95€, Double: 107€, both +10% VAT, breakfast included), please email the hotel at comercial@valladolidrecoletos.com and mention the '<strong>Jessica & Juanma Wedding</strong>'.",
     "hotel_enara_desc": "A stylish boutique hotel right on the main square, Plaza Mayor.",
-    "hotel_enara_booking": "The hotel offers a <strong>10% discount</strong> on their web rates for our guests.",
+    "hotel_enara_booking": "The hotel offers a <strong>10% discount</strong> on their web rates for our guests. To get the discount, please use the promotional code <strong>JESSICAJUANMA2026</strong> when booking online.",
     "hotel_villa_desc": "A comfortable and convenient hotel in Medina del Campo, a good option for those who wish to stay closer to the wedding venue.",
-    "hotel_villa_booking": "We have arranged a special rate (Single: 57€, Double: 86€, Triple: 99€, all per night). To book, please call the hotel directly at +34 983 81 05 96 or write an email to direccion@villadeferias.com and mention '<strong>Boda Jessica y Juanma</strong>'."
+    "hotel_villa_booking": "We have arranged a special rate (Single: 57€, Double: 86€, Triple: 99€, all per night). To book, you must contact the hotel directly at +34 983 81 05 96 or by email at direccion@villadeferias.com, mentioning our wedding '<strong>Boda Jessica y Juanma</strong>' to access the special rate."
 });
 Object.assign(translations.es, {
     "accommodations_page_title": "Alojamiento",
@@ -40,11 +40,11 @@ Object.assign(translations.es, {
     "hotel_mozart_desc": "Un hotel con encanto y muy céntrico, perfecto para explorar la ciudad a pie.",
     "hotel_mozart_booking": "Hemos bloqueado 15 habitaciones dobles a un precio fijo (110€/noche). Para reservar, debéis llamar al hotel (+34 983 297 777) o enviar un email (hotelmozart@hotelmozart.net) y mencionar la referencia '<strong>Boda Juanma y Jessica</strong>'. Este bloqueo es válido hasta el 16 de septiembre de 2026.",
     "hotel_recoletos_desc": "Un hotel clásico también situado cerca del parque Campo Grande, conocido por sus cómodas habitaciones.",
-    "hotel_recoletos_booking": "Para obtener una tarifa especial (Individual: 95€, Doble: 107€, ambos +10% IVA, desayuno incluido), por favor enviad un email al hotel a comercial@valladolidrecoletos.com y mencionad el código '<strong>JessicaJuanma2026</strong>'.",
+    "hotel_recoletos_booking": "Para obtener una tarifa especial (Individual: 95€, Doble: 107€, ambos +10% IVA, desayuno incluido), por favor enviad un email al hotel a comercial@valladolidrecoletos.com y mencionad la '<strong>Boda de Jessica y Juanma</strong>'.",
     "hotel_enara_desc": "Un elegante hotel boutique en plena Plaza Mayor.",
-    "hotel_enara_booking": "El hotel ofrece un <strong>10% de descuento</strong> sobre sus tarifas web para nuestros invitados.",
+    "hotel_enara_booking": "El hotel ofrece un <strong>10% de descuento</strong> sobre sus tarifas web para nuestros invitados. Para obtener el descuento, por favor usad el código promocional <strong>JESSICAJUANMA2026</strong> al hacer la reserva online.",
     "hotel_villa_desc": "Un hotel cómodo y práctico situado en Medina del Campo, una buena opción para aquellos que deseen alojarse más cerca del lugar de la boda.",
-    "hotel_villa_booking": "Hemos negociado una tarifa especial (Individual: 57€, Doble: 86€, Triple: 99€, todas por noche). Para reservar, por favor llamad directamente al hotel al +34 983 81 05 96 o escribid un email a direccion@villadeferias.com y mencionad '<strong>Boda Jessica y Juanma</strong>'."
+    "hotel_villa_booking": "Hemos negociado una tarifa especial (Individual: 57€, Doble: 86€, Triple: 99€, todas por noche). Para reservar, es necesario contactar directamente con el hotel en el +34 983 81 05 96 o por email a direccion@villadeferias.com, mencionando nuestra boda '<strong>Boda Jessica y Juanma</strong>' para acceder a la tarifa especial."
 });
 Object.assign(translations.de, {
     "accommodations_page_title": "Unterkünfte",
@@ -64,10 +64,10 @@ Object.assign(translations.de, {
     "hotel_mozart_desc": "Ein charmantes und sehr zentral gelegenes Hotel, perfekt um die Stadt zu Fuß zu erkunden.",
     "hotel_mozart_booking": "Wir haben 15 Doppelzimmer zu einem festen Preis (110€/Nacht) blockiert. Um zu buchen, müsst ihr das Hotel anrufen (+34 983 297 777) oder eine E-Mail (hotelmozart@hotelmozart.net) senden und die Referenz '<strong>Boda Juanma y Jessica</strong>' angeben. Diese Blockierung ist bis zum 16. September 2026 gültig.",
     "hotel_recoletos_desc": "Ein klassisches Hotel, ebenfalls in der Nähe des Campo Grande Parks, bekannt für seine komfortablen Zimmer.",
-    "hotel_recoletos_booking": "Um einen Sondertarif zu erhalten (Einzel: 95€, Doppel: 107€, beides +10% MwSt., Frühstück inklusive), sendet bitte eine E-Mail an das Hotel unter comercial@valladolidrecoletos.com und gebt den Code '<strong>JessicaJuanma2026</strong>' an.",
+    "hotel_recoletos_booking": "Um einen Sondertarif zu erhalten (Einzel: 95€, Doppel: 107€, beides +10% MwSt., Frühstück inklusive), sendet bitte eine E-Mail an das Hotel unter comercial@valladolidrecoletos.com und erwähnt die '<strong>Hochzeit von Jessica & Juanma</strong>'.",
     "hotel_enara_desc": "Ein stilvolles Boutique-Hotel direkt am Hauptplatz, der Plaza Mayor.",
-    "hotel_enara_booking": "Das Hotel bietet unseren Gästen einen Rabatt von <strong>10%</strong> auf die Web-Preise.",
+    "hotel_enara_booking": "Das Hotel bietet unseren Gästen einen Rabatt von <strong>10%</strong> auf die Web-Preise. Um den Rabatt zu erhalten, verwendet bei der Online-Buchung bitte den Promo-Code <strong>JESSICAJUANMA2026</strong>.",
     "hotel_villa_desc": "Ein komfortables und praktisches Hotel in Medina del Campo, eine gute Option für diejenigen, die näher am Hochzeitsort übernachten möchten.",
-    "hotel_villa_booking": "Wir haben einen Sondertarif ausgehandelt (Einzel: 57€, Doppel: 86€, Dreibett: 99€, alle pro Nacht). Um zu buchen, ruft bitte direkt im Hotel an unter +34 983 81 05 96 oder schreibt eine E-Mail an direccion@villadeferias.com und erwähnt '<strong>Boda Jessica y Juanma</strong>'."
+    "hotel_villa_booking": "Wir haben einen Sondertarif ausgehandelt (Einzel: 57€, Doppel: 86€, Dreibett: 99€, alle pro Nacht). Um zu buchen, müsst ihr das Hotel direkt unter +34 983 81 05 96 oder per E-Mail an direccion@villadeferias.com kontaktieren und unsere Hochzeit '<strong>Boda Jessica y Juanma</strong>' erwähnen, um den Sondertarif zu erhalten."
 });
 
