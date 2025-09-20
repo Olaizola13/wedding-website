@@ -314,3 +314,19 @@
         padding-top: 10px;
     }
 }
+
+/* --- Memories Page Refactor --- */
+.memories-note {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #777;
+    margin-top: 25px;
+}
+
+.memories-thanks {
+    margin-top: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--color-dark);
+}
