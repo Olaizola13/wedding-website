@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5 {
     background-color: var(--color-dark);
     padding: 15px;
     text-align: center;
+    margin-top: 70px; /* Add space to avoid overlapping with the language switcher */
 }
 
 .subpage-nav a {
