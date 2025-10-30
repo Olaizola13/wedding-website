@@ -116,6 +116,20 @@ footer {
     word-break: break-word; /* Better compatibility for word breaking */
 }
 
+/* Utility class for centered text content */
+.centered-content {
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center { text-align: center; }
+.mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 50px; }
+.mb-30 { margin-bottom: 30px; }
+.my-15 { margin-top: 15px; margin-bottom: 15px; }
+
+
 /* =================================== */
 /* --- GLOBAL MEDIA QUERIES --- */
 /* =================================== */

@@ -38,7 +38,7 @@ Object.assign(translations.es, {
     "hotel_colon_desc": "Un hotel moderno situado en la avenida principal 'Acera de Recoletos', justo al lado del parque Campo Grande.",
     "hotel_colon_booking": "Para obtener un <strong>10% de descuento</strong> sobre la tarifa online, id a su web, seleccionad el hotel 'Colón-Plaza', elegid las fechas e introducid el código promocional <strong>BODAS2026</strong>.",
     "hotel_mozart_desc": "Un hotel con encanto y muy céntrico, perfecto para explorar la ciudad a pie.",
-    "hotel_mozart_booking": "Hemos bloqueado 15 habitaciones dobles a un precio fijo (110€/noche). Para reservar, debéis llamar al hotel (+34 983 297 777) o enviar un email (hotelmozart@hotelmozart.net) y mencionar la referencia '<strong>Boda Juanma y Jessica</strong>'. Este bloqueo es válido hasta el 16 de septiembre de 2026.",
+    "hotel_mozart_booking": "Hemos bloqueado 15 habitaciones dobles a un precio fijo (110€/noche). Para reservar, debéis llamar al hotel (+34 983 297 777) o enviar un email (hotelmozart@hotelmozart.net) y mencionar la referencia '<em>Boda Juanma y Jessica</em>'. Este bloqueo es válido hasta el 16 de septiembre de 2026.",
     "hotel_recoletos_desc": "Un hotel clásico también situado cerca del parque Campo Grande, conocido por sus cómodas habitaciones.",
     "hotel_recoletos_booking": "La reserva se puede hacer directamente online a través de la página web del hotel.",
     "hotel_enara_desc": "Un elegante hotel boutique en plena Plaza Mayor.",
@@ -70,4 +70,3 @@ Object.assign(translations.de, {
     "hotel_villa_desc": "Ein komfortables und praktisches Hotel in Medina del Campo, eine gute Option für diejenigen, die näher am Hochzeitsort übernachten möchten.",
     "hotel_villa_booking": "Die Buchung kann direkt online über die Webseite des Hotels vorgenommen werden."
 });
-

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title data-key="page_title"></title>
     <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
@@ -18,6 +19,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="language-switcher">
+        <a href="?lang=en" title="English"><img src="/images/uk.png" alt="English"></a>
+        <a href="?lang=es" title="Español"><img src="/images/spain.png" alt="Español"></a>
+        <a href="?lang=de" title="Deutsch"><img src="/images/germany.png" alt="Deutsch"></a>
+    </div>
+
     <nav class="subpage-nav">
         <a href="/wedding.html" data-key="nav_back_to_main"></a>
     </nav>
@@ -27,15 +34,15 @@
     </header>
     <main class="container">
         <p class="intro-text" data-key="accommodations_intro"></p>
-        <img src="/images/map_accomodations.webp" alt="Map of hotel areas" class="map-image">
+        <img src="/images/map_accomodations.webp" alt="Map of hotel areas" class="map-image" loading="lazy">
         
         <div class="hotel-recommendations">
             
-            <div class="city-hotel-group collapsible-hotel-section">
-                <div class="collapsible-hotel-header">
+            <details class="city-hotel-group collapsible-hotel-section" open>
+                <summary class="collapsible-hotel-header">
                     <h2 data-key="hotels_in_valladolid"></h2>
                     <svg class="toggle-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
-                </div>
+                </summary>
                 <div class="hotel-card-container">
                     <div class="hotel-card-inner">
                         <!-- Hotel 1: Colón Plaza -->
@@ -95,13 +102,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </details>
 
-            <div class="city-hotel-group collapsible-hotel-section">
-                 <div class="collapsible-hotel-header">
+            <details class="city-hotel-group collapsible-hotel-section">
+                 <summary class="collapsible-hotel-header">
                     <h2 data-key="hotels_in_medina"></h2>
                     <svg class="toggle-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
-                </div>
+                </summary>
                 <div class="hotel-card-container">
                     <div class="hotel-card-inner">
                         <div class="hotel-card">
@@ -117,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </details>
 
         </div>
 
@@ -131,4 +138,3 @@
     <script src="/js/main.js"></script>
 </body>
 </html>
-

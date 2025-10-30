@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (translationText) {
                 element.innerHTML = translationText;
+
+                // Also update the alt attribute if the element is an image
+                if (element.tagName === 'IMG') {
+                    element.alt = translationText;
+                }
             }
         });
 
@@ -62,6 +67,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // For this project, assuming scripts are loaded sequentially is okay.
     setLanguage(language);
 
+    // --- Language switcher logic ---
+    const languageSwitcher = document.querySelector('.language-switcher');
+    if (languageSwitcher) {
+        languageSwitcher.addEventListener('click', (e) => {
+            const link = e.target.closest('a');
+            if (link) {
+                e.preventDefault();
+                const newLang = new URL(link.href).searchParams.get('lang');
+                window.location.search = `?lang=${newLang}`;
+            }
+        });
+    }
+
     // --- Collapsible section logic for main page ---
     const eventCard = document.querySelector('.event-details-card');
     if (eventCard) {
@@ -74,15 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (clickableHeader) clickableHeader.addEventListener('click', toggleExpansion);
         if (clickableArrow) clickableArrow.addEventListener('click', toggleExpansion);
     }
-
-    // --- Collapsible section logic for accommodation page hotels ---
-    const hotelSections = document.querySelectorAll('.collapsible-hotel-section');
-    hotelSections.forEach(section => {
-        const header = section.querySelector('.collapsible-hotel-header');
-        header.addEventListener('click', () => {
-            section.classList.toggle('expanded');
-        });
-    });
 
     // --- Countdown timer logic ---
     const countdownElement = document.getElementById('countdown-timer');
@@ -143,4 +152,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
-

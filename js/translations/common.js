@@ -19,7 +19,6 @@ Object.assign(translations.en, {
     "btn_memories": "Upload Memories",
     "btn_song_requests": "Song Requests",
     "nav_back_to_main": "← Back to Main Page",
-    "attribution_text": "Flag icons by",
     "rsvp_a_yes": "Yes",
     "rsvp_a_no": "No"
 });
@@ -38,7 +37,6 @@ Object.assign(translations.es, {
     "btn_memories": "Subir Recuerdos",
     "btn_song_requests": "Peticiones Musicales",
     "nav_back_to_main": "← Volver a la Página Principal",
-    "attribution_text": "Iconos de banderas por",
     "rsvp_a_yes": "Sí",
     "rsvp_a_no": "No"
 });
@@ -57,7 +55,6 @@ Object.assign(translations.de, {
     "btn_memories": "Erinnerungen hochladen",
     "btn_song_requests": "Musikwünsche",
     "nav_back_to_main": "← Zurück zur Hauptseite",
-    "attribution_text": "Flaggen-Icons von",
     "rsvp_a_yes": "Ja",
     "rsvp_a_no": "Nein"
 });
