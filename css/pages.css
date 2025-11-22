@@ -171,7 +171,8 @@
     height: 28px;
     transition: transform 0.3s ease;
 }
-.collapsible-hotel-section.expanded .collapsible-hotel-header .toggle-arrow {
+/* Drive the arrow rotation off the native details open state */
+.collapsible-hotel-section[open] .collapsible-hotel-header .toggle-arrow {
     transform: rotate(180deg);
 }
 .hotel-card-container {
@@ -180,7 +181,8 @@
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.4s ease-in-out;
 }
-.collapsible-hotel-section.expanded .hotel-card-container {
+/* Let the cards show when the details element is open */
+.collapsible-hotel-section[open] .hotel-card-container {
     grid-template-rows: 1fr;
 }
 .hotel-card-inner {
