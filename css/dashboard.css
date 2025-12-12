@@ -238,21 +238,25 @@
 
 @media (max-width: 600px) {
     .dashboard-container {
-        padding: 16px;
+        padding: 12px;
     }
 
     .icon-button-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .icon-button {
+        padding: 10px;
     }
 
     .icon-button img {
-        width: 72px;
-        height: 72px;
+        width: 64px;
+        height: 64px;
     }
 
     .icon-button span {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .countdown-number {
