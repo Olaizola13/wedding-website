@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,6 +17,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .structure-list, .practical-list {
+            list-style: disc;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
     <div class="language-switcher">
@@ -34,39 +41,79 @@
     </header>
     <main class="container">
         <div class="content-card">
-            <h2 data-key="recommendations_section1_title"></h2>
+            <h2 data-key="recommendations_intro_heading"></h2>
             <p data-key="recommendations_intro_text"></p>
         </div>
 
-        <div class="recommendations-index-grid">
-            <a href="/rec_history.html" class="rec-index-button">
-                <img src="/images/icon_rec_history.webp" alt="" data-key="rec_index_history">
-                <span data-key="rec_index_history"></span>
-            </a>
-            <a href="/rec_cathedral.html" class="rec-index-button">
-                <img src="/images/icon_rec_cathedral.webp" alt="" data-key="rec_index_cathedral">
-                <span data-key="rec_index_cathedral"></span>
-            </a>
-            <a href="/rec_beach.html" class="rec-index-button">
-                <img src="/images/icon_rec_beach.webp" alt="" data-key="rec_index_beach">
-                <span data-key="rec_index_beach"></span>
-            </a>
-            <a href="/rec_storks.html" class="rec-index-button">
-                <img src="/images/icon_rec_storks.webp" alt="" data-key="rec_index_storks">
-                <span data-key="rec_index_storks"></span>
-            </a>
-            <a href="/rec_park.html" class="rec-index-button">
-                <img src="/images/icon_rec_park.webp" alt="" data-key="rec_index_park">
-                <span data-key="rec_index_park"></span>
-            </a>
-            <a href="/rec_dayout.html" class="rec-index-button">
-                <img src="/images/icon_rec_dayout.webp" alt="" data-key="rec_index_dayout">
-                <span data-key="rec_index_dayout"></span>
-            </a>
+        <div class="content-card">
+            <h3 data-key="recommendations_structure_title"></h3>
+            <div data-key="recommendations_structure_text"></div>
         </div>
+
+        <div class="content-card">
+            <h3 data-key="recommendations_hotspots_title"></h3>
+            <p data-key="recommendations_mercado_text"></p>
+        </div>
+
+        <div class="content-card">
+            <h3 data-key="recommendations_practical_title"></h3>
+            <ul class="practical-list">
+                <li data-key="recommendations_tipping"></li>
+                <li data-key="recommendations_opening_hours"></li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h3 data-key="recommendations_food_title"></h3>
+            <div data-key="recommendations_food_text"></div>
+        </div>
+
+        <div class="content-card">
+            <h3 data-key="recommendations_drinks_title"></h3>
+            <p data-key="recommendations_drinks_teaser"></p>
+            <a href="/rec_drinks.html" class="hotel-link" data-key="recommendations_drinks_button"></a>
+        </div>
+
+        <div class="content-card">
+            <h3 data-key="recommendations_sights_title"></h3>
+            <p data-key="recommendations_sights_intro"></p>
+            <div class="recommendations-index-grid">
+                <a href="/rec_history.html" class="rec-index-button">
+                    <img src="/images/icon_rec_history.webp" alt="" data-key="rec_index_history">
+                    <span data-key="rec_index_history"></span>
+                </a>
+                <a href="/rec_cathedral.html" class="rec-index-button">
+                    <img src="/images/icon_rec_cathedral.webp" alt="" data-key="rec_index_cathedral">
+                    <span data-key="rec_index_cathedral"></span>
+                </a>
+                <a href="/rec_beach.html" class="rec-index-button">
+                    <img src="/images/icon_rec_beach.webp" alt="" data-key="rec_index_beach">
+                    <span data-key="rec_index_beach"></span>
+                </a>
+                <a href="/rec_storks.html" class="rec-index-button">
+                    <img src="/images/icon_rec_storks.webp" alt="" data-key="rec_index_storks">
+                    <span data-key="rec_index_storks"></span>
+                </a>
+                <a href="/rec_park.html" class="rec-index-button">
+                    <img src="/images/icon_rec_park.webp" alt="" data-key="rec_index_park">
+                    <span data-key="rec_index_park"></span>
+                </a>
+                <a href="/rec_dayout.html" class="rec-index-button">
+                    <img src="/images/icon_rec_dayout.webp" alt="" data-key="rec_index_dayout">
+                    <span data-key="rec_index_dayout"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h3 data-key="recommendations_region_title"></h3>
+            <p data-key="recommendations_region_text"></p>
+        </div>
+            <div class="text-center mt-30"><a href="/wedding.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
     </main>
     <script src="/js/translations/common.js"></script>
     <script src="/js/translations/recommendations.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>
+

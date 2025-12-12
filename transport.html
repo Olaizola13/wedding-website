@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
 <body>
     <div class="language-switcher">
         <a href="?lang=en" title="English"><img src="/images/uk.png" alt="English"></a>
-        <a href="?lang=es" title="Español"><img src="/images/spain.png" alt="Español"></a>
+        <a href="?lang=es" title="EspaÃ±ol"><img src="/images/spain.png" alt="EspaÃ±ol"></a>
         <a href="?lang=de" title="Deutsch"><img src="/images/germany.png" alt="Deutsch"></a>
     </div>
 
@@ -31,12 +31,13 @@
         <img src="/images/icon_transport.webp" alt="Transport Icon">
         <h1 data-key="transport_page_title"></h1>
     </header>
-    <main class="container">
+    <main class="container" id="shuttle">
         <p class="intro-text" data-key="transport_intro"></p>
         <img src="/images/map_transport.webp" alt="Map of transport route" class="map-image">
 
         <div class="content-card">
             <h3 data-key="transport_departure_title"></h3>
+            <p data-key="transport_departure_notice"></p>
             <p data-key="transport_departure_text"></p>
         </div>
         
@@ -48,11 +49,14 @@
                 <li data-key="transport_return_option2"></li>
                 <li data-key="transport_return_option3"></li>
             </ul>
+            <p data-key="transport_schedule_note"></p>
         </div>
-        <p data-key="transport_schedule_note" class="text-center"></p>
+            <div class="text-center mt-30"><a href="/wedding.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
     </main>
     <script src="/js/translations/common.js"></script>
     <script src="/js/translations/transport.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>
+
+

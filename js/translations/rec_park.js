@@ -1,13 +1,12 @@
 Object.assign(translations.en, {
-    "rec_park_page_title": "Campo Grande Park",
-    "recommendations_park_text": "Our central park is called <em>Campo Grande</em>, which literally translates to 'The Big Field'... a wonderful piece of Castilian irony, because the park is not big at all. It's a lovely, cozy green space, perfect for a short stroll. It is, however, famous for its population of peacocks, who wander around near <em>Recoletos</em> (Recoletos Alley) like they own the place (they do)."
+    "rec_park_page_title": "Campo Grande",
+    "recommendations_park_text": "Our central park is called Campo Grande – a charming Castilian irony, as it’s not that big. It’s a cosy green space, perfect for a short walk.<br><br>It’s especially famous for its peacocks roaming freely.<br><br>👉 {{LINK_CAMPO_GRANDE_MAPS}}"
 });
 Object.assign(translations.es, {
-    "rec_park_page_title": "Parque Campo Grande",
-    "recommendations_park_text": "Nuestro parque central se llama <em>Campo Grande</em>... una maravillosa pieza de ironía castellana, porque el parque no es grande en absoluto. Es un espacio verde encantador y acogedor, perfecto para un paseo corto. Eso sí, es famoso por su población de pavos reales, que se pasean cerca de <em>Recoletos</em> (Paseo de Recoletos) como si fueran los dueños del lugar (lo son)."
+    "rec_park_page_title": "Campo Grande",
+    "recommendations_park_text": "Nuestro parque central se llama Campo Grande, una simpática ironía castellana, ya que no es muy grande. Es una zona verde acogedora, ideal para pasear.<br><br>Es famoso por sus pavos reales.<br><br>👉 {{LINK_CAMPO_GRANDE_MAPS}}"
 });
 Object.assign(translations.de, {
-    "rec_park_page_title": "Campo Grande Park",
-    "recommendations_park_text": "Unser zentraler Park heißt <em>Campo Grande</em>, was wörtlich 'Großes Feld' bedeutet... ein wunderbares Stück kastilischer Ironie, denn der Park ist überhaupt nicht groß. Es ist eine hübsche, gemütliche Grünfläche, perfekt für einen kurzen Spaziergang. Berühmt ist er jedoch für seine Pfauenpopulation, die in der Nähe von <em>Recoletos</em> (Recoletos-Allee) herumstolziert, als gehöre ihnen der Laden (was auch stimmt)."
+    "rec_park_page_title": "Campo Grande",
+    "recommendations_park_text": "Unser zentraler Park heißt Campo Grande – eine charmante kastilische Ironie, denn so groß ist er gar nicht. Er ist eine hübsche, gemütliche Grünanlage, perfekt für einen kurzen Spaziergang.<br><br>Besonders bekannt ist der Park für seine Pfauen, die sich frei bewegen, als gehöre ihnen alles.<br><br>👉 {{LINK_CAMPO_GRANDE_MAPS}}"
 });
-

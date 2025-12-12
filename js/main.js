@@ -1,5 +1,96 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const placeholderLinks = {
+        "LINK_POSADA": {
+            entries: [
+                { url: "https://laposadadelpinar.com/", label: { en: "Website", es: "Sitio web", de: "Webseite" } }
+            ]
+        },
+        "LINK_CAMPO_GRANDE_MAPS": {
+            entries: [
+                { url: "https://maps.app.goo.gl/quLghu8E6sQYGiou8", label: { en: "Google Maps", es: "Google Maps", de: "Google Maps" } },
+                { url: "https://www.valladolid.com/campo-grande", label: { en: "Info page", es: "Página informativa", de: "Info-Seite" } }
+            ]
+        },
+        "LINK_MERCADO_DEL_VAL": {
+            entries: [
+                { url: "https://itsmy.bio/mercadodelval", label: { en: "Website", es: "Web", de: "Website" } },
+                { url: "https://maps.app.goo.gl/yuEuN7ptFCWx1GUW6", label: { en: "Google Maps", es: "Google Maps", de: "Google Maps" } }
+            ]
+        },
+        "LINK_GETRAENKE": {
+            entries: [
+                { url: "/rec_drinks.html", label: { en: "Drinks guide", es: "Guía de bebidas", de: "Getränkekunde" } }
+            ],
+            joiner: " "
+        },
+        "LINK_MATAMALA": {
+            entries: [
+                { url: "https://matamales.es/", label: { en: "Website", es: "Sitio web", de: "Webseite" } },
+                { url: "https://maps.app.goo.gl/EU5eTznsM8Hy2q4B7", label: { en: "Google Maps", es: "Google Maps", de: "Google Maps" } }
+            ]
+        },
+        "LINK_CALLE_SANDOVAL_MAPS": {
+            entries: [
+                { url: "https://maps.app.goo.gl/kWoN267pAPywkEpE9", label: { en: "Google Maps", es: "Google Maps", de: "Google Maps" } }
+            ]
+        },
+        "LINK_BAR_ZAMORA": {
+            entries: [
+                { url: "https://maps.app.goo.gl/UUCt3wXywJcaJ8by9", label: { en: "Bar Zamora (Maps)", es: "Bar Zamora (Maps)", de: "Bar Zamora (Maps)" } }
+            ]
+        },
+        "LINK_EL_CORCHO": {
+            entries: [
+                { url: "https://maps.app.goo.gl/pnXJsm738e2T1dx19", label: { en: "El Corcho (Maps)", es: "El Corcho (Maps)", de: "El Corcho (Maps)" } }
+            ]
+        },
+        "LINK_FRANCISCO_ZARANDONA_MAPS": {
+            entries: [
+                { url: "https://maps.app.goo.gl/Aehd4vEm8AhqP7Y86", label: { en: "Calle Francisco Zarandona", es: "Calle Francisco Zarandona", de: "Calle Francisco Zarandona" } }
+            ]
+        },
+        "LINK_MERCADO_DEL_VAL_SITE": {
+            entries: [
+                { url: "https://itsmy.bio/mercadodelval", label: { en: "Mercado del Val site", es: "Web Mercado del Val", de: "Website Mercado del Val" } }
+            ]
+        },
+        "LINK_YLLERA": {
+            entries: [
+                { url: "https://maps.app.goo.gl/Cnva8HdQB1WWm4Vj6", label: { en: "Bodega Yllera", es: "Bodega Yllera", de: "Bodega Yllera" } }
+            ]
+        },
+        "LINK_ARZUAGA": {
+            entries: [
+                { url: "https://maps.app.goo.gl/NMCRvMDwYmsxkNVw6", label: { en: "Bodega Arzuaga", es: "Bodega Arzuaga", de: "Bodega Arzuaga" } }
+            ]
+        },
+        "LINK_BODEGA_SORBONA": {
+            entries: [
+                { url: "https://maps.app.goo.gl/2TPzH82BGiFGwQ3V8", label: { en: "Bodega la Sorbona", es: "Bodega la Sorbona", de: "Bodega la Sorbona" } }
+            ]
+        }
+    };
+
+    const resolvePlaceholder = (key, language) => {
+        const config = placeholderLinks[key];
+        if (!config) return null;
+        const joiner = typeof config.joiner === 'string' ? config.joiner : ' | ';
+        return config.entries.map(entry => {
+            const label = (entry.label && entry.label[language]) || (entry.label && entry.label.en) || 'Link';
+            const isExternal = /^https?:\/\//i.test(entry.url);
+            const target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+            return `<a href="${entry.url}"${target}>${label}</a>`;
+        }).join(joiner);
+    };
+
+    const replacePlaceholders = (text, language) => {
+        return text.replace(/{{(LINK_[A-Z0-9_]+)}}/g, (_, key) => {
+            const replacement = resolvePlaceholder(key, language);
+            return replacement || `{{${key}}}`;
+        });
+    };
+
     const setLanguage = (language) => {
         const elements = document.querySelectorAll('[data-key]');
         
@@ -15,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             if (translationText) {
-                element.innerHTML = translationText;
+                element.innerHTML = replacePlaceholders(translationText, language);
 
                 // Also update the alt attribute if the element is an image
                 if (element.tagName === 'IMG') {

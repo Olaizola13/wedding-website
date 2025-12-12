@@ -1,10 +1,9 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title data-key="memories_page_title">Memories</title>
+    <title data-key="rec_drinks_page_title"></title>
     <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
     <link rel="shortcut icon" href="/icons/favicon.ico" />
@@ -13,44 +12,51 @@
     <link rel="manifest" href="/icons/site.webmanifest" />
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/components.css">
-    <link rel="stylesheet" href="/css/pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="language-switcher">
-        <a href="?lang=en" title="English"><img src="/images/uk.png" alt="English"></a>
-        <a href="?lang=es" title="EspaÃ±ol"><img src="/images/spain.png" alt="EspaÃ±ol"></a>
-        <a href="?lang=de" title="Deutsch"><img src="/images/germany.png" alt="Deutsch"></a>
-    </div>
-    
     <nav class="subpage-nav">
-        <a href="/wedding.html" data-key="nav_back_to_main"></a>
+        <a href="/recommendations.html" data-key="nav_back_to_main"></a>
     </nav>
-
     <header class="subpage-header">
-        <img src="/images/icon_memories.webp" alt="Upload Memories Icon">
-        <h1 data-key="memories_page_title"></h1>
+        <img src="/images/icon_recommendations.webp" alt="Drinks Icon">
+        <h1 data-key="rec_drinks_page_title"></h1>
     </header>
-    
-    <main class="container centered-content">
-        <p class="intro-text" data-key="memories_intro"></p>
-        
-        <div class="memories-button-container">
-            <a href="https://photos.app.goo.gl/hUL7mvC3BGAwfT899" class="upload-button" target="_blank">
-                <img src="/images/logo_google_photos.webp" alt="Google Photos">
-                <span data-key="memories_google_button"></span>
-            </a>
+    <main class="container">
+        <p data-key="drinks_intro" class="intro-text"></p>
+
+        <div class="content-card">
+            <h3 data-key="drinks_tinto_title"></h3>
+            <ul>
+                <li data-key="drinks_tinto_limon"></li>
+                <li data-key="drinks_tinto_naranja"></li>
+            </ul>
         </div>
-        
-        <p class="memories-note" data-key="memories_note"></p>
-        <p class="memories-thanks" data-key="memories_thanks"></p>
+
+        <div class="content-card">
+            <h3 data-key="drinks_beer_title"></h3>
+            <ul>
+                <li data-key="drinks_beer"></li>
+                <li data-key="drinks_beer_sizes"></li>
+                <li data-key="drinks_alcohol_free"></li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h3 data-key="drinks_wine_title"></h3>
+            <p data-key="drinks_wine_intro"></p>
+            <p data-key="drinks_wine_favorites_title"></p>
+            <ul>
+                <li data-key="drinks_wine_favorite1"></li>
+                <li data-key="drinks_wine_favorite2"></li>
+            </ul>
+        </div>
             <div class="text-center mt-30"><a href="/wedding.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
     </main>
-    
     <script src="/js/translations/common.js"></script>
-    <script src="/js/translations/memories.js"></script>
+    <script src="/js/translations/rec_drinks.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>
