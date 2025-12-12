@@ -1,6 +1,11 @@
 /* Styles specific to the main wedding.html dashboard page */
 
+.dashboard-body {
+    overflow-x: hidden;
+}
+
 .dashboard-container {
+    width: 100%;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
@@ -232,14 +237,18 @@
 }
 
 @media (max-width: 600px) {
+    .dashboard-container {
+        padding: 16px;
+    }
+
     .icon-button-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
 
     .icon-button img {
-        width: 70px;
-        height: 70px;
+        width: 72px;
+        height: 72px;
     }
 
     .icon-button span {
