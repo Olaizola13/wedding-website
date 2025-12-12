@@ -55,6 +55,9 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    padding: 12px;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
     text-decoration: none;
     transition: transform 0.2s ease;
 }
@@ -70,6 +73,7 @@
     background-color: white;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    flex-shrink: 0;
 }
 
 .icon-button span {
@@ -78,7 +82,7 @@
     font-weight: 700;
     color: var(--color-dark);
     text-align: center;
-    height: 2.5em;
+    min-height: 2.5em;
     display: flex;
     align-items: center;
     justify-content: center;
