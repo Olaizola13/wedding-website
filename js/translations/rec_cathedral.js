@@ -1,6 +1,6 @@
 Object.assign(translations.en, {
     "rec_cathedral_page_title": "The Cathedral",
-    "recommendations_cathedral_text": "Our grand cathedral was designed by the same architect who built the palace and monastery complex of <em>El Escorial</em> near Madrid, so the plans were, let's say, ambitious. He designed what would have been a truly colossal building, but then... Spain ran out of money. Classic. What stands today is less than half of the original blueprint, a stunning monument to the idea that it’s okay not to finish everything you start."
+    "recommendations_cathedral_text": "Our grand cathedral was designed by the same architect who built the palace and monastery complex of <em>El Escorial</em> near Madrid, so the plans were, let's say, ambitious. He designed what would have been a truly colossal building, but then... Spain ran out of money. Classic. What stands today is less than half of the original blueprint, a stunning monument to the idea that it's okay not to finish everything you start."
 });
 Object.assign(translations.es, {
     "rec_cathedral_page_title": "La Catedral",

@@ -1,6 +1,6 @@
 Object.assign(translations.en, {
     "rec_park_page_title": "Campo Grande",
-    "recommendations_park_text": "Our central park is called Campo Grande – a charming Castilian irony, as it’s not that big. It’s a cosy green space, perfect for a short walk.<br><br>It’s especially famous for its peacocks roaming freely.<br><br>👉 {{LINK_CAMPO_GRANDE_MAPS}}"
+    "recommendations_park_text": "Our central park is called Campo Grande – a charming Castilian irony, as it's not that big. It's a cosy green space, perfect for a short walk.<br><br>It's especially famous for its peacocks roaming freely.<br><br>👉 {{LINK_CAMPO_GRANDE_MAPS}}"
 });
 Object.assign(translations.es, {
     "rec_park_page_title": "Campo Grande",

@@ -1,11 +1,11 @@
 Object.assign(translations.en, {
     "kids_page_title": "Kids",
-    "kids_intro_1": "Our daughter Nuria will of course celebrate with us – and it wouldn’t be a party without her friends!",
+    "kids_intro_1": "Our daughter Nuria will of course celebrate with us – and it wouldn't be a party without her friends!",
     "kids_intro_2": "Children are very welcome to join all celebrations.",
     "kids_at_the_venue_title": "On the Wedding Day",
     "kids_at_the_venue_text": "The wedding venue, <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>, is a wonderful place for children. There is a small playground and lots of safe open space to run and play.<br><br>A real highlight (but not a must!) are the donkeys and beautiful peacocks living there.",
     "kids_planning_title": "A Little Help for Our Planning",
-    "kids_planning_text": "So we can organise some entertainment for the little ones, please let us know via the RSVP if you’re bringing children.<br><br><em>More information about childcare will follow.</em>",
+    "kids_planning_text": "So we can organise some entertainment for the little ones, please let us know via the RSVP if you're bringing children.<br><br><em>More information about childcare will follow.</em>",
     "kids_general_title": "General info",
     "kids_general_text": "Spain is very child-friendly. Children are welcome in restaurants even late in the evening, and people are generally very warm with kids.<br><br>Museums almost always have baby-changing facilities, and larger cities often offer nursing rooms. Many playgrounds are close to cafés or bars."
 });
