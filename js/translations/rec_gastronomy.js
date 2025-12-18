@@ -7,22 +7,25 @@ Object.assign(translations.en, {
     "food_title": "Food Cheat Sheet",
     "food_intro_text": "The food in this region is defined by high-quality local ingredients and traditional preparations forged by the harsh climate. The focus is on simple, robust flavors.",
     "food_specialties_title": "Local Specialties",
-    "food_list_html": "<ul class=\"structure-list\"><li><strong>Croquetas:</strong> Small, crispy croquettes, often with ham or fish.</li><li><strong>Tortilla de patatas:</strong> Thick potato omelette, sometimes with onion.</li><li><strong>Jamón:</strong> Air-dried Spanish ham, served in thin slices.</li><li><strong>Queso:</strong> Sheep's cheese from Castile, e.g., Pata de Mulo.</li><li><strong>Lechazo:</strong> Wood-fired roast suckling lamb, a local specialty.</li><li><strong>Cocido:</strong> Hearty chickpea stew with meats and sausage.</li><li><strong>Dulces:</strong> Sweet treats like mantecados, polvorones, rosquillas or hojaldres.</li></ul>",
+    "food_list_html": "<ul class=\"structure-list\"><li><strong>\"Croquetas\":</strong> Small, crispy croquettes, often with ham or fish.</li><li><strong>\"Tortilla de patatas\":</strong> Thick potato omelette, sometimes with onion.</li><li><strong>\"Jamón\":</strong> Air-dried Spanish ham, served in thin slices.</li><li><strong>\"Queso\":</strong> Sheep's cheese from Castile, e.g., \"Pata de Mulo\".</li><li><strong>\"Lechazo\":</strong> Wood-fired roast suckling lamb, a local specialty.</li><li><strong>\"Cocido\":</strong> Hearty chickpea stew with meats and sausage.</li><li><strong>\"Dulces\":</strong> Sweet treats like \"mantecados\", \"polvorones\", \"rosquillas\" or \"hojaldres\".</li></ul>",
 
     // Drinks
     "drinks_intro": "Local go-tos for a warm afternoon or a long wedding weekend.",
-    "drinks_tinto_title": "Tinto de verano",
-    "drinks_tinto_limon": "<strong>Tinto de verano limón:</strong> red wine with lemon soda over ice.",
-    "drinks_tinto_naranja": "<strong>Tinto de verano naranja:</strong> red wine with orange soda over ice.",
     "drinks_beer_title": "Beer",
-    "drinks_beer": "<strong>Brands:</strong> Estrella Galicia, Mahou, Alhambra. Favourite: Águila sin filtrar.",
-    "drinks_beer_sizes": "<strong>Sizes:</strong> caña (≈200 ml), doble (≈330–400 ml), jarra (≈500 ml).",
-    "drinks_alcohol_free": "Plenty of alcohol-free beers (0.0%), including tostadas (darker, lightly malty).",
+    "drinks_beer": "<strong>Brands:</strong> Estrella Galicia, Mahou, Alhambra. Favourite: \"Águila sin filtrar\".",
+    "drinks_beer_sizes": "<strong>Sizes:</strong> \"caña\" (≈200 ml), \"doble\" (≈330–400 ml), \"jarra\" (≈500 ml).",
+    "drinks_alcohol_free": "Plenty of alcohol-free beers (0.0%), including \"tostadas\" (darker, lightly malty).",
     "drinks_wine_title": "Wine",
-    "drinks_wine_intro": "We mostly drink red wine from Ribera del Duero (Tempranillo). Recommended bodegas are Arzuaga, Protos and Zifar.",
+    "drinks_wine_intro": "We mostly drink red wine from \"Ribera del Duero\" (\"Tempranillo\"). Recommended \"bodegas\" are Arzuaga, Protos and Zifar.",
     "drinks_wine_favorites_title": "Our favourite wines:",
     "drinks_wine_favorite1": "Arzuaga Crianza",
     "drinks_wine_favorite2": "Protos Roble",
+    "drinks_mixes_title": "Wine mixes",
+    "drinks_mixes_intro": "Refreshing wine spritzers we love on hot days.",
+    "drinks_tinto_limon": "<strong>\"Tinto de verano\" limón:</strong> red wine with lemon soda over ice.",
+    "drinks_tinto_naranja": "<strong>\"Tinto de verano\" naranja:</strong> red wine with orange soda over ice.",
+    "drinks_sangria": "<strong>\"Sangria\":</strong> red wine with fruit, sweetener and a splash of brandy or liqueur.",
+    "drinks_sangria_vs_tinto": "Difference: \"Sangria\" is fuller with chopped fruit and a touch of spirits, while \"tinto de verano\" is a lighter wine-and-soda mix served ice-cold.",
 });
 
 Object.assign(translations.es, {
@@ -38,9 +41,6 @@ Object.assign(translations.es, {
 
     // Drinks
     "drinks_intro": "Nuestros básicos locales para una tarde calurosa o un largo fin de semana de boda.",
-    "drinks_tinto_title": "Tinto de verano",
-    "drinks_tinto_limon": "<strong>Tinto de verano limón:</strong> vino tinto con refresco de limón con hielo.",
-    "drinks_tinto_naranja": "<strong>Tinto de verano naranja:</strong> vino tinto con refresco de naranja con hielo.",
     "drinks_beer_title": "Cerveza",
     "drinks_beer": "<strong>Marcas:</strong> Estrella Galicia, Mahou, Alhambra. Favorita: Águila sin filtrar.",
     "drinks_beer_sizes": "<strong>Tamaños:</strong> caña (≈200 ml), doble (≈330–400 ml), jarra (≈500 ml).",
@@ -50,6 +50,12 @@ Object.assign(translations.es, {
     "drinks_wine_favorites_title": "Nuestros vinos favoritos:",
     "drinks_wine_favorite1": "Arzuaga Crianza",
     "drinks_wine_favorite2": "Protos Roble",
+    "drinks_mixes_title": "Mezclas de vino",
+    "drinks_mixes_intro": "Refrescos de vino perfectos para los días calurosos.",
+    "drinks_tinto_limon": "<strong>Tinto de verano limón:</strong> vino tinto con refresco de limón con hielo.",
+    "drinks_tinto_naranja": "<strong>Tinto de verano naranja:</strong> vino tinto con refresco de naranja con hielo.",
+    "drinks_sangria": "<strong>Sangría:</strong> vino tinto con fruta, toque dulce y un chorrito de brandy o licor.",
+    "drinks_sangria_vs_tinto": "Diferencia: la sangría lleva fruta troceada y un toque de alcohol, mientras el tinto de verano es una mezcla más ligera de vino y refresco muy fría.",
 });
 
 Object.assign(translations.de, {
@@ -61,20 +67,23 @@ Object.assign(translations.de, {
     "food_title": "Speisenkunde",
     "food_intro_text": "Das Essen in dieser Region zeichnet sich durch hochwertige lokale Zutaten und traditionelle Zubereitungen aus. Der Fokus liegt auf einfachen, kräftigen Aromen.",
     "food_specialties_title": "Lokale Spezialitäten",
-    "food_list_html": "<ul class=\"structure-list\"><li><strong>Croquetas:</strong> Kleine, knusprige Kroketten, oft mit Schinken oder Fisch.</li><li><strong>Tortilla de patatas:</strong> Dickes Omelett mit Kartoffeln, manchmal mit Zwiebeln.</li><li><strong>Jamón:</strong> Luftgetrockneter Schinken, in dünnen Scheiben.</li><li><strong>Queso:</strong> Schafskäse aus Kastilien, z. B. Pata de Mulo.</li><li><strong>Lechazo:</strong> Langsam im Holzofen gegartes Milchlamm – regionale Spezialität.</li><li><strong>Cocido:</strong> Kräftiger Eintopf aus Kichererbsen mit Fleisch und Wurst.</li><li><strong>Dulces:</strong> Süßes Gebäck wie mantecados, polvorones, rosquillas oder hojaldres.</li></ul>",
+    "food_list_html": "<ul class=\"structure-list\"><li><strong>\"Croquetas\":</strong> Kleine, knusprige Kroketten, oft mit Schinken oder Fisch.</li><li><strong>\"Tortilla de patatas\":</strong> Dickes Omelett mit Kartoffeln, manchmal mit Zwiebeln.</li><li><strong>\"Jamón\":</strong> Luftgetrockneter Schinken, in dünnen Scheiben.</li><li><strong>\"Queso\":</strong> Schafskäse aus Kastilien, z. B. \"Pata de Mulo\".</li><li><strong>\"Lechazo\":</strong> Langsam im Holzofen gegartes Milchlamm – regionale Spezialität.</li><li><strong>\"Cocido\":</strong> Kräftiger Eintopf aus Kichererbsen mit Fleisch und Wurst.</li><li><strong>\"Dulces\":</strong> Süßes Gebäck wie \"mantecados\", \"polvorones\", \"rosquillas\" oder \"hojaldres\".</li></ul>",
 
     // Drinks
     "drinks_intro": "Unsere lokalen Favoriten für warme Nachmittage und ein langes Hochzeitswochenende.",
-    "drinks_tinto_title": "Tinto de verano",
-    "drinks_tinto_limon": "<strong>Tinto de verano limón:</strong> Rotwein mit Zitronenlimonade auf Eis.",
-    "drinks_tinto_naranja": "<strong>Tinto de verano naranja:</strong> Rotwein mit Orangenlimonade auf Eis.",
     "drinks_beer_title": "Bier",
-    "drinks_beer": "<strong>Marken:</strong> Estrella Galicia, Mahou, Alhambra. Favorit: Águila sin filtrar.",
-    "drinks_beer_sizes": "<strong>Größen:</strong> caña (≈200 ml), doble (≈330–400 ml), jarra (≈500 ml).",
-    "drinks_alcohol_free": "Viele alkoholfreie Biere (0,0 %), auch tostadas (dunkel, leicht malzig).",
+    "drinks_beer": "<strong>Marken:</strong> Estrella Galicia, Mahou, Alhambra. Favorit: \"Águila sin filtrar\".",
+    "drinks_beer_sizes": "<strong>Größen:</strong> \"caña\" (≈200 ml), \"doble\" (≈330–400 ml), \"jarra\" (≈500 ml).",
+    "drinks_alcohol_free": "Viele alkoholfreie Biere (0,0 %), auch \"tostadas\" (dunkel, leicht malzig).",
     "drinks_wine_title": "Wein",
-    "drinks_wine_intro": "Wir trinken überwiegend Rotwein aus der Ribera del Duero (Tempranillo). Empfehlenswerte Bodegas sind Arzuaga, Protos und Zifar.",
+    "drinks_wine_intro": "Wir trinken überwiegend Rotwein aus der \"Ribera del Duero\" (\"Tempranillo\"). Empfehlenswerte Bodegas sind Arzuaga, Protos und Zifar.",
     "drinks_wine_favorites_title": "Unsere Lieblingsweine:",
     "drinks_wine_favorite1": "Arzuaga Crianza",
     "drinks_wine_favorite2": "Protos Roble",
+    "drinks_mixes_title": "Weinmixes",
+    "drinks_mixes_intro": "Erfrischende Weinschorlen für heiße Tage.",
+    "drinks_tinto_limon": "<strong>\"Tinto de verano\" limón:</strong> Rotwein mit Zitronenlimonade auf Eis.",
+    "drinks_tinto_naranja": "<strong>\"Tinto de verano\" naranja:</strong> Rotwein mit Orangenlimonade auf Eis.",
+    "drinks_sangria": "<strong>\"Sangria\":</strong> Rotwein mit Früchten, etwas Süße und einem Schuss Brandy oder Likör.",
+    "drinks_sangria_vs_tinto": "Unterschied: \"Sangria\" ist fülliger mit Fruchtstücken und einem Hauch Spirituose, während \"tinto de verano\" ein leichter Mix aus Wein und Limonade ist, eiskalt serviert.",
 });
