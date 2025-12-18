@@ -53,7 +53,7 @@ Object.assign(translations.es, {
     "recommendations_region_text": "<strong>Bodega recomendada para visitar:</strong> Yllera ({{LINK_YLLERA}}): arquitectura llamativa, restaurante y hotel.<br><strong>Más bodegas:</strong> Arzuaga ({{LINK_ARZUAGA}}), Protos, Peñafiel.<br><strong>Comer en bodegas tradicionales:</strong> Bodega la Sorbona cerca de Valladolid ({{LINK_BODEGA_SORBONA}}).<br><strong>Castillos:</strong> Peñafiel, Tiedra, Íscar.<br><strong>Ciudades:</strong> Segovia, León, Burgos, Ávila, Salamanca"
 });
 Object.assign(translations.de, {
-    "recommendations_page_title": "Empfehlungen",
+    "recommendations_page_title": "Wissenswertes",
     "recommendations_intro_heading": "Was Valladolid zu bieten hat",
     "recommendations_intro_text": "Valladolid und die Region Kastilien und León sind reich an Geschichte, gutem Essen und Trinken sowie schönen Sehenswürdigkeiten. Hier findet ihr einen schnellen Überblick, um die Stadt und die Umgebung in eurem Tempo zu entdecken.",
     "recommendations_structure_title": "So erkundet ihr alles",

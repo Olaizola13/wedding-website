@@ -1,6 +1,6 @@
 Object.assign(translations.en, {
     "memories_page_title": "Share Your Memories",
-    "memories_intro": "One of the greatest gifts you can give us is to share the wonderful moments you capture! We've created a shared album where you can easily upload your photos and videos from both the Get-Together and the Wedding day.",
+    "memories_intro": "We created this album so you can upload your photos and videos from the wedding. But even beforehand, you have the chance to share pictures here that you don't want to withhold from us and the other guests.",
     "memories_note": "A Google account is required for the Google Photos album.",
     "memories_google_button": "Google Photos Album",
     "memories_icloud_button": "iCloud Shared Album",
@@ -8,7 +8,7 @@ Object.assign(translations.en, {
 });
 Object.assign(translations.es, {
     "memories_page_title": "Comparte Tus Recuerdos",
-    "memories_intro": "¡Uno de los mejores regalos que podéis darnos es compartir los maravillosos momentos que capturéis! Hemos creado un álbum compartido donde podéis subir fácilmente vuestras fotos y vídeos tanto de la preboda como del día de la boda.",
+    "memories_intro": "Hemos creado este álbum para que podáis subir vuestras fotos y vídeos de la boda. Pero incluso antes, tenéis la oportunidad de compartir aquí imágenes que no queráis ocultarnos a nosotros ni al resto de invitados.",
     "memories_note": "Se requiere una cuenta de Google para el álbum de Google Fotos.",
     "memories_google_button": "Álbum de Google Fotos",
     "memories_icloud_button": "Álbum Compartido de iCloud",
@@ -16,7 +16,7 @@ Object.assign(translations.es, {
 });
 Object.assign(translations.de, {
     "memories_page_title": "Teile deine Erinnerungen",
-    "memories_intro": "Eines der größten Geschenke, die ihr uns machen könnt, ist, die wundervollen Momente zu teilen, die ihr festhaltet! Wir haben ein gemeinsames Album erstellt, in das ihr ganz einfach eure Fotos und Videos vom Get-Together und vom Hochzeitstag hochladen könnt.",
+    "memories_intro": "Wir haben dieses Album erstellt, damit ihr eure Fotos und Videos von der Hochzeit hochladen könnt. Aber auch im Vorhinein habt ihr die Möglichkeit hier Bilder mit uns zu teilen, die ihr uns und den anderen Gästen nicht vorenthalten möchtet.",
     "memories_note": "Für das Google Fotos-Album ist ein Google-Konto erforderlich.",
     "memories_google_button": "Google Fotos Album",
     "memories_icloud_button": "Geteiltes iCloud Album",

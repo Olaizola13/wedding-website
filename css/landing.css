@@ -1,0 +1,41 @@
+.language-selector-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1551092389-134b2c695329?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+.language-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 50px 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.language-box h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+.language-box a {
+    display: block;
+    background-color: #E0B4A2; /* UPDATED to dusty pink */
+    color: white;
+    padding: 15px 30px;
+    margin: 15px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.language-box a:hover {
+    background-color: #c99d87; /* UPDATED to a darker shade of pink for hover */
+}
+.selector-logo {
+    height: 200px; /* Changed from 100px */
+    width: auto;
+    margin-bottom: 20px;
+}

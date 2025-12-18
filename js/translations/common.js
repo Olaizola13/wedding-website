@@ -50,7 +50,7 @@ Object.assign(translations.de, {
     "btn_kids": "Kinder",
     "btn_transport": "Transport",
     "btn_rsvp": "RSVP",
-    "btn_recommendations": "Sehenswertes",
+    "btn_recommendations": "Wissenswertes",
     "btn_gifts": "Geschenke",
     "btn_memories": "Erinnerungen hochladen",
     "btn_song_requests": "Musikwünsche",

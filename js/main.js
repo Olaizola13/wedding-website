@@ -92,6 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const setLanguage = (language) => {
+        if (typeof translations === 'undefined') {
+            console.warn('Translations object not found. Skipping language update.');
+            return;
+        }
+
         const elements = document.querySelectorAll('[data-key]');
         
         elements.forEach(element => {

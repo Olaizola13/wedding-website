@@ -1,7 +1,7 @@
 Object.assign(translations.en, {
     "kids_page_title": "Kids",
     "kids_intro_1": "Our daughter Nuria will of course celebrate with us – and it wouldn't be a party without her friends!",
-    "kids_intro_2": "Children are very welcome to join all celebrations.",
+    "kids_intro_2": "Your children are warmly invited to join all celebrations.",
     "kids_at_the_venue_title": "On the Wedding Day",
     "kids_at_the_venue_text": "The wedding venue, <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>, is a wonderful place for children. There is a small playground and lots of safe open space to run and play.<br><br>A real highlight (but not a must!) are the donkeys and beautiful peacocks living there.",
     "kids_planning_title": "A Little Help for Our Planning",
@@ -12,7 +12,7 @@ Object.assign(translations.en, {
 Object.assign(translations.es, {
     "kids_page_title": "Niños",
     "kids_intro_1": "Nuestra hija Nuria celebrará con nosotros, ¡y no sería una fiesta sin sus amigos!",
-    "kids_intro_2": "Los niños son más que bienvenidos a participar en todas las celebraciones.",
+    "kids_intro_2": "Vuestros hijos están cordialmente invitados a participar en todas las celebraciones.",
     "kids_at_the_venue_title": "El día de la boda",
     "kids_at_the_venue_text": "El lugar de la boda, la <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>, es ideal para niños. Hay un pequeño parque infantil y mucho espacio abierto y seguro para jugar.<br><br>Un gran atractivo (aunque no obligatorio) son los burros y los pavos reales.",
     "kids_planning_title": "Una pequeña ayuda para planificar",
@@ -23,7 +23,7 @@ Object.assign(translations.es, {
 Object.assign(translations.de, {
     "kids_page_title": "Kinder",
     "kids_intro_1": "Unsere Tochter Nuria wird natürlich mit uns feiern – und es wäre keine Party ohne ihre Freunde!",
-    "kids_intro_2": "Kinder sind herzlich eingeladen, an allen Feierlichkeiten teilzunehmen.",
+    "kids_intro_2": "Eure Kinder sind herzlich eingeladen, an allen Feierlichkeiten teilzunehmen.",
     "kids_at_the_venue_title": "Am Hochzeitstag",
     "kids_at_the_venue_text": "Der Hochzeitsort, die <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>, ist ein wunderbarer Ort für Kinder. Es gibt einen kleinen Spielplatz sowie viel sicheren, offenen Raum zum Herumlaufen und Spielen.<br><br>Ein echtes Highlight (aber kein Muss!) sind die dort lebenden Esel und die wunderschönen Pfauen.",
     "kids_planning_title": "Eine kleine Hilfe für unsere Planung",

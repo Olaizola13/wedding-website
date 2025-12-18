@@ -1,6 +1,7 @@
 Object.assign(translations.en, {
     "date": "17 . 10 . 2026",
     "dear_guests": "Dear Guests,",
+    "header_cta": "Read our Story",
     "wedding_intro": "Dear guests,<br><br>Welcome to our wedding website. We're so happy you're here!<br>On this page you'll find all the information about our wedding weekend.",
     "wedding_intro_truncated": "Dear guests,<br><br>Welcome to our wedding website. We're so happy you're here!<br>On this page you'll find all the information about our wedding weekend.",
     "pre_wedding_title": "Get-Together",
@@ -21,6 +22,7 @@ Object.assign(translations.en, {
 Object.assign(translations.es, {
     "date": "17 . 10 . 2026",
     "dear_guests": "Queridos invitados,",
+    "header_cta": "Leer nuestra Historia",
     "wedding_intro": "Queridos invitados,<br><br>bienvenidos a nuestra página web de boda. ¡Qué alegría teneros aquí!<br>En esta página encontraréis toda la información sobre nuestro fin de semana de boda.",
     "wedding_intro_truncated": "Queridos invitados,<br><br>bienvenidos a nuestra página web de boda. ¡Qué alegría teneros aquí!<br>En esta página encontraréis toda la información sobre nuestro fin de semana de boda.",
     "pre_wedding_title": "Preboda",
@@ -41,6 +43,7 @@ Object.assign(translations.es, {
 Object.assign(translations.de, {
     "date": "17 . 10 . 2026",
     "dear_guests": "Liebe Gäste,",
+    "header_cta": "Unsere Geschichte lesen",
     "wedding_intro": "Liebe Gäste,<br><br>willkommen auf unserer Hochzeitsseite. Schön, dass ihr hier seid!<br>Auf dieser Seite findet ihr alle Informationen zu unserem Hochzeitswochenende.",
     "wedding_intro_truncated": "Liebe Gäste,<br><br>willkommen auf unserer Hochzeitsseite. Schön, dass ihr hier seid!<br>Auf dieser Seite findet ihr alle Informationen zu unserem Hochzeitswochenende.",
     "pre_wedding_title": "Get-Together",
