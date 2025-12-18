@@ -1,8 +1,4 @@
-const translations = {
-    en: {},
-    es: {},
-    de: {}
-};
+// Specific translations for rec_dayout page - relies on translations object from common.js
 
 Object.assign(translations.en, {
     "rec_dayout_page_title": "Our Perfect Day",
