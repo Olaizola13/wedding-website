@@ -137,8 +137,20 @@
     margin-right: 10px;
 }
 .content-card ul:not(.heart-list) li::before {
-    content: '🚌';
+    content: '•';
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1;
     margin-right: 10px;
+    vertical-align: sub;
+}
+.content-card ul.transport-list li::before {
+    content: '🚌';
+    font-weight: normal;
+    font-size: 1rem;
+    vertical-align: baseline;
+    color: inherit;
 }
 .content-card ul.heart-list {
     list-style-type: none;
