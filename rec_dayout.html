@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jessica & Juanma's Wedding">
-    <title data-key="page_title"></title>
+    <title data-key="rec_dayout_page_title"></title>
     <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
     <link rel="shortcut icon" href="/icons/favicon.ico" />
@@ -21,7 +21,7 @@
             position: relative;
             overflow: hidden;
             width: 100%;
-            padding-top: 100%; /* 1:1 Aspect Ratio, adjust if needed */
+            padding-top: 100%;
             margin-top: 20px;
             border-radius: 16px;
             border: 1px solid #eee;
@@ -45,10 +45,37 @@
         <h1 data-key="rec_dayout_page_title"></h1>
     </header>
     <main class="container">
+        <!-- Intro & Market -->
         <div class="content-card">
             <img src="/images/recommended_mercado.webp" alt="Mercado del Val" class="content-image">
-            <p data-key="recommendations_dayout_text"></p>
-            <img src="/images/recommended_croquetas.webp" alt="Croquetas from El Corcho" class="content-image">
+            <p data-key="dayout_intro_market"></p>
+            <p data-key="dayout_afternoon_drinks"></p>
+        </div>
+
+        <!-- Dinner & Tipping -->
+        <div class="content-card">
+            <p data-key="dayout_dinner"></p>
+            <div class="warning-card">
+                <p data-key="dayout_tipping" style="margin: 0;"></p>
+            </div>
+        </div>
+
+        <!-- Alternatives -->
+        <div class="content-card">
+             <h3 data-key="dayout_alternatives_title"></h3>
+             <p data-key="dayout_alternatives_text"></p>
+        </div>
+
+        <!-- Extra Recs -->
+        <div class="content-card">
+            <h3 data-key="dayout_extra_title"></h3>
+            <ul>
+                <li data-key="dayout_extra_list_1"></li>
+                <li data-key="dayout_extra_list_2"></li>
+                <li data-key="dayout_extra_list_3"></li>
+                <li data-key="dayout_extra_list_4"></li>
+                <li data-key="dayout_extra_list_5"></li>
+            </ul>
         </div>
 
         <div class="content-card">
@@ -57,12 +84,10 @@
                 <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1vHV81NPyVfK-HHDZ_agJP7Jvqsa6_Ow&ehbc=2E312F" width="640" height="480"></iframe>
             </div>
         </div>
-            <div class="text-center mt-30"><a href="/wedding.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
+        <div class="text-center mt-30"><a href="/recommendations.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
     </main>
     <script src="/js/translations/common.js" charset="UTF-8"></script>
     <script src="/js/translations/rec_dayout.js" charset="UTF-8"></script>
     <script src="/js/main.js" charset="UTF-8"></script>
 </body>
 </html>
-
-
