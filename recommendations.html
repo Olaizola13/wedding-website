@@ -13,18 +13,12 @@
     <meta name="apple-mobile-web-app-title" content="J&J" />
     <link rel="manifest" href="/icons/site.webmanifest" />
     <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        .structure-list, .practical-list {
-            list-style: disc;
-            padding-left: 20px;
-            line-height: 1.6;
-        }
-    </style>
 </head>
 <body>
     <div class="language-switcher">
@@ -40,81 +34,47 @@
         <img src="/images/icon_recommendations.webp" alt="Recommendations Icon">
         <h1 data-key="recommendations_page_title"></h1>
     </header>
-    <main class="container">
-        <div class="content-card">
-            <h2 data-key="recommendations_intro_heading"></h2>
-            <p data-key="recommendations_intro_text"></p>
-        </div>
+    
+    <main class="dashboard-container">
+        <p class="intro-text mb-30" data-key="recommendations_intro_text"></p>
 
-        <div class="content-card">
-            <h3 data-key="recommendations_structure_title"></h3>
-            <div data-key="recommendations_structure_text"></div>
-        </div>
+        <section class="icon-button-grid">
+            <!-- 1. History & Culture -->
+            <a href="/rec_history.html" class="icon-button">
+                <img src="/images/icon_rec_history.webp" alt="" data-key="btn_rec_history">
+                <span data-key="btn_rec_history"></span>
+            </a>
+            <!-- 2. Gastronomy (Food & Drinks) -->
+            <a href="/rec_gastronomy.html" class="icon-button">
+                <img src="/images/icon_rec_gastronomy.webp" alt="" data-key="btn_rec_gastronomy">
+                <span data-key="btn_rec_gastronomy"></span>
+            </a>
+            <!-- 3. Sights (Cathedral, Park, etc.) -->
+            <a href="/rec_sights.html" class="icon-button">
+                <img src="/images/icon_rec_sights.webp" alt="" data-key="btn_rec_sights">
+                <span data-key="btn_rec_sights"></span>
+            </a>
+            <!-- 4. Region (Surroundings) -->
+            <a href="/rec_region.html" class="icon-button">
+                <img src="/images/icon_rec_region.webp" alt="" data-key="btn_rec_region">
+                <span data-key="btn_rec_region"></span>
+            </a>
+            <!-- 5. Practical Info -->
+            <a href="/rec_practical.html" class="icon-button">
+                <img src="/images/icon_rec_practical.webp" alt="" data-key="btn_rec_practical">
+                <span data-key="btn_rec_practical"></span>
+            </a>
+            <!-- 6. Our Day Out -->
+            <a href="/rec_dayout.html" class="icon-button">
+                <img src="/images/icon_rec_dayout.webp" alt="" data-key="btn_rec_dayout">
+                <span data-key="btn_rec_dayout"></span>
+            </a>
+        </section>
 
-        <div class="content-card">
-            <h3 data-key="recommendations_hotspots_title"></h3>
-            <p data-key="recommendations_mercado_text"></p>
-        </div>
-
-        <div class="content-card">
-            <h3 data-key="recommendations_practical_title"></h3>
-            <ul class="practical-list">
-                <li data-key="recommendations_tipping"></li>
-                <li data-key="recommendations_opening_hours"></li>
-            </ul>
-        </div>
-
-        <div class="content-card">
-            <h3 data-key="recommendations_food_title"></h3>
-            <div data-key="recommendations_food_text"></div>
-        </div>
-
-        <div class="content-card">
-            <h3 data-key="recommendations_drinks_title"></h3>
-            <p data-key="recommendations_drinks_teaser"></p>
-            <a href="/rec_drinks.html" class="hotel-link" data-key="recommendations_drinks_button"></a>
-        </div>
-
-        <div class="content-card">
-            <h3 data-key="recommendations_sights_title"></h3>
-            <p data-key="recommendations_sights_intro"></p>
-            <div class="recommendations-index-grid">
-                <a href="/rec_history.html" class="rec-index-button">
-                    <img src="/images/icon_rec_history.webp" alt="" data-key="rec_index_history">
-                    <span data-key="rec_index_history"></span>
-                </a>
-                <a href="/rec_cathedral.html" class="rec-index-button">
-                    <img src="/images/icon_rec_cathedral.webp" alt="" data-key="rec_index_cathedral">
-                    <span data-key="rec_index_cathedral"></span>
-                </a>
-                <a href="/rec_beach.html" class="rec-index-button">
-                    <img src="/images/icon_rec_beach.webp" alt="" data-key="rec_index_beach">
-                    <span data-key="rec_index_beach"></span>
-                </a>
-                <a href="/rec_storks.html" class="rec-index-button">
-                    <img src="/images/icon_rec_storks.webp" alt="" data-key="rec_index_storks">
-                    <span data-key="rec_index_storks"></span>
-                </a>
-                <a href="/rec_park.html" class="rec-index-button">
-                    <img src="/images/icon_rec_park.webp" alt="" data-key="rec_index_park">
-                    <span data-key="rec_index_park"></span>
-                </a>
-                <a href="/rec_dayout.html" class="rec-index-button">
-                    <img src="/images/icon_rec_dayout.webp" alt="" data-key="rec_index_dayout">
-                    <span data-key="rec_index_dayout"></span>
-                </a>
-            </div>
-        </div>
-
-        <div class="content-card">
-            <h3 data-key="recommendations_region_title"></h3>
-            <p data-key="recommendations_region_text"></p>
-        </div>
-            <div class="text-center mt-30"><a href="/wedding.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
+        <div class="text-center mt-30"><a href="/wedding.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
     </main>
     <script src="/js/translations/common.js" charset="UTF-8"></script>
     <script src="/js/translations/recommendations.js" charset="UTF-8"></script>
     <script src="/js/main.js" charset="UTF-8"></script>
 </body>
 </html>
-
