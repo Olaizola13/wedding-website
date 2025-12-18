@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jessica & Juanma's Wedding">
+    <title data-key="rec_sights_title"></title>
+    <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="J&J" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .sights-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px 20px; /* Slightly larger vertical gap for visual separation */
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+        .sight-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+            text-align: center;
+            /* No background or box-shadow here as requested */
+        }
+        .sight-link:hover {
+            transform: translateY(-5px);
+        }
+        .sight-icon {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%; /* Circular icons */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            background-color: white;
+        }
+        .sight-title {
+            font-family: 'Kalam', cursive;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin: 0;
+            line-height: 1.2;
+        }
+        /* Mobile adjustment to keep icons proportionate */
+        @media (max-width: 480px) {
+            .sight-icon {
+                width: 80px;
+                height: 80px;
+            }
+            .sight-title {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="subpage-nav">
+        <a href="/recommendations.html" data-key="nav_back_to_main"></a>
+    </nav>
+    <header class="subpage-header">
+        <img src="/images/icon_rec_sights.webp" alt="Sights Icon">
+        <h1 data-key="rec_sights_title"></h1>
+    </header>
+    <main class="container">
+        <p class="intro-text mb-30" data-key="sights_intro_text"></p>
+
+        <div class="sights-grid">
+            <!-- 1. Cathedral -->
+            <a href="/rec_cathedral.html" class="sight-link">
+                <img src="/images/icon_rec_cathedral.webp" alt="Cathedral" class="sight-icon">
+                <span class="sight-title" data-key="rec_cathedral_title"></span>
+            </a>
+
+            <!-- 2. Park -->
+            <a href="/rec_park.html" class="sight-link">
+                <img src="/images/icon_rec_park.webp" alt="Park" class="sight-icon">
+                <span class="sight-title" data-key="rec_park_title"></span>
+            </a>
+
+            <!-- 3. Storks -->
+            <a href="/rec_storks.html" class="sight-link">
+                <img src="/images/icon_rec_storks.webp" alt="Storks" class="sight-icon">
+                <span class="sight-title" data-key="rec_storks_title"></span>
+            </a>
+
+            <!-- 4. Beach -->
+            <a href="/rec_beach.html" class="sight-link">
+                <img src="/images/icon_rec_beach.webp" alt="Beach" class="sight-icon">
+                <span class="sight-title" data-key="rec_beach_title"></span>
+            </a>
+        </div>
+
+        <div class="text-center mt-50"><a href="/recommendations.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
+    </main>
+    <script src="/js/translations/common.js" charset="UTF-8"></script>
+    <script src="/js/translations/rec_sights.js" charset="UTF-8"></script>
+    <script src="/js/main.js" charset="UTF-8"></script>
+</body>
+</html>
