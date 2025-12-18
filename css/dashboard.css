@@ -47,30 +47,32 @@
     filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
 }
 
-.story-icon-overlay {
+.story-button {
     position: absolute;
     top: 15px;
     left: 15px;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
     padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     color: var(--color-primary);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    animation: pulse-icon 3s infinite;
+    text-decoration: none;
+    transition: transform 0.2s ease;
 }
 
-@keyframes pulse-icon {
-    0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+.story-button:hover {
+    transform: scale(1.15);
 }
 
-.header-illustration-link:hover .story-icon-overlay {
-    transform: scale(1.1) rotate(5deg);
-    background-color: white;
+.story-button svg {
+    height: 30px;
+    width: 30px;
+    fill: currentColor;
 }
 
 /* Icon Button Grid */
