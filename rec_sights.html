@@ -18,50 +18,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <style>
-        .sights-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 500px;
-            margin: 40px auto 80px auto;
+        .intro-text {
+            margin-bottom: 30px;
         }
-        .sight-link {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-decoration: none;
-            transition: transform 0.2s ease;
-            text-align: center;
-            /* No background or box-shadow here as requested */
+
+        .sight-details {
+            margin-bottom: 20px;
         }
-        .sight-link:hover {
-            transform: translateY(-5px);
-        }
-        .sight-icon {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 50%; /* Circular icons */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            margin-bottom: 15px;
+
+        .sight-summary {
             background-color: white;
+            padding: 15px 20px;
+            border-radius: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            list-style: none; /* remove default marker */
         }
+        .sight-summary::-webkit-details-marker { /* remove default marker for chrome */
+            display: none;
+        }
+
+        .sight-summary::after {
+            content: '+';
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--color-secondary);
+            transition: transform 0.3s ease;
+        }
+        .sight-details[open] > .sight-summary::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+
+        .sight-link-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-align: left;
+            flex-grow: 1; /* Allow content to take available space */
+        }
+
+        .sight-icon {
+            width: 70px; /* Adjust icon size for summary */
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background-color: white;
+            flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+
         .sight-title {
             font-family: 'Kalam', cursive;
-            font-size: 1.2rem;
+            font-size: 1.5rem; /* Adjust title size for summary */
             font-weight: 700;
             color: var(--color-dark);
             margin: 0;
             line-height: 1.2;
         }
+
+        .accordion-content {
+            padding: 20px 0 0 0; /* Adjust padding for content within details */
+        }
+        .accordion-content .content-card {
+            margin-bottom: 0; /* Remove bottom margin if multiple content-cards are stacked */
+        }
+        .accordion-content .content-image {
+            margin-bottom: 20px;
+        }
+
+
         /* Mobile adjustment to keep icons proportionate */
         @media (max-width: 480px) {
             .sight-icon {
-                width: 80px;
-                height: 80px;
+                width: 50px;
+                height: 50px;
             }
             .sight-title {
-                font-size: 1.1rem;
+                font-size: 1.3rem;
+            }
+            .sight-summary {
+                padding: 10px 15px;
+            }
+            .sight-summary::after {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -77,31 +120,73 @@
     <main class="container">
         <p class="intro-text mb-30" data-key="sights_intro_text"></p>
 
-        <div class="sights-grid">
-            <!-- 1. Cathedral -->
-            <a href="/rec_cathedral.html" class="sight-link">
-                <img src="/images/icon_rec_cathedral.webp" alt="Cathedral" class="sight-icon">
-                <span class="sight-title" data-key="rec_cathedral_title"></span>
-            </a>
+        <!-- Cathedral Section -->
+        <details class="accordion-item sight-details">
+            <summary class="accordion-header sight-summary">
+                <div class="sight-link-content">
+                    <img src="/images/icon_rec_cathedral.webp" alt="Cathedral" class="sight-icon">
+                    <span class="sight-title" data-key="rec_cathedral_title"></span>
+                </div>
+            </summary>
+            <div class="accordion-content">
+                <div class="content-card">
+                    <img src="/images/recommended_catedral.webp" alt="Facade of Valladolid Cathedral" class="content-image">
+                    <p data-key="recommendations_cathedral_text"></p>
+                    <img src="/images/recommended_catedral_detras.webp" alt="Ruins behind the unfinished cathedral" class="content-image">
+                </div>
+            </div>
+        </details>
 
-            <!-- 2. Park -->
-            <a href="/rec_park.html" class="sight-link">
-                <img src="/images/icon_rec_park.webp" alt="Park" class="sight-icon">
-                <span class="sight-title" data-key="rec_park_title"></span>
-            </a>
+        <!-- Park Section -->
+        <details class="accordion-item sight-details">
+            <summary class="accordion-header sight-summary">
+                <div class="sight-link-content">
+                    <img src="/images/icon_rec_park.webp" alt="Park" class="sight-icon">
+                    <span class="sight-title" data-key="rec_park_title"></span>
+                </div>
+            </summary>
+            <div class="accordion-content">
+                <div class="content-card">
+                    <img src="/images/recommended_peacock.webp" alt="A peacock in Campo Grande park" class="content-image">
+                    <p data-key="recommendations_park_text"></p>
+                    <img src="/images/recommended_campo_grande.webp" alt="Aerial view of Campo Grande park" class="content-image">
+                </div>
+            </div>
+        </details>
 
-            <!-- 3. Storks -->
-            <a href="/rec_storks.html" class="sight-link">
-                <img src="/images/icon_rec_storks.webp" alt="Storks" class="sight-icon">
-                <span class="sight-title" data-key="rec_storks_title"></span>
-            </a>
+        <!-- Storks Section -->
+        <details class="accordion-item sight-details">
+            <summary class="accordion-header sight-summary">
+                <div class="sight-link-content">
+                    <img src="/images/icon_rec_storks.webp" alt="Storks" class="sight-icon">
+                    <span class="sight-title" data-key="rec_storks_title"></span>
+                </div>
+            </summary>
+            <div class="accordion-content">
+                <div class="content-card">
+                    <img src="/images/recommended_cigu.webp" alt="A white stork in flight" class="content-image">
+                    <p data-key="recommendations_storks_text"></p>
+                    <img src="/images/recommended_formation.webp" alt="A flight formation of storks at sunset" class="content-image">
+                </div>
+            </div>
+        </details>
 
-            <!-- 4. Beach -->
-            <a href="/rec_beach.html" class="sight-link">
-                <img src="/images/icon_rec_beach.webp" alt="Beach" class="sight-icon">
-                <span class="sight-title" data-key="rec_beach_title"></span>
-            </a>
-        </div>
+        <!-- Beach Section -->
+        <details class="accordion-item sight-details">
+            <summary class="accordion-header sight-summary">
+                <div class="sight-link-content">
+                    <img src="/images/icon_rec_beach.webp" alt="Beach" class="sight-icon">
+                    <span class="sight-title" data-key="rec_beach_title"></span>
+                </div>
+            </summary>
+            <div class="accordion-content">
+                <div class="content-card">
+                    <img src="/images/recommended_playa.webp" alt="The river beach in Valladolid" class="content-image">
+                    <p data-key="recommendations_beach_text"></p>
+                    <img src="/images/recommended_playa_view.webp" alt="View showing the beach is on a river" class="content-image">
+                </div>
+            </div>
+        </details>
 
         <div class="text-center mt-50"><a href="/recommendations.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
     </main>
