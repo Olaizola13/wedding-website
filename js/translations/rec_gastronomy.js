@@ -2,14 +2,13 @@ Object.assign(translations.en, {
     "rec_gastronomy_title": "Gastronomy",
     "tab_food": "Food",
     "tab_drinks": "Drinks",
-    "tab_hotspots": "Hot Spots",
-    
+
     // Food
     "food_title": "Food Cheat Sheet",
     "food_intro_text": "The food in this region is defined by high-quality local ingredients and traditional preparations forged by the harsh climate. The focus is on simple, robust flavors.",
     "food_specialties_title": "Local Specialties",
     "food_list_html": "<ul class=\"structure-list\"><li><strong>Croquetas:</strong> Small, crispy croquettes, often with ham or fish.</li><li><strong>Tortilla de patatas:</strong> Thick potato omelette, sometimes with onion.</li><li><strong>Jamón:</strong> Air-dried Spanish ham, served in thin slices.</li><li><strong>Queso:</strong> Sheep's cheese from Castile, e.g., Pata de Mulo.</li><li><strong>Lechazo:</strong> Wood-fired roast suckling lamb, a local specialty.</li><li><strong>Cocido:</strong> Hearty chickpea stew with meats and sausage.</li><li><strong>Dulces:</strong> Sweet treats like mantecados, polvorones, rosquillas or hojaldres.</li></ul>",
-    
+
     // Drinks
     "drinks_intro": "Local go-tos for a warm afternoon or a long wedding weekend.",
     "drinks_tinto_title": "Tinto de verano",
@@ -24,17 +23,12 @@ Object.assign(translations.en, {
     "drinks_wine_favorites_title": "Our favourite wines:",
     "drinks_wine_favorite1": "Arzuaga Crianza",
     "drinks_wine_favorite2": "Protos Roble",
-
-    // Hotspots
-    "hotspots_title": "Where to go",
-    "recommendations_mercado_text": "One of our favourite stops in Valladolid is the Mercado del Val ({{LINK_MERCADO_DEL_VAL}}), the city's historic market hall.<br><br>In the morning you sit here with a café con leche and something sweet. In the late afternoon and early evening people meet for a drink, which automatically comes with a tapa of your choice.<br><br>For tapas we like Bar Zamora ({{LINK_BAR_ZAMORA}}) or El Corcho ({{LINK_EL_CORCHO}}).<br><br>For dinner we recommend restaurants in Calle de Francisco Zarandona (e.g. Matamala {{LINK_MATAMALA}}; map: {{LINK_FRANCISCO_ZARANDONA_MAPS}}) or Calle Sandoval ({{LINK_CALLE_SANDOVAL_MAPS}})."
 });
 
 Object.assign(translations.es, {
     "rec_gastronomy_title": "Gastronomía",
     "tab_food": "Comida",
     "tab_drinks": "Bebidas",
-    "tab_hotspots": "Sitios Clave",
 
     // Food
     "food_title": "Guía rápida de comida",
@@ -56,17 +50,12 @@ Object.assign(translations.es, {
     "drinks_wine_favorites_title": "Nuestros vinos favoritos:",
     "drinks_wine_favorite1": "Arzuaga Crianza",
     "drinks_wine_favorite2": "Protos Roble",
-
-    // Hotspots
-    "hotspots_title": "Dónde ir",
-    "recommendations_mercado_text": "Uno de nuestros puntos habituales es el Mercado del Val ({{LINK_MERCADO_DEL_VAL}}), la histórica plaza de abastos.<br><br>Por la mañana se toma un café con leche con algo dulce. A última hora de la tarde la gente queda para tomar algo, que viene automáticamente acompañado de una tapa gratis.<br><br>Para tapear, nos gustan el Bar Zamora ({{LINK_BAR_ZAMORA}}) o El Corcho ({{LINK_EL_CORCHO}}).<br><br>Para cenar recomendamos los restaurantes de la Calle de Francisco Zarandona (p. ej. Matamala {{LINK_MATAMALA}}; mapa: {{LINK_FRANCISCO_ZARANDONA_MAPS}}) o de la Calle Sandoval ({{LINK_CALLE_SANDOVAL_MAPS}})."
 });
 
 Object.assign(translations.de, {
     "rec_gastronomy_title": "Gastronomie",
     "tab_food": "Essen",
     "tab_drinks": "Getränke",
-    "tab_hotspots": "Hot Spots",
 
     // Food
     "food_title": "Speisenkunde",
@@ -88,8 +77,4 @@ Object.assign(translations.de, {
     "drinks_wine_favorites_title": "Unsere Lieblingsweine:",
     "drinks_wine_favorite1": "Arzuaga Crianza",
     "drinks_wine_favorite2": "Protos Roble",
-
-    // Hotspots
-    "hotspots_title": "Wo man hingeht",
-    "recommendations_mercado_text": "Einer unserer typischen Anlaufpunkte ist der Mercado del Val ({{LINK_MERCADO_DEL_VAL}}), die historische Markthalle.<br><br>Am Vormittag sitzt man hier bei einem café con leche und etwas Süßem. Am späten Nachmittag trifft man sich auf ein Getränk, das automatisch mit einer Tapa eurer Wahl serviert wird.<br><br>Für Tapas empfehlen wir u. a. Bar Zamora ({{LINK_BAR_ZAMORA}}) oder El Corcho ({{LINK_EL_CORCHO}}).<br><br>Zum Abendessen empfehlen wir Restaurants in der Calle de Francisco Zarandona (z. B. Matamala {{LINK_MATAMALA}}; Lage: {{LINK_FRANCISCO_ZARANDONA_MAPS}}) oder der Calle Sandoval ({{LINK_CALLE_SANDOVAL_MAPS}})."
 });
