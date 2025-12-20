@@ -8,7 +8,7 @@ Object.assign(translations.en, {
     "rec_storks_title": "The Storks",
     "recommendations_storks_text": "Look up! On nearly every historic rooftop, you'll see gigantic nests, meticulously built by magnificent white storks. Unfortunately, you will most likely find them completely empty. The storks, being clever birds, spend their days out in the countryside wastelands, far from the tourists. Your best chance to actually see them is to catch their spectacular flight formations when they return home around sunset.",
     "rec_beach_title": "Little Caribbean",
-    "recommendations_beach_text": "Yes, Valladolid has a beach! Is it the Caribbean? No. Is it on the sea? Also no. But our mighty <em>Pisuerga</em> river provides a magnificent sandy stretch perfect for a sunny day. If you squint your eyes *really* hard, ignore the 12-story buildings on the other side and order a mojito, it's basically the same thing. Almost."
+    "recommendations_beach_text": "Yes, Valladolid has a beach! Is it the Caribbean? No. Is it on the sea? Also no. But our mighty <em>Pisuerga</em> river provides a magnificent sandy stretch perfect for a sunny day. If you squint your eyes *really* hard, ignore the 12-story buildings on the other side and order a <em>mojito</em>, it's basically the same thing. Almost."
 });
 Object.assign(translations.es, {
     "rec_sights_title": "Qué ver",
@@ -20,7 +20,7 @@ Object.assign(translations.es, {
     "rec_storks_title": "Las Cigüeñas",
     "recommendations_storks_text": "¡Mirad hacia arriba! En casi todos los tejados históricos, veréis nidos gigantescos, construidos meticulosamente por magníficas cigüeñas blancas. Desafortunadamente, lo más probable es que los encontréis completamente vacíos. Las cigüeñas, que son muy listas, pasan el día en los páramos del campo, lejos de los turistas. Vuestra mejor oportunidad para verlas de verdad es pillar sus espectaculares formaciones de vuelo cuando regresan a casa al atardecer.",
     "rec_beach_title": "El Pequeño Caribe",
-    "recommendations_beach_text": "¡Sí, Valladolid tiene playa! ¿Es el Caribe? No. ¿Está en el mar? Tampoco. Pero nuestro caudaloso río Pisuerga nos regala una magnífica franja de arena perfecta para un día de sol. Si entrecierras los ojos *muy* fuerte, ignoras los edificios de 12 plantas de la otra orilla y pides un mojito, es básicamente lo mismo. Casi."
+    "recommendations_beach_text": "¡Sí, Valladolid tiene playa! ¿Es el Caribe? No. ¿Está en el mar? Tampoco. Pero nuestro caudaloso río Pisuerga nos regala una magnífica franja de arena perfecta para un día de sol. Si entrecierras los ojos *muy* fuerte, ignoras los edificios de 12 plantas de la otra orilla y pides un <em>mojito</em>, es básicamente lo mismo. Casi."
 });
 Object.assign(translations.de, {
     "rec_sights_title": "Sehenswertes",
@@ -32,5 +32,5 @@ Object.assign(translations.de, {
     "rec_storks_title": "Die Störche",
     "recommendations_storks_text": "Schaut nach oben! Auf fast jedem historischen Dach seht ihr gigantische Nester, die von prächtigen Weißstörchen sorgfältig gebaut wurden. Leider werdet ihr sie höchstwahrscheinlich komplett leer vorfinden. Die Störche, kluge Vögel, verbringen ihre Tage auf dem Land in den Einöden, weit weg von den Touristen. Eure beste Chance, sie tatsächlich zu sehen, ist, ihre spektakulären Flugformationen zu erwischen, wenn sie bei Sonnenuntergang nach Hause zurückkehren.",
     "rec_beach_title": "Kleine Karibik",
-    "recommendations_beach_text": "Ja, Valladolid hat einen Strand! Ist es die Karibik? Nein. Liegt er am Meer? Auch nicht. Aber unser mächtiger Fluss <em>Pisuerga</em> beschert uns einen herrlichen Sandstrand, perfekt für einen sonnigen Tag. Wenn man die Augen *ganz* fest zusammenkneift, die 12-stöckigen Gebäude auf der anderen Seite ignoriert und einen Mojito bestellt, ist es im Grunde dasselbe. Fast."
+    "recommendations_beach_text": "Ja, Valladolid hat einen Strand! Ist es die Karibik? Nein. Liegt er am Meer? Auch nicht. Aber unser mächtiger Fluss <em>Pisuerga</em> beschert uns einen herrlichen Sandstrand, perfekt für einen sonnigen Tag. Wenn man die Augen *ganz* fest zusammenkneift, die 12-stöckigen Gebäude auf der anderen Seite ignoriert und einen <em>Mojito</em> bestellt, ist es im Grunde dasselbe. Fast."
 });

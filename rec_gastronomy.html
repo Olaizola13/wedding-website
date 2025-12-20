@@ -45,7 +45,7 @@
         <div id="food" class="tab-content active">
              <div class="content-card">
                 <h2 data-key="food_title"></h2>
-                <div data-key="food_intro_text"></div>
+                <p data-key="food_intro_text"></p>
             </div>
             <div class="content-card">
                  <img src="/images/recommended_croquetas.webp" alt="Tapas" class="content-image">
@@ -56,7 +56,39 @@
 
         <!-- DRINKS TAB -->
         <div id="drinks" class="tab-content">
-            <p data-key="drinks_intro" class="intro-text"></p>
+            <div class="content-card">
+                <h2 data-key="drinks_title"></h2>
+                <p data-key="drinks_intro"></p>
+            </div>
+
+            <details class="accordion-item">
+                <summary class="accordion-header" data-key="drinks_coffee_title"></summary>
+                <div class="accordion-content">
+                    <p data-key="drinks_coffee_intro"></p>
+                    <ul>
+                        <li data-key="drinks_coffee_con_leche"></li>
+                        <li data-key="drinks_coffee_hielo"></li>
+                        <li data-key="drinks_coffee_carajillo"></li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header" data-key="drinks_beer_title"></summary>
+                <div class="accordion-content">
+                    <p data-key="drinks_beer_intro"></p>
+                    <p data-key="drinks_beer_canas"></p>
+                    <p data-key="drinks_beer_sizes"></p>
+                    <p data-key="drinks_beer_favorites_title"></p>
+                    <ul class="heart-list">
+                        <li data-key="drinks_beer_favorite1"></li>
+                        <li data-key="drinks_beer_favorite2"></li>
+                        <li data-key="drinks_beer_favorite3"></li>
+                    </ul>
+                    <p data-key="drinks_beer_regulars"></p>
+                    <p data-key="drinks_alcohol_free"></p>
+                </div>
+            </details>
 
             <details class="accordion-item">
                 <summary class="accordion-header" data-key="drinks_wine_title"></summary>
@@ -78,17 +110,6 @@
             </details>
 
             <details class="accordion-item">
-                <summary class="accordion-header" data-key="drinks_beer_title"></summary>
-                <div class="accordion-content">
-                    <ul>
-                        <li data-key="drinks_beer"></li>
-                        <li data-key="drinks_beer_sizes"></li>
-                        <li data-key="drinks_alcohol_free"></li>
-                    </ul>
-                </div>
-            </details>
-
-            <details class="accordion-item">
                 <summary class="accordion-header" data-key="drinks_mixes_title"></summary>
                 <div class="accordion-content">
                     <p data-key="drinks_mixes_intro"></p>
@@ -100,18 +121,6 @@
                     <p data-key="drinks_sangria_vs_tinto"></p>
                 </div>
             </details>
-
-            <details class="accordion-item">
-                <summary class="accordion-header" data-key="drinks_coffee_title"></summary>
-                <div class="accordion-content">
-                    <p data-key="drinks_coffee_intro"></p>
-                    <ul>
-                        <li data-key="drinks_coffee_con_leche"></li>
-                        <li data-key="drinks_coffee_hielo"></li>
-                        <li data-key="drinks_coffee_carajillo"></li>
-                    </ul>
-                </div>
-            </details>
         </div>
 
         <div class="text-center mt-30"><a href="/recommendations.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
@@ -121,3 +130,7 @@
     <script src="/js/main.js" charset="UTF-8"></script>
 </body>
 </html>
+
+
+
+

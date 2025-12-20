@@ -227,24 +227,33 @@ document.addEventListener('DOMContentLoaded', () => {
         const tabButtons = document.querySelectorAll('.icon-tab-button');
         const tabContents = document.querySelectorAll('.tab-content');
 
+        const activateTab = (targetTab) => {
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabButtons.forEach(btn => {
+                if (btn.dataset.tab === targetTab) {
+                    btn.classList.add('active');
+                }
+            });
+            tabContents.forEach(content => {
+                if (content.id === targetTab) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        };
+
         tabButtons.forEach(button => {
             button.addEventListener('click', () => {
-                const targetTab = button.dataset.tab;
-
-                // Update button states
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                // Update content visibility
-                tabContents.forEach(content => {
-                    if (content.id === targetTab) {
-                        content.classList.add('active');
-                    } else {
-                        content.classList.remove('active');
-                    }
-                });
+                activateTab(button.dataset.tab);
             });
         });
+
+        const hashTarget = window.location.hash.slice(1);
+        const tabIds = Array.from(tabContents).map((content) => content.id);
+        if (hashTarget && tabIds.includes(hashTarget)) {
+            activateTab(hashTarget);
+        }
     }
 
 });

@@ -8,8 +8,9 @@
 .bank-details {
     background-color: white;
     padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: var(--tile-radius);
+    box-shadow: var(--tile-shadow);
+    border: var(--tile-border);
     margin-bottom: 30px;
     text-align: left;
 }
@@ -168,6 +169,17 @@
 }
 
 
+.content-card ul.flush-list li {
+    text-indent: 0;
+}
+.content-card ul.flush-list li::before {
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1.5em;
+    margin-right: 0;
+    text-align: center;
+}
+
 /* --- Forms & Iframe Containers --- */
 .google-form-container iframe {
     width: 100%;
@@ -273,8 +285,9 @@
 .terminal-card {
     background-color: #f8f5f2; /* A slightly different background */
     padding: 15px;
-    border-radius: 12px;
-    border: 1px solid #eee;
+    border-radius: var(--tile-radius);
+    box-shadow: var(--tile-shadow);
+    border: var(--tile-border);
 }
 .terminal-card p {
     margin: 0;
@@ -304,4 +317,5 @@
         margin-top: 0;
     }
 }
+
 

@@ -161,12 +161,12 @@
     background-color: var(--color-secondary);
     color: white;
     padding: 15px 20px;
-    border-radius: 16px;
+    border-radius: var(--tile-radius);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: var(--tile-shadow);
 }
 .collapsible-hotel-header h2 {
     margin: 0;
@@ -277,10 +277,10 @@
 }
 .accordion-item {
     background-color: white;
-    border-radius: 12px;
+    border-radius: var(--tile-radius);
     margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
+    box-shadow: var(--tile-shadow);
+    border: var(--tile-border);
 }
 .accordion-header {
     cursor: pointer;
