@@ -20,6 +20,10 @@ Object.assign(translations.en, {
     "hotel_mozart_name": "Hotel Mozart (3*)",
     "hotel_mozart_desc": "A charming, classic hotel located on a quiet street just around the corner from Hotel Colón Plaza.",
     "hotel_mozart_booking": "We have blocked 15 double rooms at a fixed rate (110€/night). To book, you must call the hotel at (+34 983 297 777) or email (hotelmozart@hotelmozart.net) and mention the reference <em>Boda Juanma y Jessica</em>. This block is valid until September 16, 2026.",
+    "hotel_recoletos_desc": "Comfortable hotel close to the station and Campo Grande park.",
+    "hotel_recoletos_booking": "Book directly on the hotel website.",
+    "hotel_enara_desc": "Boutique hotel in the city center.",
+    "hotel_enara_booking": "Book directly on the hotel website.",
     "hotel_link_text": "Visit Website"
 });
 Object.assign(translations.es, {
@@ -44,6 +48,10 @@ Object.assign(translations.es, {
     "hotel_mozart_name": "Hotel Mozart (3*)",
     "hotel_mozart_desc": "Un hotel clásico y encantador situado en una calle tranquila a la vuelta de la esquina del Hotel Colón Plaza.",
     "hotel_mozart_booking": "Hemos bloqueado 15 habitaciones dobles a un precio fijo (110€/noche). Para reservar, debéis llamar al hotel (+34 983 297 777) o enviar un email (hotelmozart@hotelmozart.net) y mencionar la referencia <em>Boda Juanma y Jessica</em>. Este bloqueo es válido hasta el 16 de septiembre de 2026.",
+    "hotel_recoletos_desc": "Hotel cómodo cerca de la estación y del parque Campo Grande.",
+    "hotel_recoletos_booking": "Reserva directamente en la web del hotel.",
+    "hotel_enara_desc": "Hotel boutique en el centro de la ciudad.",
+    "hotel_enara_booking": "Reserva directamente en la web del hotel.",
     "hotel_link_text": "Visitar Web"
 });
 Object.assign(translations.de, {
@@ -68,5 +76,9 @@ Object.assign(translations.de, {
     "hotel_mozart_name": "Hotel Mozart (3*)",
     "hotel_mozart_desc": "Ein charmantes, klassisches Hotel in einer ruhigen Straße gleich um die Ecke vom Hotel Colón Plaza.",
     "hotel_mozart_booking": "Wir haben 15 Doppelzimmer zu einem festen Preis (110€/Nacht) blockiert. Um zu buchen, müsst ihr das Hotel anrufen (+34 983 297 777) oder eine E-Mail (hotelmozart@hotelmozart.net) senden und die Referenz <em>Boda Juanma y Jessica</em> angeben. Diese Blockierung ist bis zum 16. September 2026 gültig.",
+    "hotel_recoletos_desc": "Komfortables Hotel in Bahnhofsnähe und nahe dem Campo Grande Park.",
+    "hotel_recoletos_booking": "Buchung direkt über die Hotel-Website.",
+    "hotel_enara_desc": "Boutique-Hotel im Stadtzentrum.",
+    "hotel_enara_booking": "Buchung direkt über die Hotel-Website.",
     "hotel_link_text": "Webseite besuchen"
 });

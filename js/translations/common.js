@@ -19,6 +19,7 @@ Object.assign(translations.en, {
     "btn_memories": "Memories",
     "btn_song_requests": "Song Requests",
     "nav_back_to_main": "← Back to Main Page",
+    "nav_back_to_recommendations": "← Back to Recommendations",
     "rsvp_a_yes": "Yes",
     "rsvp_a_no": "No"
 });
@@ -37,6 +38,7 @@ Object.assign(translations.es, {
     "btn_memories": "Recuerdos",
     "btn_song_requests": "Peticiones Musicales",
     "nav_back_to_main": "← Volver a la Página Principal",
+    "nav_back_to_recommendations": "← Volver a Recomendaciones",
     "rsvp_a_yes": "Sí",
     "rsvp_a_no": "No"
 });
@@ -55,6 +57,7 @@ Object.assign(translations.de, {
     "btn_memories": "Erinnerungen",
     "btn_song_requests": "Musikwünsche",
     "nav_back_to_main": "← Zurück zur Hauptseite",
+    "nav_back_to_recommendations": "← Zurück zu den Empfehlungen",
     "rsvp_a_yes": "Ja",
     "rsvp_a_no": "Nein"
 });
