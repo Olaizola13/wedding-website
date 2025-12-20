@@ -31,6 +31,11 @@ Object.assign(translations.en, {
     "drinks_tinto_naranja": "<strong>\"Tinto de verano\" naranja:</strong> red wine with orange soda over ice.",
     "drinks_sangria": "<strong>\"Sangria\":</strong> red wine with fruit, sweetener and a splash of brandy or liqueur.",
     "drinks_sangria_vs_tinto": "Difference: \"Sangria\" is fuller with chopped fruit and a touch of spirits, usually ordered as a 1L or 2L jar to share; for a solo refresher people pick \"tinto de verano\"—a lighter wine-and-soda mix served ice-cold.",
+    "drinks_coffee_title": "Coffee",
+    "drinks_coffee_intro": "Coffee in Spain is enjoyed many ways, but the most classical order is the \"café con leche\"—half espresso, half hot milk—and it's the go-to coffee for many people.",
+    "drinks_coffee_con_leche": "<strong>\"Café con leche\":</strong> a balanced mix of espresso and steamed milk, comforting and the daily favorite for many locals.",
+    "drinks_coffee_hielo": "<strong>\"Café con hielo\":</strong> an espresso served alongside a glass with ice so you can add sugar before cooling it; a summer staple that plenty enjoy all year.",
+    "drinks_coffee_carajillo": "<strong>\"Carajillo\":</strong> black coffee mixed with \"Licor 43\", a timeless sweet-and-spirited specialty loved by many.",
 });
 
 Object.assign(translations.es, {
@@ -66,6 +71,11 @@ Object.assign(translations.es, {
     "drinks_tinto_naranja": "<strong>Tinto de verano naranja:</strong> vino tinto con refresco de naranja con hielo.",
     "drinks_sangria": "<strong>Sangría:</strong> vino tinto con fruta, toque dulce y un chorrito de brandy o licor.",
     "drinks_sangria_vs_tinto": "Diferencia: la sangría lleva fruta troceada y un toque de alcohol, suele pedirse en jarra de 1L o 2L para compartir; para tomar uno solo se pide antes un tinto de verano, una mezcla más ligera de vino y refresco muy fría.",
+    "drinks_coffee_title": "Café",
+    "drinks_coffee_intro": "En España se toma el café de muchas maneras, pero la forma más clásica es el \"café con leche\": mitad espresso, mitad leche caliente; la elección habitual de muchos.",
+    "drinks_coffee_con_leche": "<strong>Café con leche:</strong> mezcla equilibrada de espresso y leche caliente, reconfortante y favorita diaria para mucha gente.",
+    "drinks_coffee_hielo": "<strong>Café con hielo:</strong> un espresso que llega junto a un vaso con hielo para que puedas añadir azúcar antes de enfriarlo; un básico del verano que muchos piden todo el año.",
+    "drinks_coffee_carajillo": "<strong>Carajillo:</strong> café solo mezclado con \"Licor 43\", un clásico dulce y con chispa que encanta a muchos.",
 });
 
 Object.assign(translations.de, {
@@ -101,4 +111,9 @@ Object.assign(translations.de, {
     "drinks_tinto_naranja": "<strong>\"Tinto de verano\" naranja:</strong> Rotwein mit Orangenlimonade auf Eis.",
     "drinks_sangria": "<strong>\"Sangria\":</strong> Rotwein mit Früchten, etwas Süße und einem Schuss Brandy oder Likör.",
     "drinks_sangria_vs_tinto": "Unterschied: \"Sangria\" ist fülliger mit Fruchtstücken und einem Hauch Spirituose, wird meist im 1L- oder 2L-Krug zum Teilen bestellt; für ein einzelnes Glas nimmt man eher \"tinto de verano\" – ein leichter Mix aus Wein und Limonade, eiskalt serviert.",
+    "drinks_coffee_title": "Kaffee",
+    "drinks_coffee_intro": "In Spanien wird Kaffee auf viele Arten getrunken, aber die klassische Bestellung ist der \"café con leche\" – zur Hälfte Espresso, zur Hälfte heiße Milch – und für viele die Standardwahl.",
+    "drinks_coffee_con_leche": "<strong>\"Café con leche\":</strong> ein ausgewogener Mix aus Espresso und warmer Milch, gemütlich und für viele das tägliche Lieblingsgetränk.",
+    "drinks_coffee_hielo": "<strong>\"Café con hielo\":</strong> ein Espresso, der separat zu einem Glas mit Eis kommt, damit man vor dem Abkühlen süßen kann; sehr beliebt im Sommer und bei vielen das ganze Jahr.",
+    "drinks_coffee_carajillo": "<strong>\"Carajillo\":</strong> schwarzer Kaffee gemischt mit \"Licor 43\", eine zeitlose, süßliche Spezialität, die viele lieben.",
 });
