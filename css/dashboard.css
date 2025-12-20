@@ -85,10 +85,18 @@
 /* Icon Button Grid */
 .icon-button-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: var(--icon-grid-columns, repeat(3, minmax(0, 1fr)));
     grid-auto-rows: auto;
     gap: 12px;
     margin-bottom: 30px;
+}
+
+.icon-button-grid--two-columns {
+    --icon-grid-columns: repeat(2, minmax(0, 1fr));
+}
+
+.icon-button-grid--three-columns {
+    --icon-grid-columns: repeat(3, minmax(0, 1fr));
 }
 
 .icon-button {
@@ -100,7 +108,7 @@
     justify-content: center;
     text-decoration: none;
     transition: transform 0.2s ease;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .icon-button:hover {
@@ -127,6 +135,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    word-break: break-word;
+    text-wrap: balance;
 }
 
 /* --- Countdown Timer --- */
