@@ -271,7 +271,7 @@
 }
 
 .event-details-card.expanded .toggle-arrow {
-    transform: rotate(180deg);
+    transform: rotate(45deg);
 }
 
 .event-details-card:not(.expanded) .toggle-arrow {
