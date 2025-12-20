@@ -85,8 +85,8 @@
 /* Icon Button Grid */
 .icon-button-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
     margin-bottom: 30px;
 }
 
@@ -107,8 +107,8 @@
 }
 
 .icon-button img {
-    width: 80px;
-    height: 80px;
+    width: 72px;
+    height: 72px;
     object-fit: contain;
     background-color: white;
     border-radius: 16px;
