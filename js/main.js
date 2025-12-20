@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         "LINK_GETRAENKE": {
             entries: [
-                { url: "/rec_drinks.html", label: { en: "Drinks guide", es: "Guía de bebidas", de: "Getränkekunde" } }
+                { url: "/rec_gastronomy.html#drinks", label: { en: "Drinks guide", es: "Guía de bebidas", de: "Getränkekunde" } }
             ],
             joiner: " "
         },
