@@ -17,7 +17,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
-    </head>
+    <style>
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 75%;
+            margin-top: 20px;
+            border-radius: 16px;
+            border: 1px solid #eee;
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
 <body>
     <div class="language-switcher">
         <a href="?lang=en" title="English"><img src="/images/uk.png" alt="English"></a>
@@ -40,8 +61,12 @@
             <h3 data-key="transport_departure_title"></h3>
             <p data-key="transport_departure_notice"></p>
             <p data-key="transport_departure_text"></p>
+            <p data-key="transport_departure_medina"></p>
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=41.6533255%2C-4.7321355&t=&z=17&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+            </div>
         </div>
-        
+
         <div class="content-card">
             <h3 data-key="transport_return_title"></h3>
             <p data-key="transport_return_text"></p>
