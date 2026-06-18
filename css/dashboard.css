@@ -355,232 +355,121 @@
     }
 }
 
-/* --- Added wedding weekend helpers --- */
-.quick-plan-card,
-.weekend-timeline-card,
-.faq-card {
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    padding: 22px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.section-eyebrow {
-    font-family: 'Kalam', cursive;
-    color: var(--color-primary);
-    font-weight: 700;
-    margin: 0 0 4px 0;
-    font-size: 1.05rem;
-}
-
-.quick-plan-card h2,
-.weekend-timeline-card h2,
-.faq-card h2 {
-    margin: 0 0 18px 0;
-    color: var(--color-dark);
-    font-size: 1.7rem;
-}
-
-.quick-plan-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-}
-
-.quick-plan-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-height: 104px;
-    padding: 14px 10px;
-    background-color: var(--color-background);
-    border: 1px solid #eee;
-    border-radius: 14px;
-    color: var(--color-dark);
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.quick-plan-item:hover,
-.faq-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-}
-
-.quick-plan-icon {
-    width: 42px;
-    height: 42px;
+/* --- Subtle dashboard helpers --- */
+.floating-help {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 90;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background-color: var(--color-accent);
-    font-size: 1.35rem;
-}
-
-.weekend-timeline {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    text-align: left;
-}
-
-.weekend-step {
-    display: grid;
-    grid-template-columns: 74px 1fr;
-    gap: 14px;
-    align-items: stretch;
-    padding: 14px;
-    border-radius: 14px;
-    background-color: var(--color-background);
-    border: 1px solid #eee;
-}
-
-.weekend-step--highlight {
-    background-color: #fff7f3;
-    border-color: rgba(224, 180, 162, 0.55);
-}
-
-.weekend-date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 12px;
-    background-color: var(--color-secondary);
-    color: white;
-    font-family: 'Kalam', cursive;
-    font-weight: 700;
-    line-height: 1.15;
-    padding: 8px;
-}
-
-.weekend-step--highlight .weekend-date {
-    background-color: var(--color-accent);
-}
-
-.weekend-copy h3 {
-    margin: 0 0 4px 0;
-    font-family: 'Playfair Display', serif;
-    color: var(--color-dark);
-    font-size: 1.25rem;
-}
-
-.weekend-copy p {
-    margin: 0;
-    font-family: 'Nunito', sans-serif;
-    color: var(--color-dark);
-    line-height: 1.45;
-}
-
-.calendar-link-row {
-    margin-top: 14px;
-}
-
-.mini-calendar-button {
-    display: inline-block;
     padding: 10px 14px;
     border-radius: 999px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.88);
     color: var(--color-dark);
     text-decoration: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Kalam', cursive;
     font-weight: 700;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    backdrop-filter: blur(5px);
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.mini-calendar-button:hover {
+.floating-help:hover {
     transform: translateY(-2px);
     background-color: white;
 }
 
-.faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.faq-card {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin: 8px 0 42px;
 }
 
-.faq-link {
-    display: block;
-    padding: 14px 16px;
-    border-radius: 14px;
-    background-color: var(--color-background);
-    border-left: 4px solid var(--color-primary);
+.faq-card h2 {
+    margin: 0 0 14px;
     color: var(--color-dark);
-    text-decoration: none;
-    text-align: left;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.faq-link span {
-    display: block;
+.faq-item {
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 0;
+}
+
+.faq-item:first-of-type {
+    border-top: 0;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 14px 4px;
+    color: var(--color-dark);
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    position: relative;
 }
 
-.faq-link em {
-    display: block;
-    margin-top: 3px;
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 4px;
+    color: var(--color-primary);
+    font-family: 'Kalam', cursive;
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.faq-item p {
+    margin: 0 26px 12px 4px;
+    color: var(--color-dark);
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.55;
+}
+
+.faq-inline-link,
+.mini-calendar-button {
+    display: inline-block;
+    margin: 0 8px 14px 4px;
     color: var(--color-secondary);
     font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
 }
 
-.confetti-piece {
-    position: fixed;
-    top: -12px;
-    z-index: 9999;
-    width: 8px;
-    height: 14px;
-    border-radius: 2px;
-    pointer-events: none;
-    animation: confetti-fall 3.4s linear forwards;
+.faq-inline-link:hover,
+.mini-calendar-button:hover {
+    color: var(--color-dark);
+    text-decoration: underline;
 }
 
-@keyframes confetti-fall {
-    to {
-        transform: translate3d(var(--confetti-drift), 110vh, 0) rotate(720deg);
-        opacity: 0.9;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .confetti-piece {
-        display: none;
-    }
+.calendar-link-row {
+    margin-bottom: 4px;
 }
 
 @media (max-width: 600px) {
-    .quick-plan-card,
-    .weekend-timeline-card,
+    .floating-help {
+        right: 12px;
+        bottom: 12px;
+        padding: 9px 12px;
+    }
+
     .faq-card {
-        padding: 18px;
+        margin-bottom: 56px;
     }
-
-    .weekend-step {
-        grid-template-columns: 64px 1fr;
-        gap: 12px;
-    }
-}
-
-.countdown-container--married {
-    justify-content: center;
-    background: linear-gradient(135deg, #fff7f3, #ffffff);
-    border: 1px solid rgba(224, 180, 162, 0.45);
-}
-
-.countdown-container--married .countdown-label {
-    color: var(--color-primary);
-    font-family: 'Kalam', cursive;
-    font-size: 1.8rem;
-    text-transform: none;
 }

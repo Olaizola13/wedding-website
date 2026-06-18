@@ -189,28 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (clickableArrow) clickableArrow.addEventListener('click', toggleExpansion);
     }
 
-    // --- Small celebration details for the dashboard ---
-    const launchConfetti = () => {
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-        const colors = ['#d1a3a4', '#E0B4A2', '#88a0a8', '#f8f5f2', '#ffffff'];
-        for (let i = 0; i < 42; i += 1) {
-            const piece = document.createElement('span');
-            piece.className = 'confetti-piece';
-            piece.style.left = `${Math.random() * 100}vw`;
-            piece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-            piece.style.animationDelay = `${Math.random() * 0.8}s`;
-            piece.style.setProperty('--confetti-drift', `${Math.random() * 160 - 80}px`);
-            document.body.appendChild(piece);
-            piece.addEventListener('animationend', () => piece.remove());
-        }
-    };
-
-    if (document.querySelector('.dashboard-container') && !sessionStorage.getItem('weddingConfettiSeen')) {
-        sessionStorage.setItem('weddingConfettiSeen', 'true');
-        window.setTimeout(launchConfetti, 700);
-    }
-
     // --- Calendar download links ---
     const calendarEvents = {
         prewedding: {
@@ -264,10 +242,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (distance < 0) {
                 // Ensure the "We are married!" text is translatable
-                countdownElement.classList.add('countdown-container--married');
                 countdownElement.innerHTML = `<div class="countdown-label" data-key="countdown_married"></div>`;
                 setLanguage(localStorage.getItem('language') || 'en'); // Re-apply translations
-                launchConfetti();
                 clearInterval(countdownInterval);
                 return;
             }
