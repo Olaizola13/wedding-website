@@ -380,12 +380,6 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
-.floating-help::before {
-    content: '♡';
-    font-size: 1.05rem;
-    line-height: 1;
-}
-
 .floating-help:hover,
 .floating-help:focus-visible,
 .floating-help.is-active {
