@@ -176,6 +176,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- FAQ reveal logic for main page ---
+    const floatingHelp = document.querySelector('.floating-help');
+    const faqCard = document.getElementById('faq');
+    if (floatingHelp && faqCard) {
+        const setFaqVisibility = (isVisible) => {
+            faqCard.hidden = !isVisible;
+            floatingHelp.setAttribute('aria-expanded', String(isVisible));
+            floatingHelp.classList.toggle('is-active', isVisible);
+
+            if (isVisible) {
+                faqCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        };
+
+        floatingHelp.addEventListener('click', () => {
+            setFaqVisibility(faqCard.hidden);
+        });
+    }
+
     // --- Collapsible section logic for main page ---
     const eventCard = document.querySelector('.event-details-card');
     if (eventCard) {
