@@ -364,21 +364,39 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 14px;
+    gap: 6px;
+    padding: 11px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.72);
     border-radius: 999px;
-    background-color: rgba(255, 255, 255, 0.88);
-    color: var(--color-dark);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(250, 238, 232, 0.94));
+    color: var(--color-primary);
+    cursor: pointer;
     text-decoration: none;
     font-family: 'Kalam', cursive;
+    font-size: 1rem;
     font-weight: 700;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
     backdrop-filter: blur(5px);
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
-.floating-help:hover {
+.floating-help::before {
+    content: '♡';
+    font-size: 1.05rem;
+    line-height: 1;
+}
+
+.floating-help:hover,
+.floating-help:focus-visible,
+.floating-help.is-active {
+    color: var(--color-dark);
     transform: translateY(-2px);
-    background-color: white;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.16);
+}
+
+.floating-help:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
 }
 
 .faq-card {
@@ -387,6 +405,11 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     padding: 20px;
     margin: 8px 0 42px;
+    scroll-margin-top: 20px;
+}
+
+.faq-card[hidden] {
+    display: none;
 }
 
 .faq-card h2 {
