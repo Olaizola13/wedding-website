@@ -354,3 +354,122 @@
         font-size: 0.7rem;
     }
 }
+
+/* --- Subtle dashboard helpers --- */
+.floating-help {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 90;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.88);
+    color: var(--color-dark);
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    backdrop-filter: blur(5px);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.floating-help:hover {
+    transform: translateY(-2px);
+    background-color: white;
+}
+
+.faq-card {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin: 8px 0 42px;
+}
+
+.faq-card h2 {
+    margin: 0 0 14px;
+    color: var(--color-dark);
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.faq-item {
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 0;
+}
+
+.faq-item:first-of-type {
+    border-top: 0;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 14px 4px;
+    color: var(--color-dark);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 4px;
+    color: var(--color-primary);
+    font-family: 'Kalam', cursive;
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.faq-item p {
+    margin: 0 26px 12px 4px;
+    color: var(--color-dark);
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.55;
+}
+
+.faq-inline-link,
+.mini-calendar-button {
+    display: inline-block;
+    margin: 0 8px 14px 4px;
+    color: var(--color-secondary);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.faq-inline-link:hover,
+.mini-calendar-button:hover {
+    color: var(--color-dark);
+    text-decoration: underline;
+}
+
+.calendar-link-row {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+    .floating-help {
+        right: 12px;
+        bottom: 12px;
+        padding: 9px 12px;
+    }
+
+    .faq-card {
+        margin-bottom: 56px;
+    }
+}

@@ -189,6 +189,48 @@ document.addEventListener('DOMContentLoaded', () => {
         if (clickableArrow) clickableArrow.addEventListener('click', toggleExpansion);
     }
 
+    // --- Calendar download links ---
+    const calendarEvents = {
+        prewedding: {
+            title: 'Jessica & Juanma Get-Together',
+            start: '20261016T180000Z',
+            end: '20261016T215900Z',
+            location: 'Privee, Valladolid',
+            description: 'Get-Together for Jessica and Juanma wedding weekend.'
+        },
+        wedding: {
+            title: 'Jessica & Juanma Wedding',
+            start: '20261017T110000Z',
+            end: '20261017T215900Z',
+            location: 'Posada Real del Pinar',
+            description: 'Arrival from 12:30, ceremony at 13:00.'
+        }
+    };
+
+    const createCalendarFile = (event) => [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//JessicaJuanma//Wedding Website//EN',
+        'BEGIN:VEVENT',
+        `UID:${event.start}-${event.title.replace(/\s+/g, '-')}@jessica-juanma-wedding`,
+        `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
+        `DTSTART:${event.start}`,
+        `DTEND:${event.end}`,
+        `SUMMARY:${event.title}`,
+        `LOCATION:${event.location}`,
+        `DESCRIPTION:${event.description}`,
+        'END:VEVENT',
+        'END:VCALENDAR'
+    ].join('\r\n');
+
+    document.querySelectorAll('[data-calendar-event]').forEach(link => {
+        const event = calendarEvents[link.dataset.calendarEvent];
+        if (!event) return;
+        const blob = new Blob([createCalendarFile(event)], { type: 'text/calendar;charset=utf-8' });
+        link.href = URL.createObjectURL(blob);
+        link.download = `${link.dataset.calendarEvent}-jessica-juanma.ics`;
+    });
+
     // --- Countdown timer logic ---
     const countdownElement = document.getElementById('countdown-timer');
     if (countdownElement) {

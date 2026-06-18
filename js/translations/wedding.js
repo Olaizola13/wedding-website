@@ -61,3 +61,75 @@ Object.assign(translations.de, {
     "countdown_seconds": "Sekunden",
     "countdown_married": "Wir haben geheiratet!"
 });
+
+Object.assign(translations.en, {
+    "floating_help": "Questions?",
+    "faq_title": "Quick questions",
+    "faq_save_date_q": "Can I save the dates in my calendar?",
+    "faq_save_date_a": "Yes — download the calendar reminders here and keep the weekend handy.",
+    "calendar_add_prewedding": "Add Get-Together",
+    "calendar_add_wedding": "Add wedding",
+    "faq_travel_q": "How do I get to Valladolid?",
+    "faq_travel_a": "We collected the main arrival options so you can choose what works best for you.",
+    "faq_go_travel": "Go to arrival information →",
+    "faq_stay_q": "Where should I stay?",
+    "faq_stay_a": "There is a dedicated accommodation page with recommended areas and hotel ideas.",
+    "faq_go_stay": "Go to accommodation →",
+    "faq_transport_q": "Will there be transport?",
+    "faq_transport_a": "Transport details live in their own section and will stay updated there.",
+    "faq_go_transport": "Go to transport →",
+    "faq_kids_q": "What about children?",
+    "faq_kids_a": "We added a family section with the information parents may need.",
+    "faq_go_kids": "Go to kids information →",
+    "faq_rsvp_q": "Where do I confirm?",
+    "faq_rsvp_a": "Please use the RSVP section so we receive all your details in one place.",
+    "faq_go_rsvp": "Go to RSVP →"
+});
+
+Object.assign(translations.es, {
+    "floating_help": "¿Dudas?",
+    "faq_title": "Preguntas rápidas",
+    "faq_save_date_q": "¿Puedo guardar las fechas en mi calendario?",
+    "faq_save_date_a": "Sí — descarga los recordatorios aquí para tener el fin de semana a mano.",
+    "calendar_add_prewedding": "Añadir preboda",
+    "calendar_add_wedding": "Añadir boda",
+    "faq_travel_q": "¿Cómo llego a Valladolid?",
+    "faq_travel_a": "Hemos reunido las opciones principales para que elijas la que mejor te encaje.",
+    "faq_go_travel": "Ir a cómo llegar →",
+    "faq_stay_q": "¿Dónde me alojo?",
+    "faq_stay_a": "Hay una página dedicada al alojamiento con zonas recomendadas e ideas de hoteles.",
+    "faq_go_stay": "Ir a alojamiento →",
+    "faq_transport_q": "¿Habrá transporte?",
+    "faq_transport_a": "Los detalles de transporte están en su propia sección y se mantendrán actualizados allí.",
+    "faq_go_transport": "Ir a transporte →",
+    "faq_kids_q": "¿Y los niños?",
+    "faq_kids_a": "Hemos añadido una sección para familias con la información que pueden necesitar los padres.",
+    "faq_go_kids": "Ir a niños →",
+    "faq_rsvp_q": "¿Dónde confirmo?",
+    "faq_rsvp_a": "Usa la sección RSVP para que recibamos todos tus datos en un único sitio.",
+    "faq_go_rsvp": "Ir a RSVP →"
+});
+
+Object.assign(translations.de, {
+    "floating_help": "Fragen?",
+    "faq_title": "Kurze Fragen",
+    "faq_save_date_q": "Kann ich die Termine in meinem Kalender speichern?",
+    "faq_save_date_a": "Ja — lade die Erinnerungen hier herunter, damit du das Wochenende griffbereit hast.",
+    "calendar_add_prewedding": "Get-Together hinzufügen",
+    "calendar_add_wedding": "Hochzeit hinzufügen",
+    "faq_travel_q": "Wie komme ich nach Valladolid?",
+    "faq_travel_a": "Wir haben die wichtigsten Anreisemöglichkeiten gesammelt, damit ihr gut planen könnt.",
+    "faq_go_travel": "Zur Anreise →",
+    "faq_stay_q": "Wo übernachte ich?",
+    "faq_stay_a": "Auf der Unterkunftsseite findet ihr empfohlene Gegenden und Hotelideen.",
+    "faq_go_stay": "Zu den Unterkünften →",
+    "faq_transport_q": "Gibt es Transport?",
+    "faq_transport_a": "Die Transportinfos haben eine eigene Seite und werden dort aktuell gehalten.",
+    "faq_go_transport": "Zum Transport →",
+    "faq_kids_q": "Was ist mit Kindern?",
+    "faq_kids_a": "Für Familien gibt es eine eigene Seite mit den wichtigsten Informationen.",
+    "faq_go_kids": "Zu den Kinderinfos →",
+    "faq_rsvp_q": "Wo sage ich zu?",
+    "faq_rsvp_a": "Bitte nutzt die RSVP-Seite, damit alle Informationen an einem Ort ankommen.",
+    "faq_go_rsvp": "Zur RSVP →"
+});
