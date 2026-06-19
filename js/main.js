@@ -214,8 +214,8 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Jessica & Juanma Get-Together',
             start: '20261016T200000',
             end: '20261016T235900',
-            location: 'Privee, 41.648143,-4.726458',
-            description: 'Get-Together for Jessica and Juanma wedding weekend.'
+            location: 'Privee, Valladolid (41.648143,-4.726458)',
+            description: 'Please arrive at 20:00 for the get-together for Jessica and Juanma wedding weekend.'
         },
         wedding: {
             title: 'Jessica & Juanma Wedding',
