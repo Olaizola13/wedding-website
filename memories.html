@@ -37,25 +37,39 @@
     
     <main class="container centered-content">
         <p class="intro-text" data-key="memories_intro"></p>
-        
-        <div class="memories-button-container">
-            <a href="https://photos.app.goo.gl/hUL7mvC3BGAwfT899" class="upload-button" target="_blank" rel="noopener noreferrer">
-                <img src="/images/logo_google_photos.webp" alt="Google Photos">
-                <span data-key="memories_google_button"></span>
-            </a>
+
+        <!-- Configure an unsigned, upload-only Cloudinary preset in these two attributes. -->
+        <section class="memories-upload-card" aria-labelledby="memories-upload-title" data-upload-panel data-cloud-name="" data-upload-preset="">
+            <span class="memories-eyebrow" data-key="memories_eyebrow"></span>
+            <h2 id="memories-upload-title" data-key="memories_upload_title"></h2>
+            <p data-key="memories_upload_description"></p>
+
+            <button type="button" class="upload-button memories-primary-button" data-choose-photos>
+                <span class="upload-camera" aria-hidden="true">↑</span>
+                <span data-key="memories_upload_button"></span>
+                <span class="upload-arrow" aria-hidden="true">→</span>
+            </button>
+            <input id="wedding-photo-input" class="visually-hidden" type="file" accept="image/*" multiple data-photo-input>
+
+            <p class="memories-note" data-key="memories_note"></p>
+            <div class="upload-progress" data-upload-progress hidden>
+                <div class="upload-progress-track" aria-hidden="true"><span data-upload-progress-bar></span></div>
+                <p class="upload-status" data-upload-status aria-live="polite"></p>
+            </div>
+        </section>
+
+        <div class="memories-tip">
+            <span aria-hidden="true">♡</span>
+            <p data-key="memories_tip"></p>
         </div>
-        
-        <p class="memories-note" data-key="memories_note"></p>
+
         <p class="memories-thanks" data-key="memories_thanks"></p>
-            <div class="text-center mt-30"><a href="/wedding.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
+        <div class="text-center mt-30"><a href="/wedding.html" class="calendar-button" data-key="nav_back_to_main"></a></div>
     </main>
     
     <script src="/js/translations/common.js" charset="UTF-8"></script>
     <script src="/js/translations/memories.js" charset="UTF-8"></script>
     <script src="/js/main.js" charset="UTF-8"></script>
+    <script src="/js/memories-upload.js" charset="UTF-8"></script>
 </body>
 </html>
-
-
-
-
