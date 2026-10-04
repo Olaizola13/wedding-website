@@ -14,6 +14,7 @@
     <link rel="manifest" href="/icons/site.webmanifest" />
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/weather.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
@@ -62,6 +63,57 @@
                 <span class="countdown-label" data-key="countdown_seconds"></span>
             </div>
         </section>
+
+        <details class="weather-card">
+            <summary class="weather-card-summary">
+                <span class="weather-summary-icon" aria-hidden="true">☀️</span>
+                <span class="weather-summary-copy">
+                    <span class="weather-eyebrow" data-key="weather_location"></span>
+                    <span class="weather-heading" data-key="weather_title"></span>
+                    <span class="weather-summary-hint" data-key="weather_expand_hint"></span>
+                </span>
+                <span class="weather-chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="weather-card-content">
+                <p class="weather-intro" data-key="weather_intro"></p>
+                <div class="weather-days" aria-live="polite" aria-busy="true">
+                    <article class="weather-day" data-weather-date="2026-10-16">
+                        <div class="weather-day-heading">
+                            <div>
+                                <p class="weather-day-name" data-key="weather_friday"></p>
+                                <p class="weather-day-date" data-key="weather_friday_date"></p>
+                            </div>
+                            <span class="weather-condition-icon" aria-hidden="true">···</span>
+                        </div>
+                        <p class="weather-condition" data-weather-condition data-key="weather_loading"></p>
+                        <div class="weather-metrics">
+                            <p><span data-key="weather_temperature"></span><strong data-weather-temperature>—</strong></p>
+                            <p><span data-key="weather_rain"></span><strong data-weather-rain>—</strong></p>
+                        </div>
+                    </article>
+                    <article class="weather-day" data-weather-date="2026-10-17">
+                        <div class="weather-day-heading">
+                            <div>
+                                <p class="weather-day-name" data-key="weather_saturday"></p>
+                                <p class="weather-day-date" data-key="weather_saturday_date"></p>
+                            </div>
+                            <span class="weather-condition-icon" aria-hidden="true">···</span>
+                        </div>
+                        <p class="weather-condition" data-weather-condition data-key="weather_loading"></p>
+                        <div class="weather-metrics">
+                            <p><span data-key="weather_temperature"></span><strong data-weather-temperature>—</strong></p>
+                            <p><span data-key="weather_rain"></span><strong data-weather-rain>—</strong></p>
+                        </div>
+                    </article>
+                </div>
+                <div class="weather-note">
+                    <span aria-hidden="true">🧥</span>
+                    <p data-key="weather_climate_note"></p>
+                </div>
+                <p class="weather-updated" data-weather-updated data-key="weather_waiting"></p>
+                <p class="weather-source"><span data-key="weather_source"></span> <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a></p>
+            </div>
+        </details>
 
         <section class="event-details-card">
             <div class="event-card-header">
@@ -177,7 +229,9 @@
     
     <script src="/js/translations/common.js" charset="UTF-8"></script>
     <script src="/js/translations/wedding.js" charset="UTF-8"></script>
+    <script src="/js/translations/weather.js" charset="UTF-8"></script>
     <script src="/js/main.js" charset="UTF-8"></script>
+    <script src="/js/weather.js" charset="UTF-8"></script>
 </body>
 </html>
 
