@@ -1,5 +1,84 @@
 /* Styles specific to the main wedding.html dashboard page */
 
+.post-wedding-card {
+    background: linear-gradient(145deg, #fff, #f6e5de);
+    padding: 28px 24px;
+    border-radius: 16px;
+    box-shadow: var(--tile-shadow);
+    text-align: center;
+    margin: 15px 0 26px;
+}
+
+.post-wedding-heart {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.post-wedding-card h1 {
+    font-family: 'Kalam', cursive;
+    font-size: clamp(2rem, 8vw, 2.6rem);
+    line-height: 1.2;
+    margin: 16px 0;
+}
+
+.post-wedding-card p {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.7;
+}
+
+.post-wedding-signature {
+    font-family: 'Kalam', cursive !important;
+    font-size: 1.3rem;
+    color: var(--color-dark);
+}
+
+.post-wedding-memories-link {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 999px;
+    background: var(--color-dark);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.post-wedding-memories-link:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 4px;
+}
+
+.celebration-confetti {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 110;
+}
+
+.celebration-confetti span {
+    position: absolute;
+    left: var(--left);
+    top: -20px;
+    width: 7px;
+    height: 12px;
+    border-radius: 2px;
+    animation: celebration-fall 6s var(--delay) ease-in forwards;
+}
+
+@keyframes celebration-fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.85; }
+    85% { opacity: 0.65; }
+    100% { transform: translateY(105vh) rotate(var(--turn)); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .celebration-confetti { display: none; }
+    .after-wedding .story-button { animation: none; }
+}
+
 .dashboard-body {
     overflow-x: hidden;
 }
@@ -231,6 +310,61 @@
 
 .event-details-card.expanded .event-card-intro-truncated {
     display: none;
+}
+
+/* Keep the essential times visible while the full invitation is collapsed. */
+.event-summary {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.event-summary p {
+    margin: 12px 0;
+}
+
+.event-summary a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.event-details-card.expanded .event-summary {
+    display: none;
+}
+
+.event-bus-notice {
+    display: block;
+    margin: 16px 0 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--color-dark);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.event-bus-notice span {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.event-bus-notice:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.event-bus-notice:focus-visible,
+.toggle-arrow-container:focus-visible {
+    outline: 2px solid var(--color-dark);
+    outline-offset: 4px;
+}
+
+button.toggle-arrow-container {
+    width: 100%;
+    border: 0;
+    background: transparent;
 }
 
 .collapsible-wrapper {

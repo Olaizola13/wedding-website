@@ -110,6 +110,19 @@
     max-width: 700px;
     margin: 10px auto 40px auto;
 }
+
+/* Embedded maps show fixed locations; directions open through separate links. */
+.map-container iframe {
+    pointer-events: none;
+}
+
+.map-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    touch-action: pan-y;
+}
 .content-image {
     margin: 10px 0 20px 0;
 }

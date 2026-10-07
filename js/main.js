@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const isAfterWedding = window.weddingPhase?.isAfterWedding === true;
+    if (isAfterWedding) {
+        document.querySelectorAll('[data-before-wedding]').forEach(element => element.remove());
+        document.querySelectorAll('[data-after-wedding]').forEach(element => { element.hidden = false; });
+        const title = document.querySelector('title[data-key="page_title"]');
+        if (title) title.dataset.key = 'post_wedding_page_title';
+        const postWeddingKeys = {
+            memories_intro: 'post_memories_intro',
+            memories_tip: 'post_memories_tip',
+            gifts_message_intro: 'post_gifts_intro'
+        };
+        document.querySelectorAll('[data-key]').forEach(element => {
+            if (postWeddingKeys[element.dataset.key]) element.dataset.key = postWeddingKeys[element.dataset.key];
+        });
+    }
+
     const placeholderLinks = {
         "LINK_POSADA": {
             entries: [
@@ -72,6 +88,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const isMapLink = (href) => {
+        try {
+            const url = new URL(href, window.location.origin);
+            return (['www.google.com', 'google.com', 'maps.google.com'].includes(url.hostname) && url.pathname.startsWith('/maps'))
+                || url.hostname === 'maps.app.goo.gl'
+                || (url.hostname === 'goo.gl' && url.pathname.startsWith('/maps'));
+        } catch (_) {
+            return false;
+        }
+    };
+
     const resolvePlaceholder = (key, language) => {
         const config = placeholderLinks[key];
         if (!config) return null;
@@ -79,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return config.entries.map(entry => {
             const label = (entry.label && entry.label[language]) || (entry.label && entry.label.en) || 'Link';
             const isExternal = /^https?:\/\//i.test(entry.url);
-            const target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+            const target = isExternal && !isMapLink(entry.url) ? ' target="_blank" rel="noopener noreferrer"' : '';
             return `<a href="${entry.url}"${target}>${label}</a>`;
         }).join(joiner);
     };
@@ -124,6 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const links = document.querySelectorAll('a[href]');
         links.forEach(link => {
+            // Map links navigate directly, avoiding blocked new tabs on phones.
+            if (isMapLink(link.href)) link.removeAttribute('target');
             // Do not append lang to the language switcher links
             if (link.closest('.language-switcher')) {
                 return;
@@ -163,6 +192,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // For this project, assuming scripts are loaded sequentially is okay.
     setLanguage(language);
 
+    if (isAfterWedding) {
+        // Also remove retired links that may be embedded in translated content.
+        document.querySelectorAll('a[href]').forEach(link => {
+            const url = new URL(link.href, window.location.href);
+            if (url.origin === window.location.origin && window.weddingPhase.isRetiredPage(url.pathname)) {
+                link.replaceWith(...link.childNodes);
+            }
+        });
+
+        const celebration = document.querySelector('.celebration-confetti');
+        if (celebration && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            const colors = ['#d1a3a4', '#88a0a8', '#E0B4A2', '#c9a35d'];
+            for (let i = 0; i < 36; i++) {
+                const piece = document.createElement('span');
+                piece.style.setProperty('--left', `${Math.random() * 100}%`);
+                piece.style.setProperty('--delay', `${Math.random() * 1.5}s`);
+                piece.style.setProperty('--turn', `${180 + Math.random() * 540}deg`);
+                piece.style.backgroundColor = colors[i % colors.length];
+                celebration.appendChild(piece);
+            }
+            window.setTimeout(() => celebration.remove(), 8000);
+        }
+    }
+
     // --- Language switcher logic ---
     const languageSwitcher = document.querySelector('.language-switcher');
     if (languageSwitcher) {
@@ -174,6 +227,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.location.search = `?lang=${newLang}`;
             }
         });
+    }
+
+    // --- Pick-up city selection ---
+    const pickupSelector = document.querySelector('[data-pickup-selector]');
+    if (pickupSelector) {
+        const choices = pickupSelector.querySelectorAll('[data-pickup-city]');
+        const panels = pickupSelector.querySelectorAll('[data-pickup-panel]');
+        pickupSelector.querySelector('[data-pickup-choices]').setAttribute('aria-label', translations[language].transport_choose_city);
+        const showPickup = (city) => {
+            choices.forEach(button => button.setAttribute('aria-expanded', String(button.dataset.pickupCity === city)));
+            panels.forEach(panel => {
+                panel.hidden = panel.dataset.pickupPanel !== city;
+                if (!panel.hidden) {
+                    const map = panel.querySelector('[data-map-src]');
+                    if (map && !map.hasAttribute('src')) map.src = map.dataset.mapSrc;
+                }
+            });
+        };
+        const showPickupFromHash = () => {
+            if (window.location.hash === '#medina-pickup') showPickup('medina');
+            else if (window.location.hash === '#poniente-pickup') showPickup('valladolid');
+        };
+        choices.forEach(button => button.addEventListener('click', () => showPickup(button.dataset.pickupCity)));
+        window.addEventListener('hashchange', showPickupFromHash);
+        showPickupFromHash();
     }
 
     // --- FAQ reveal logic for main page ---
@@ -200,10 +278,22 @@ document.addEventListener('DOMContentLoaded', () => {
     if (eventCard) {
         const clickableHeader = eventCard.querySelector('.event-card-header');
         const clickableArrow = eventCard.querySelector('.toggle-arrow-container');
-        const toggleExpansion = (e) => {
-            e.stopPropagation(); 
-            eventCard.classList.toggle('expanded');
+        const content = eventCard.querySelector('.collapsible-content');
+        const updateExpansion = () => {
+            const expanded = eventCard.classList.contains('expanded');
+            if (content) content.inert = !expanded;
+            if (clickableArrow) {
+                clickableArrow.setAttribute('aria-expanded', String(expanded));
+                const key = expanded ? 'event_collapse_label' : 'event_expand_label';
+                clickableArrow.setAttribute('aria-label', translations[language][key] || translations.en[key]);
+            }
         };
+        const toggleExpansion = (e) => {
+            e.stopPropagation();
+            eventCard.classList.toggle('expanded');
+            updateExpansion();
+        };
+        updateExpansion();
         if (clickableHeader) clickableHeader.addEventListener('click', toggleExpansion);
         if (clickableArrow) clickableArrow.addEventListener('click', toggleExpansion);
     }
@@ -213,16 +303,16 @@ document.addEventListener('DOMContentLoaded', () => {
         prewedding: {
             title: 'Jessica & Juanma Get-Together',
             start: '20261016T200000',
-            end: '20261016T235900',
+            end: '20261017T000000',
             location: 'Privee, Valladolid (41.648143,-4.726458)',
-            description: 'Please arrive at 20:00 for the get-together for Jessica and Juanma wedding weekend.'
+            description: 'Friday, 16 October: Privee at 20:00. Cocktail reception with drinks included from 20:00 to 22:00. Venue open from 22:00 to 00:00; additional drinks at your own expense. No organised transport on Friday.'
         },
         wedding: {
             title: 'Jessica & Juanma Wedding',
-            start: '20261017T130000',
-            end: '20261017T235900',
-            location: 'Posada Real del Pinar',
-            description: 'Arrival from 12:30, ceremony at 13:00.'
+            start: '20261017T123000',
+            end: '20261018T003000',
+            location: 'Posada Real del Pinar, Pinar de San Rafael, Pozal de Gallinas, Valladolid',
+            description: 'Saturday, 17 October: guest reception at 12:30. Ceremony starts at 13:00 sharp; please be seated beforehand. Buses leave Poniente at 11:00 sharp and pick up at Villa de Ferias at 11:45. Arrive early: buses will not wait. Return buses: 20:00, 22:00 and 00:30 on Sunday, 18 October.'
         }
     };
 
@@ -249,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Countdown timer logic ---
     const countdownElement = document.getElementById('countdown-timer');
     if (countdownElement) {
-        const weddingDate = new Date('2026-10-17T13:00:00').getTime();
+        const weddingDate = new Date('2026-10-17T13:00:00+02:00').getTime();
 
         const updateCountdown = () => {
             const now = new Date().getTime();

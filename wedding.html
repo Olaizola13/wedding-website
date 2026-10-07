@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="/js/wedding-phase.js" charset="UTF-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jessica & Juanma's Wedding">
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
@@ -27,7 +28,7 @@
         <a href="?lang=de" title="Deutsch"><img src="/images/germany.png" alt="Deutsch"></a>
     </div>
 
-    <button class="floating-help" type="button" aria-controls="faq" aria-expanded="false" data-key="floating_help"></button>
+    <button class="floating-help" type="button" aria-controls="faq" aria-expanded="false" data-key="floating_help" data-before-wedding></button>
 
     <main class="dashboard-container">
         
@@ -45,7 +46,7 @@
         </header>
 
         <!-- Countdown Timer -->
-        <section id="countdown-timer" class="countdown-container">
+        <section id="countdown-timer" class="countdown-container" data-before-wedding>
             <div class="countdown-item">
                 <span id="days" class="countdown-number">0</span>
                 <span class="countdown-label" data-key="countdown_days"></span>
@@ -64,7 +65,7 @@
             </div>
         </section>
 
-        <details class="weather-card">
+        <details class="weather-card" data-before-wedding>
             <summary class="weather-card-summary">
                 <span class="weather-summary-icon" aria-hidden="true">☀️</span>
                 <span class="weather-summary-copy">
@@ -115,19 +116,35 @@
             </div>
         </details>
 
-        <section class="event-details-card">
+        <section class="post-wedding-card" data-after-wedding hidden aria-labelledby="post-wedding-title">
+            <div class="post-wedding-heart" aria-hidden="true">♡</div>
+            <h1 id="post-wedding-title" data-key="post_wedding_title"></h1>
+            <p data-key="post_wedding_message"></p>
+            <p class="post-wedding-signature" data-key="post_wedding_signature"></p>
+            <p data-key="post_wedding_memories_prompt"></p>
+            <a class="post-wedding-memories-link" href="/memories.html" data-key="post_wedding_memories_button"></a>
+        </section>
+        <div class="celebration-confetti" data-after-wedding hidden aria-hidden="true"></div>
+
+        <section class="event-details-card" data-before-wedding>
             <div class="event-card-header">
                 <h2 data-key="dear_guests"></h2>
                 <p class="event-card-intro-truncated" data-key="wedding_intro_truncated"></p>
             </div>
+            <div class="event-summary">
+                <p data-key="main_friday_summary"></p>
+                <p data-key="main_saturday_summary"></p>
+            </div>
+            <a class="event-bus-notice" href="/transport.html#shuttle" data-key="main_bus_notice"></a>
              <div class="collapsible-wrapper">
-                <div class="collapsible-content">
+                <div class="collapsible-content" id="weekend-event-details" inert>
                     <p class="event-card-text" data-key="wedding_intro"></p>
                     <div class="visual-separator"></div>
                     <div class="event-item">
                         <h3 data-key="pre_wedding_title"></h3>
                         <p data-key="pre_wedding_date"></p>
                         <p data-key="pre_wedding_location"></p>
+                        <p data-key="pre_wedding_schedule"></p>
                         <p data-key="pre_wedding_dresscode"></p>
                     </div>
                     <div class="visual-separator"></div>
@@ -141,32 +158,32 @@
                     <p class="event-card-text" data-key="wedding_outro"></p>
                 </div>
             </div>
-            <div class="toggle-arrow-container">
+            <button class="toggle-arrow-container" type="button" aria-controls="weekend-event-details" aria-expanded="false" aria-label="Show full weekend details">
                  <svg class="toggle-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 5v14"></path>
                     <path d="M5 12h14"></path>
                 </svg>
-            </div>
+            </button>
         </section>
 
         <section class="icon-button-grid icon-button-grid--three-columns">
-            <a href="/travel.html" class="icon-button">
+            <a href="/travel.html" class="icon-button" data-before-wedding>
                 <img src="/images/icon_travel.webp" alt="" data-key="btn_travel">
                 <span data-key="btn_travel"></span>
             </a>
-            <a href="/accommodations.html" class="icon-button">
+            <a href="/accommodations.html" class="icon-button" data-before-wedding>
                 <img src="/images/icon_accommodations.webp" alt="" data-key="btn_accommodations">
                 <span data-key="btn_accommodations"></span>
             </a>
-            <a href="/locations.html" class="icon-button">
+            <a href="/locations.html" class="icon-button" data-before-wedding>
                 <img src="/images/icon_locations.webp" alt="" data-key="btn_locations">
                 <span data-key="btn_locations"></span>
             </a>
-            <a href="/transport.html" class="icon-button">
+            <a href="/transport.html" class="icon-button" data-before-wedding>
                 <img src="/images/icon_transport.webp" alt="" data-key="btn_transport">
                 <span data-key="btn_transport"></span>
             </a>
-            <a href="/kids.html" class="icon-button">
+            <a href="/kids.html" class="icon-button" data-before-wedding>
                 <img src="/images/icon_kids.webp" alt="" data-key="btn_kids">
                 <span data-key="btn_kids"></span>
             </a>
@@ -182,13 +199,13 @@
                 <img src="/images/icon_memories.webp" alt="" data-key="btn_memories">
                 <span data-key="btn_memories"></span>
             </a>
-            <a href="/rsvp.html" class="icon-button">
+            <a href="/rsvp.html" class="icon-button" data-before-wedding>
                 <img src="/images/icon_rsvp.webp" alt="" data-key="btn_rsvp">
                 <span data-key="btn_rsvp"></span>
             </a>
         </section>
 
-        <section class="faq-card" id="faq" hidden>
+        <section class="faq-card" id="faq" hidden data-before-wedding>
             <h2 data-key="faq_title"></h2>
             <details class="faq-item">
                 <summary data-key="faq_save_date_q"></summary>
