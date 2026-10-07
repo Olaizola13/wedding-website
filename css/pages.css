@@ -189,6 +189,8 @@
     opacity: 0.65;
 }
 
+.memories-upload-card [hidden] { display: none; }
+
 .upload-progress { margin-top: 24px; }
 .upload-progress-track {
     height: 8px;

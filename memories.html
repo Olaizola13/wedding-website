@@ -38,8 +38,8 @@
     <main class="container centered-content">
         <p class="intro-text" data-key="memories_intro"></p>
 
-        <!-- Configure an unsigned, upload-only Cloudinary preset in these two attributes. -->
-        <section class="memories-upload-card" aria-labelledby="memories-upload-title" data-upload-panel data-cloud-name="" data-upload-preset="">
+        <!-- Guest uploads use an unsigned preset; account secrets must never appear here. -->
+        <section class="memories-upload-card" aria-labelledby="memories-upload-title" data-upload-panel data-cloud-name="ty23k8cn" data-upload-preset="boda-2026-guests">
             <span class="memories-eyebrow" data-key="memories_eyebrow"></span>
             <h2 id="memories-upload-title" data-key="memories_upload_title"></h2>
             <p data-key="memories_upload_description"></p>
@@ -49,12 +49,13 @@
                 <span data-key="memories_upload_button"></span>
                 <span class="upload-arrow" aria-hidden="true">→</span>
             </button>
-            <input id="wedding-photo-input" class="visually-hidden" type="file" accept="image/*" multiple data-photo-input>
+            <input id="wedding-photo-input" class="visually-hidden" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif,.jpg,.jpeg,.png,.webp,.heic,.heif" multiple data-photo-input>
 
             <p class="memories-note" data-key="memories_note"></p>
             <div class="upload-progress" data-upload-progress hidden>
                 <div class="upload-progress-track" aria-hidden="true"><span data-upload-progress-bar></span></div>
                 <p class="upload-status" data-upload-status aria-live="polite"></p>
+                <button type="button" class="upload-button memories-primary-button" data-retry-photos data-key="memories_retry_button" hidden></button>
             </div>
         </section>
 

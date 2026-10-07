@@ -1,9 +1,12 @@
 Object.assign(translations.en, {
     "transport_page_title": "Transport",
+    "transport_punctuality_title": "Be on time — buses leave at 11:00 sharp!",
+    "transport_punctuality_text": "<strong>Please arrive at the Poniente pick-up point before 11:00.</strong> There is no passenger list, so we cannot check who is missing. The buses will leave at exactly 11:00 and will not wait for late arrivals.",
+    "transport_pickup_directions": "Get directions to the Poniente pick-up point",
     "transport_intro": "To ensure everyone can relax and enjoy the celebration without worrying about driving, we will be providing a complimentary shuttle bus service on the wedding day.",
     "transport_departure_title": "To the Wedding",
     "transport_departure_notice": "<strong>Departure from Valladolid:</strong> the buses will leave from the <a href=\"https://www.google.com/maps?q=41.6533255,-4.7321355\" target=\"_blank\" rel=\"noopener noreferrer\">Poniente pick-up point</a> at exactly 11:00 am.",
-    "transport_departure_text": "The shuttle service runs from Valladolid to <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>. You can see the pick-up point on the map below or open it directly in Google Maps using the link above.",
+    "transport_departure_text": "The shuttle service runs from Valladolid to <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>. The map below shows the fixed Poniente pick-up point. Tap the button below the map to get directions in Google Maps from your location.",
     "transport_departure_medina": "<strong>Stop in Medina del Campo:</strong> the bus will also stop at Villa de Ferias at 11:45 am to pick up guests staying there.",
     "transport_return_title": "From the Wedding",
     "transport_return_text": "For the way back, the shuttle service will run at three different times. If needed, the return buses will stop in Medina del Campo to drop guests off at Villa de Ferias before continuing to Valladolid:",
@@ -14,10 +17,13 @@ Object.assign(translations.en, {
 });
 Object.assign(translations.es, {
     "transport_page_title": "Transporte",
+    "transport_punctuality_title": "¡Máxima puntualidad! Salida a las 11:00 en punto",
+    "transport_punctuality_text": "<strong>Por favor, llegad al punto de recogida de Poniente antes de las 11:00.</strong> No hay lista de pasajeros, así que no podemos comprobar quién falta. Los autobuses saldrán a las 11:00 en punto y no esperarán a quienes lleguen tarde.",
+    "transport_pickup_directions": "Cómo llegar al punto de recogida de Poniente",
     "transport_intro": "Para asegurar que todos podáis relajaros y disfrutar de la celebración sin preocuparos por conducir, ofreceremos un servicio de autobuses gratuito el día de la boda.",
     "transport_departure_title": "Hacia la Boda",
     "transport_departure_notice": "<strong>Salida desde Valladolid:</strong> los autobuses saldrán desde el <a href=\"https://www.google.com/maps?q=41.6533255,-4.7321355\" target=\"_blank\" rel=\"noopener noreferrer\">punto de recogida de Poniente</a> a las 11:00 en punto.",
-    "transport_departure_text": "El servicio de autobuses irá desde Valladolid hasta la <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>. Podéis ver el punto de recogida en el mapa de abajo o abrirlo directamente en Google Maps con el enlace anterior.",
+    "transport_departure_text": "El servicio de autobuses irá desde Valladolid hasta la <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>. El mapa de abajo muestra el punto fijo de recogida de Poniente. Pulsad el botón bajo el mapa para ver cómo llegar desde vuestra ubicación en Google Maps.",
     "transport_departure_medina": "<strong>Parada en Medina del Campo:</strong> el autobús también pasará por Villa de Ferias a las 11:45 para recoger a quienes se alojen allí.",
     "transport_return_title": "Desde la Boda",
     "transport_return_text": "Para el trayecto de vuelta, el servicio de autobuses tendrá tres horarios. Si fuera necesario, los autobuses pasarán por Medina del Campo para dejar a gente en Villa de Ferias antes de continuar hacia Valladolid:",
@@ -28,10 +34,13 @@ Object.assign(translations.es, {
 });
 Object.assign(translations.de, {
     "transport_page_title": "Transport",
+    "transport_punctuality_title": "Bitte unbedingt pünktlich sein — Abfahrt um 11:00 Uhr!",
+    "transport_punctuality_text": "<strong>Bitte seid vor 11:00 Uhr am Abholpunkt Poniente.</strong> Es gibt keine Passagierliste, daher können wir nicht prüfen, wer noch fehlt. Die Busse fahren um Punkt 11:00 Uhr ab und warten nicht auf verspätete Gäste.",
+    "transport_pickup_directions": "Route zum Abholpunkt Poniente anzeigen",
     "transport_intro": "Damit sich alle entspannen und die Feier genießen können, ohne sich Gedanken über das Fahren machen zu müssen, stellen wir am Hochzeitstag einen kostenlosen Shuttlebus-Service zur Verfügung.",
     "transport_departure_title": "Zur Hochzeit",
     "transport_departure_notice": "<strong>Abfahrt in Valladolid:</strong> Die Busse fahren pünktlich um 11:00 Uhr am <a href=\"https://www.google.com/maps?q=41.6533255,-4.7321355\" target=\"_blank\" rel=\"noopener noreferrer\">Abholpunkt Poniente</a> ab.",
-    "transport_departure_text": "Der Shuttle-Service fährt von Valladolid zur <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>. Den Abholpunkt seht ihr auf der Karte unten oder direkt in Google Maps über den Link oben.",
+    "transport_departure_text": "Der Shuttle-Service fährt von Valladolid zur <a href=\"https://laposadadelpinar.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Posada Real del Pinar</em></a>. Die Karte unten zeigt den festen Abholpunkt Poniente. Tippt auf den Button unter der Karte, um euch in Google Maps die Route von eurem Standort anzeigen zu lassen.",
     "transport_departure_medina": "<strong>Zwischenstopp in Medina del Campo:</strong> Der Bus hält außerdem um 11:45 Uhr am Villa de Ferias, um dort untergebrachte Gäste abzuholen.",
     "transport_return_title": "Von der Hochzeit",
     "transport_return_text": "Für die Rückfahrt fährt der Shuttle-Service zu drei verschiedenen Zeiten. Falls nötig, halten die Rückfahrbusse in Medina del Campo, um Gäste am Villa de Ferias abzusetzen, bevor sie weiter nach Valladolid fahren:",
