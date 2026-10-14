@@ -12,10 +12,9 @@ Object.assign(translations.en, {
     "transport_departure_notice": "<strong>11:00 · Poniente, Valladolid</strong>",
     "transport_departure_medina": "<strong>11:45 · Hotel Villa de Ferias, Medina del Campo</strong>",
     "transport_return_title": "From the Wedding",
-    "transport_return_text": "Return buses go to Valladolid, stopping at Villa de Ferias if needed.",
-    "transport_return_option1": "<strong>20:00</strong>",
-    "transport_return_option2": "<strong>22:00</strong>",
-    "transport_return_option3": "<strong>00:30</strong> · Sunday, 18 October (Saturday night)"
+    "transport_return_text": "All return buses go to Valladolid and can stop at Hotel Villa de Ferias if needed.",
+    "transport_return_option1": "<strong>21:30</strong> · 1 bus",
+    "transport_return_option2": "<strong>00:30</strong> · 2 buses · Sunday, 18 October (Saturday night)"
 });
 Object.assign(translations.es, {
     "transport_choose_city": "¿Desde dónde salís? Elegid vuestra ciudad para ver el punto de recogida.",
@@ -31,10 +30,9 @@ Object.assign(translations.es, {
     "transport_departure_notice": "<strong>11:00 · Poniente, Valladolid</strong>",
     "transport_departure_medina": "<strong>11:45 · Hotel Villa de Ferias, Medina del Campo</strong>",
     "transport_return_title": "Desde la Boda",
-    "transport_return_text": "Los autobuses regresan a Valladolid, con parada en Villa de Ferias si es necesario.",
-    "transport_return_option1": "<strong>20:00</strong>",
-    "transport_return_option2": "<strong>22:00</strong>",
-    "transport_return_option3": "<strong>00:30</strong> · Domingo 18 de octubre (la noche del sábado)"
+    "transport_return_text": "Todos los autobuses de vuelta regresan a Valladolid y pueden parar en el Hotel Villa de Ferias si es necesario.",
+    "transport_return_option1": "<strong>21:30</strong> · 1 autobús",
+    "transport_return_option2": "<strong>00:30</strong> · 2 autobuses · Domingo 18 de octubre (la noche del sábado)"
 });
 Object.assign(translations.de, {
     "transport_choose_city": "Wo steigt ihr ein? Wählt eure Stadt, um den Abholpunkt zu sehen.",
@@ -50,8 +48,7 @@ Object.assign(translations.de, {
     "transport_departure_notice": "<strong>11:00 Uhr · Poniente, Valladolid</strong>",
     "transport_departure_medina": "<strong>11:45 Uhr · Hotel Villa de Ferias, Medina del Campo</strong>",
     "transport_return_title": "Von der Hochzeit",
-    "transport_return_text": "Die Busse fahren zurück nach Valladolid und halten bei Bedarf am Villa de Ferias.",
-    "transport_return_option1": "<strong>20:00 Uhr</strong>",
-    "transport_return_option2": "<strong>22:00 Uhr</strong>",
-    "transport_return_option3": "<strong>00:30 Uhr</strong> · Sonntag, 18. Oktober (in der Nacht von Samstag auf Sonntag)"
+    "transport_return_text": "Alle Rückfahrtbusse fahren nach Valladolid und können bei Bedarf am Hotel Villa de Ferias halten.",
+    "transport_return_option1": "<strong>21:30 Uhr</strong> · 1 Bus",
+    "transport_return_option2": "<strong>00:30 Uhr</strong> · 2 Busse · Sonntag, 18. Oktober (in der Nacht von Samstag auf Sonntag)"
 });
